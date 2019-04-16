@@ -1,20 +1,21 @@
 import * as styles from './styles.scss';
-import slidr from '../../../node_modules/vanillajs-slidr/slidr';
 
 interface SlideShowTemplateData {
 
 }
 
 export default (render: Function, data: SlideShowTemplateData) => {
-    return render`
+	return render`
         <style>${styles.toString()}</style>
-        <div id="slider" style="display: block">
-            <div data-slidr="one">apple</div>
-            <div data-slidr="two">banana</div>
-            <div data-slidr="three">coconut</div>
+        <div class="container snap vertical">
+	        <div class="section-1"><glyph-headline></glyph-headline></div>
+	        <div class="section-2">
+		<div class="container snap">
+			<div class="section-3">Item 2</div>
+			<div class="section-4">Item 3</div>
+		</div>  
+	    </div>
+            <div class="section-5">Item 4</div>
         </div>
-        <script>
-            ${ slidr.create('slider').start()}
-        </script>
     `;
 }

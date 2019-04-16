@@ -1,0 +1,35 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('glyph-headline') {
+  .glyph-headline {
+    list-style-type: none;
+    padding-left: 0;
+
+      a {
+        color: white;
+        display: block;
+        position: relative;
+        white-space: nowrap;
+        padding: 20px 20px;
+        cursor: pointer;
+      }
+      
+      li {
+        display: block;
+        margin: 20px;
+        font-weight: 800;
+        font-size: 25px;
+        letter-spacing: 5.5px;
+        line-height: 30px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; 
+      }
+
+      &__hover span[aria-hidden] {
+        display: inline-block;
+      }
+    
+    }
+      
+}
