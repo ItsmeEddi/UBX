@@ -1,0 +1,61 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('snap-layout') {
+    .snap-layout {
+        &__container {
+            display: flex;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow-x: auto;
+            white-space: nowrap;
+            -moz-scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+
+            &--vertical {
+                flex-direction: column;
+                -moz-scroll-snap-type: y mandatory;
+                scroll-snap-type: y mandatory;
+            }
+        }
+
+        &__section {
+            min-width: 100%;
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            -moz-scroll-snap-align: start end;
+            scroll-snap-align: start end;
+            background: url('/resources/img/noise.png') repeat;
+        }
+    }
+    
+    .section-1 {
+    background-color: #4067BF;
+    }
+    
+    .section-2 {
+    background-color: #BA7ECD;
+    }
+    
+    .section-3 {
+    background-color: #66DDDB;
+    }
+    
+    .section-4 {
+    background-color: #F0E34E;
+    }
+    
+    .section-5 {
+    background-color: #E53C56;
+    }
+    
+    .section-6 {
+    background-color: #E770A1;
+    }
+}
