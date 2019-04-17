@@ -6,7 +6,7 @@
     padding-left: 0;
 
       a {
-        color: white;
+        color: black;
         display: block;
         position: relative;
         white-space: nowrap;
@@ -28,6 +28,10 @@
 
       &__hover span[aria-hidden] {
         display: inline-block;
+      }
+
+      span[data-initial=" "] {
+        width: 7px;
       }
     
     }

@@ -7,14 +7,33 @@ interface GlyphHeadlineProps {
 }
 
 interface GlyphHeadlineState {
-
+    headlineCharacters: string[]
+    headlineItem: string
 }
 
 class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
     static componentName = 'glyph-headline';
 
+    constructor() {
+        super();
+        this.state = {
+            headlineCharacters: [],
+            headlineItem: ''
+        }
+    }
     connectedCallback() {
+    
+        const testHeadline = 'TEST HEADLINE';
+        const characters = testHeadline.split('');
+        this.setState({
+            headlineCharacters: characters,
+            headlineItem: testHeadline
+        });
+        
+        this.splittingLogic();
+    }
 
+    splittingLogic() {
         Splitting();
 
         var chars = ["$", "%", "#", "@", "&", "=", "*", "/"];
@@ -23,11 +42,11 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
 
         [].forEach.call(myNodeListOne, function (item, i, array) {
 
-            item.addEventListener("mouseenter", function () {
-                [].forEach.call(myNodeListTwo, function (
+            item.addEventListener("mouseenter", ()=>{
+                [].forEach.call(myNodeListTwo, (
                     item,
                     i
-                ) {
+                )=>{
                     var isEmpty = " " === item.textContent,
                         r = item.getBoundingClientRect().width;
                     var cnt = 0;
@@ -35,9 +54,9 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
                         "" != item.style.width
                             ? item.style.width
                             : isEmpty ? "7px" : r < 1 ? "" : String(Math.floor(r)) + "px"),
-                        (setTimeout(function () {
+                        (setTimeout(()=>{
                             (item.innerHTML = chars[getRandomInt(0, chars.length - 1)]),
-                                setTimeout(function () {
+                                setTimeout(()=>{
                                     (item.innerHTML = item.dataset.initial),
                                         (cnt += 1),
                                         cnt === chars.length - 1;
@@ -47,13 +66,16 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
             });
         })
 
-        function getRandomInt(t, e) {
-            return Math.floor(Math.random() * (e - t + 1)) + t
+        const getRandomInt = (t, e)=>{
+            return Math.floor(Math.random() * (e - t + 1)) + t;
         }
     }
 
     render() {
-        return template(this.html, {});
+        return template(this.html, {
+            headlineCharacters: this.state.headlineCharacters,
+            headlineItem: this.state.headlineItem
+        });
     }
 }
 
