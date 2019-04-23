@@ -16,7 +16,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
                     <div class="snap-layout__section navi-blue">Item 2.3</div>
                 </div>
             </div>
-        <div class="snap-layout__section dark-blue">Item 3</div>
+            <div class="snap-layout__section dark-blue">Item 3</div>
         </div>
     `;
 }
