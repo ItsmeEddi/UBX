@@ -1,0 +1,42 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('speaker-box') {
+    .speaker {
+        position: relative;
+
+        &__box-one {
+            width: 200px;
+            height: 250px;
+            left: 75px;
+            background-color: blue;
+            position: absolute;
+        }
+
+        &__box-two {
+            width: 200px;
+            height: 250px;
+            top: 25px;
+            background-color: lightgrey;
+            position: absolute;
+        }
+
+        &__title {
+            position: absolute;
+            left: 300px;
+        }
+
+        &__job {
+            color: blue;
+            position: absolute;
+            left: 300px;
+            top: 50px;
+        }
+
+        &__description {
+            position: absolute;
+            left: 300px;
+            top: 100px;
+        }
+
+    }
+}

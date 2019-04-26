@@ -20,13 +20,15 @@
     "@biotope/element": "^2.0.0",
     "@biotope/resource-loader": "^1.4.1",
     "breakpoint-sass": "2.7.1",
+    "file-loader": "^3.0.1",
     "handlebars": "4.0.11",
     "sanitize.css": "^7.0.0",
     "susy": "2.2.14",
+    "url-loader": "^1.1.2",
     "vi-css-helper": "git+https://github.com/virtualidentityag/vi-css-helper.git#1.1.1"
   },
   "devDependencies": {
-    "@biotope/build": "6.0.0",
+    "@biotope/build": "^6.0.0",
     "@types/modernizr": "^3.5.1",
     "@types/node": "^10.12.18",
     "chai": "4.1.2",
