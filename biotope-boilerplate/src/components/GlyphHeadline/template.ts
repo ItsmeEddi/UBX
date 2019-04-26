@@ -8,10 +8,12 @@ interface GlyphHeadlineTemplateData {
 export default (render: Function, data: GlyphHeadlineTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <ul class="glyph-headline">
-            <li class="glyph-headline__hover" aria-label="${data.headlineItem}">
-                ${data.headlineCharacters.map(character => `<span aria-hidden="true" data-initial="${character}" aria-label="${character}" >${character}</span>`)}
-            </li>
-        </ul>
+        <h2 class="glyph-headline">
+            <ul class="glyph-headline__letter-list">
+                <li class="glyph-headline__letter" aria-label="${data.headlineItem}">
+                    ${data.headlineCharacters.map(character => `<span aria-hidden="true" data-initial="${character}" aria-label="${character}" >${character}</span>`)}
+                </li>
+            </ul>
+        </h2>
    `;
 }

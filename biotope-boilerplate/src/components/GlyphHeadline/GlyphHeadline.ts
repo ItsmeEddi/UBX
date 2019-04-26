@@ -37,7 +37,7 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
         Splitting();
 
         var chars = ["$", "%", "#", "@", "&", "=", "*", "/"];
-        var myNodeListOne = this.shadowRoot.querySelectorAll(".glyph-headline__hover");
+        var myNodeListOne = this.shadowRoot.querySelectorAll(".glyph-headline__letter");
         var myNodeListTwo = this.shadowRoot.querySelectorAll("span");
 
         [].forEach.call(myNodeListOne, function (item, i, array) {
@@ -53,14 +53,14 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
                     (item.style.width =
                         "" != item.style.width
                             ? item.style.width
-                            : isEmpty ? "7px" : r < 1 ? "" : String(Math.floor(r)) + "px"),
+                            : isEmpty ? "8px" : r < 1 ? "" : String(Math.floor(r)) + "px"),
                         (setTimeout(()=>{
                             (item.innerHTML = chars[getRandomInt(0, chars.length - 1)]),
                                 setTimeout(()=>{
                                     (item.innerHTML = item.dataset.initial),
                                         (cnt += 1),
                                         cnt === chars.length - 1;
-                                }, 120);
+                                }, 150);
                         }, 40 * i));
                 });
             });
