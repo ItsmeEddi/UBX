@@ -21,9 +21,9 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
             headlineItem: ''
         }
     }
+
     connectedCallback() {
-    
-        const testHeadline = 'TEST HEADLINE';
+        const testHeadline = 'test headline';
         const characters = testHeadline.split('');
         this.setState({
             headlineCharacters: characters,
@@ -36,24 +36,15 @@ class GlyphHeadline extends Component<GlyphHeadlineProps, GlyphHeadlineState> {
     splittingLogic() {
         Splitting();
 
-        var chars = ["$", "%", "#", "@", "&", "=", "*", "/"];
-        var myNodeListOne = this.shadowRoot.querySelectorAll(".glyph-headline__letter");
-        var myNodeListTwo = this.shadowRoot.querySelectorAll("span");
+        const chars = ["$", "%", "#", "@", "&", "=", "*", "/"];
+        const headlines = this.shadowRoot.querySelectorAll("li");
+        const letters = this.shadowRoot.querySelectorAll(".glyph-headline__letter");
 
-        [].forEach.call(myNodeListOne, function (item, i, array) {
+        [].forEach.call(headlines, function (item, i, array) {
 
             item.addEventListener("mouseenter", ()=>{
-                [].forEach.call(myNodeListTwo, (
-                    item,
-                    i
-                )=>{
-                    var isEmpty = " " === item.textContent,
-                        r = item.getBoundingClientRect().width;
+                [].forEach.call(letters, (item, i)=>{
                     var cnt = 0;
-                    (item.style.width =
-                        "" != item.style.width
-                            ? item.style.width
-                            : isEmpty ? "8px" : r < 1 ? "" : String(Math.floor(r)) + "px"),
                         (setTimeout(()=>{
                             (item.innerHTML = chars[getRandomInt(0, chars.length - 1)]),
                                 setTimeout(()=>{

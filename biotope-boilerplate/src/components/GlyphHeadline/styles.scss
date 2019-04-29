@@ -6,7 +6,6 @@
     display: inline-block;
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 24px;
 
     &:before {
       content: '';
@@ -16,7 +15,7 @@
       height: 8px;
       top: 8px;
       z-index: -1;
-      background-color: #9FE347;
+      background-color: #9FE447;
     }
 
     &__letter-list {
@@ -25,12 +24,18 @@
       margin: 0;
     }
 
+    &__letter {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+    }
+
     &__hover span[aria-hidden] {
       display: inline-block;
     }
 
     span[data-initial=" "] {
-      width: 8px;
+      width: 40px;
     }
   }
 }
