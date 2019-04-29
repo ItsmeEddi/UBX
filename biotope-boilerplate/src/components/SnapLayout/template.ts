@@ -1,5 +1,5 @@
 import * as styles from './styles.scss';
-import * as background from './background.svg';
+/*import * as background from './background.svg';*/
 
 interface SnapLayoutTemplateData {
 
@@ -8,18 +8,13 @@ interface SnapLayoutTemplateData {
 export default (render: Function, data: SnapLayoutTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <div class="snap-layout__container snap-layout__container--vertical">
-            <div class="snap-layout__section dark-blue" >
-                ${{ html: background }}
-            </div>
-            <div class="snap-layout__section navi-blue">
-                <div class="snap-layout__container">
-                    <div class="snap-layout__section navi-blue">Item 2.1</div>
-                    <div class="snap-layout__section navi-blue">Item 2.2</div>
-                    <div class="snap-layout__section navi-blue">Item 2.3</div>
-                </div>
-            </div>
-            <div class="snap-layout__section dark-blue">Item 3</div>
+        <fixed-nav></fixed-nav>
+        <div class="snap-layout__container">
+            <section id="speaker" class="snap-layout__section dark-blue">Speaker</section>
+            <section id="schedule"class="snap-layout__section white">Schedule</section>
+            <section id="events" class="snap-layout__section dark-blue">Past events</section>    
+            <section id="location" class="snap-layout__section white">Location</section> 
+            <section id="registration" class="snap-layout__section dark-blue">Registration</section> 
         </div>
     `;
 }
