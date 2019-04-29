@@ -10,24 +10,20 @@
         &__section {
             min-width: 100%;
             min-height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 40px;
+            padding: 20vh 5vw;
             background: url('/resources/img/noise.png') repeat;
             animation: grain 1s infinite;
         }
     }
     
     .dark-blue {
-        background-color: #010413;
+        background-color: #050E3F;
         color: white;
     }
     
     .white {
         background-color: white;
-        color: #010413;
+        color: #050E3F;
     }
 
     @keyframes grain {

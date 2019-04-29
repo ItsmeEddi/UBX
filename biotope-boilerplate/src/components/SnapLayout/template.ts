@@ -1,5 +1,4 @@
 import * as styles from './styles.scss';
-/*import * as background from './background.svg';*/
 
 interface SnapLayoutTemplateData {
 
@@ -10,11 +9,25 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
         <style>${styles.toString()}</style>
         <fixed-nav></fixed-nav>
         <div class="snap-layout__container">
-            <section id="speaker" class="snap-layout__section dark-blue">Speaker</section>
-            <section id="schedule"class="snap-layout__section white">Schedule</section>
-            <section id="events" class="snap-layout__section dark-blue">Past events</section>    
-            <section id="location" class="snap-layout__section white">Location</section> 
-            <section id="registration" class="snap-layout__section dark-blue">Registration</section> 
+        <section class="snap-layout__section white">
+                <simple-text>Welche Rolle spielen Useful Brand Experienxe auf dem Weg um digitalen Business? Unter dem Motto "Create Digital Opportunities" zeigt die UBX19, wie die Macht und Vielfalt digitaler Lösungen und Prozesse genutzt werden können, ...</simple-text>
+                <simple-button>Registration</simple-button>
+            </section>
+            <section id="speaker" class="snap-layout__section dark-blue">
+                <simple-text>Speaker</simple-text>
+            </section>
+            <section id="schedule"class="snap-layout__section white">
+                <simple-text>Schedule</simple-text>
+            </section>
+            <section id="events" class="snap-layout__section dark-blue">
+                <simple-text>Past events</simple-text>
+            </section>    
+            <section id="location" class="snap-layout__section white">
+                <simple-text>Location</simple-text>
+            </section> 
+            <section id="registration" class="snap-layout__section dark-blue">
+                <simple-text>Registration</simple-text>
+            </section>
         </div>
     `;
 }
