@@ -2,10 +2,11 @@
 
 @include host('glyph-headline') {
 
-  .glyph-headline {
+  h2 {
     display: inline-block;
     position: relative;
     text-transform: uppercase;
+    z-index: 9;
 
     &:before {
       content: '';
@@ -15,27 +16,48 @@
       height: 8px;
       top: 8px;
       z-index: -1;
-      background-color: #9FE447;
     }
 
-    &__letter-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    &__letter {
+    span {
       display: inline-block;
-      width: 40px;
+      min-width: 40px;
       text-align: center;
     }
+  }
+}
 
-    &__hover span[aria-hidden] {
-      display: inline-block;
-    }
+// dark theme
 
-    span[data-initial=" "] {
-      width: 40px;
-    }
+:host([dark]) h2{
+  color: #000;
+
+  &:before {
+    background-color: #9FE447;
+  }
+}
+
+glyph-headline[dark] h2{
+  color: #000;
+  
+  &:before {
+    background-color: #9FE447;
+  }
+}
+
+
+// light theme
+:host([light]) h2{
+  color: #fff;
+
+  &:before {
+    background-color: #1355F5;
+  }
+}
+
+glyph-headline[light] h2{
+  color: #fff;
+  
+  &:before {
+    background-color: #1355F5;
   }
 }
