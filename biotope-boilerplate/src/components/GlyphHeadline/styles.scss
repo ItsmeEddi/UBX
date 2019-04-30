@@ -27,7 +27,6 @@
 }
 
 // dark theme
-
 :host([dark]) h2{
   color: #000;
 
@@ -43,7 +42,6 @@ glyph-headline[dark] h2{
     background-color: #9FE447;
   }
 }
-
 
 // light theme
 :host([light]) h2{
