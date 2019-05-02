@@ -9,11 +9,15 @@ interface SpeakerBoxState {
 
 }
 
-class SpeakerBox extends Component< SpeakerBoxProps, SpeakerBoxState > {
+class SpeakerBox extends Component<SpeakerBoxProps, SpeakerBoxState> {
     static componentName = 'speaker-box';
 
+    contentToggle() {
+        this.nextElementSibling.classList.toggle('speaker__description--open');
+    }
+
     render() {
-        return template(this.html, {});
+        return template(this.html, { toggleOpen: this.contentToggle });
     }
 }
 

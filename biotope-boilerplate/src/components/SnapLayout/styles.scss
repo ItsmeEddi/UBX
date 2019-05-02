@@ -23,7 +23,12 @@
     
     .white {
         background-color: white;
+        background: none;
         color: #050E3F;
+    }
+
+    #speaker {
+        display: inline-grid;
     }
 
     @keyframes grain {
