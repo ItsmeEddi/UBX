@@ -1,0 +1,36 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('main-footer') {
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        color: #fff;
+        background-color: #06103C;
+        border-top: 4px solid #96D946;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 16px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        svg path{
+            fill: #fff;
+        }
+    }
+}

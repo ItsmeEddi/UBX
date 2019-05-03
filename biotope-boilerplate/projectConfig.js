@@ -10,5 +10,8 @@ module.exports = {
 			'resources/ts/**/*.ts',
 			'components/**/*.ts'
 		]
+	},
+	webpack: {
+		watchScss: true
 	}
 };

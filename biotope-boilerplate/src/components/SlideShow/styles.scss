@@ -48,4 +48,60 @@
             100% { bottom: 50px; }
         }
     }
+    .container {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+      }
+      
+      .container.vertical {
+        flex-direction: column;
+      }
+      
+      .container.snap {
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+      }
+      
+      .container.snap > div {
+        scroll-snap-align: center;
+      }
+      
+      .container.snap.vertical {
+        flex-direction: column;
+        scroll-snap-type: y mandatory;
+      }
+      
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+      
+      .container > div {
+        min-width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+      
+      .section-1 {
+        background-color: #010413;
+      }
+      
+      .section-3 {
+        background-color: #050E3F;
+      }
+      
+      .section-4 {
+        background-color: #050E3F;
+      }
+      
+      .section-5 {
+        background-color: #010413;
+      }
 }

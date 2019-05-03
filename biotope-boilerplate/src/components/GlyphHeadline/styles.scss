@@ -1,0 +1,67 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('glyph-headline') {
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    z-index: 9;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: calc(100% + 20px);
+      height: 0.4em;
+      top: 0.5em;
+      z-index: -1;
+    }
+
+    span {
+      display: inline-block;
+      width: 1.4em;
+      text-align: center;
+
+      &:first-of-type {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+// dark theme
+:host([dark]) h2{
+  color: #000;
+
+  &:before {
+    background-color: #9FE447;
+  }
+}
+
+glyph-headline[dark] h2{
+  color: #000;
+  
+  &:before {
+    background-color: #9FE447;
+  }
+}
+
+// light theme
+:host([light]) h2{
+  color: #fff;
+
+  &:before {
+    background-color: #1355F5;
+  }
+}
+
+glyph-headline[light] h2{
+  color: #fff;
+  
+  &:before {
+    background-color: #1355F5;
+  }
+}

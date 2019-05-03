@@ -1,0 +1,51 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('video-stage') {
+    .video-stage {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        overflow: hidden;
+
+        &__overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            color: #fff;
+            background-color: RGBA(8, 19, 62, .3);
+
+            span {
+                font-size: 25px;
+                text-align: center;
+                width: 100%;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            svg path {
+                fill: #fff;
+            }
+        }
+
+        &__date {
+            margin-bottom: 100px;
+        }
+
+        &__video {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+}

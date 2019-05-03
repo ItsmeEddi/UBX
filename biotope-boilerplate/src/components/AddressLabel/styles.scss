@@ -1,0 +1,19 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('address-label') {
+    .address-label {
+        display: flex;
+        color: #fff;
+        
+        // just temporary
+        background-color: #06103C;
+
+        &__icon {
+            margin-right: 16px;
+        }
+
+        h3 {
+            margin: 0 0 8px 0;
+        }
+    }
+}

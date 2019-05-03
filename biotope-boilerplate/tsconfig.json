@@ -5,7 +5,7 @@
 		"module": "commonjs",
 		"moduleResolution": "Node",
 		"sourceMap": true,
-		"target": "ES5"
+		"target": "ES6"
 	},
 	"exclude": [
 		"node_modules",
