@@ -39,8 +39,8 @@ export default (render: Function, data: MainFooterTemplateData) => {
                     <path d="M252.14 36.1081L257.24 49.3081L262 36.1081H263.89L257.17 53.9281C256.939 54.4848 256.679 55.0289 256.39 55.5581C256.183 55.9349 255.912 56.2732 255.59 56.5581C255.3 56.8085 254.959 56.9928 254.59 57.0981C254.107 57.2214 253.609 57.2786 253.11 57.2681H252.22C252.033 57.2636 251.847 57.2298 251.67 57.1681V55.5381L252.31 55.6381C252.526 55.6533 252.744 55.6533 252.96 55.6381C253.302 55.646 253.642 55.5848 253.96 55.4581C254.227 55.3395 254.468 55.1697 254.67 54.9581C254.88 54.7343 255.053 54.4776 255.18 54.1981L255.63 53.1981L256.29 51.4581L250.13 36.1081H252.14Z" fill="white"/>
                 </svg>
                 <ul class="main-footer__links">
-                    <li><a href="http://ubx.info/konferenz/datenschutz/">Datenschutz</a></li>
-                    <li><a href="http://ubx.info/konferenz/impressum/">Impressum</a></li>
+                    <li><a href="http://ubx.info/konferenz/datenschutz/" target="_blank">Datenschutz</a></li>
+                    <li><a href="http://ubx.info/konferenz/impressum/" target="_blank">Impressum</a></li>
                 </ul>
             </div>
             <div class="main-footer__social-media-container">
