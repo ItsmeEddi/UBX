@@ -4,10 +4,12 @@
     .main-footer {
         display: flex;
         justify-content: space-between;
-        height: 80px;
         color: #fff;
-        background-color: #06103C;
-        border-top: 4px solid #96D946;
+        background-color: #010413;
+
+        &__vi-logo {
+            width: 150px;
+        }
 
         a {
             color: #fff;

@@ -13,7 +13,7 @@ export default (render: Function, data: AddressLabelTemplateData) => {
             </div>
             <div>
             <h3>Virtual Identity AG</h3>
-            <p>Isarwinkel 16<br>81379 Munich</p>
+            <simple-text>Isarwinkel 16<br>81379 Munich</simple-text>
             </div>
         </div>
     `;
