@@ -17,7 +17,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
             <a href="#" class="navbar__logo">${{ html: logo }}</a>
             <ul class="navbar__main-nav">
                 <li>
-                    <a href="#speaker" class="navbar__links">Speaker</a>
+                    <a href="#speaker" class="navbar__links">Speakers</a>
                 </li>
                 <li>
                     <a href="#schedule" class="navbar__links">Schedule</a>
@@ -26,7 +26,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
                     <a href="#location" class="navbar__links">Location</a>
                 </li>
                 <li>
-                    <a href="#events" class="navbar__links">Past events</a>
+                    <a href="#events" class="navbar__links">Previous years</a>
                 </li>
                 <li>
                     <a href="#registration" class="navbar__links">Registration</a>
