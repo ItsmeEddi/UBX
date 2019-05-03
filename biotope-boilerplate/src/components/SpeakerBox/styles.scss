@@ -3,43 +3,45 @@
 @include host('speaker-box') {
 
     .speaker {
+        overflow: hidden;
         position: relative;
-        height: 500px;
-        margin-bottom: 500px;
+        margin-bottom: 20vw;
         margin-top: 85px;
+        padding: 2em;
+
+        &__wrapper {
+            position: relative;
+        }
 
         &__box-one {
-            width: 230px;
-            height: 436px;
+            width: 30%;
+            height: 100%;
+            top: 0;
             left: 100px;
             background-color: #004EFF;
             position: absolute;
-        }
-
-        &__box-two {
-            width: 275px;
-            height: 366px;
-            top: 25px;
-            background-color: white;
-            position: absolute;
-        }
-
-        img {
-            height: 362px;
-            top: 25px;
-            left: -25px;
-            position: absolute;
-            z-index:2;
+            &::after {
+                content: '';
+                width: calc(80% + 100px);
+                height: 80%;
+                left: -100px;
+                top: 25px;
+                background-color: white;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
 
         &__title {
-            position: absolute;
+            position: relative;
             font-size: 2em;
-            left: 50px;
-            top: 450px;
+            left: calc(30% + 80px);
             line-height: 1.2em;
             display: inline-block;
             font-weight: 400;
+            margin-top: 0;
+            padding-right: 60%;
         }
 
         &__title::after {
@@ -53,18 +55,18 @@
           }
 
         &__job {
+            left: calc(30% + 110px);
             color: white;
-            position: absolute;
+            position: relative;
             margin-top: 10px;
-            width: 212px;
-            left: 50px;
-            top: 600px;
+            display: block;
+            max-width: 50%;
+
         }
 
         &__toggle {
-            position: absolute;
-            left: 50px;
-            top: 650px;
+            position: relative;
+            left: calc(30% + 110px);
             cursor: pointer;
             color: #87E800;
             font-weight: 700;
@@ -81,12 +83,11 @@
         }
 
         &__description {
-            position: absolute;
+            left: calc(10% + 110px);
+            width: calc(90% - 110px);
+            position: relative;
             margin-top: 20px;
-            left: 50px;
-            top: 675px;
             display: none;
-            width: 275px;
 
             &--open {
                 display: block;
@@ -99,26 +100,7 @@
             margin-bottom: 100px;
 
         &__title {
-            left: 300px;
-            top: -30px;
-            width: 200px;
             font-size: 3em;
-        }
-
-        &__job {
-            left: 350px;
-            top: 250px;
-        }
-
-        &__toggle {
-            left: 350px;
-            top: 320px;
-        }
-
-        &__description {
-            left: 350px;
-            top: 350px;
-            width: 325px;
         }
 
         }
