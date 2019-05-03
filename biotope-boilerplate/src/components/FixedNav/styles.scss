@@ -47,7 +47,7 @@
             color: rgba(255, 255, 255, 0.9);
             display: inline-block;
             font-size: 22px;
-            margin-top: 40px;
+            margin-top: 20px;
             margin-left: 5vw;
             width: 44px;
             height: 44px;
@@ -55,7 +55,7 @@
 
         &__toggle {
             position: absolute;
-            top: 45px;
+            top: 25px;
             right: 5vw;
             cursor: pointer;
         }
@@ -65,7 +65,7 @@
         display: block;
       }
       
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 800px) {
         .navbar {
           display: flex;
           justify-content: space-between;
