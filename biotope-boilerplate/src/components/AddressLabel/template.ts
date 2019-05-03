@@ -9,7 +9,7 @@ export default (render: Function, data: AddressLabelTemplateData) => {
         <style>${styles.toString()}</style>
         <div class="address-label">
             <div class="address-label__icon">
-                placeholder icon
+                <img src="">
             </div>
             <div>
             <h3>Virtual Identity AG</h3>

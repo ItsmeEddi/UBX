@@ -5,12 +5,13 @@
         background: none;
         border: 0;
         box-sizing: border-box;
-        margin: 1em;
-        padding: 1em 1.5em;
+        margin: 1em 0;
+        padding: 0.5em 1.5em;
         cursor: pointer;
-        box-shadow: inset 0 0 0 3px #004EFF;
+        box-shadow: inset 0 0 0 5px #004EFF;
         color: #004EFF;
         font-weight: 700;
+        font-size: 1.2em;
         text-transform: uppercase;
         position: relative;
       
@@ -27,7 +28,7 @@
         
           &::before,
           &::after {
-            border: 3px solid transparent;
+            border: 5px solid transparent;
             width: 0;
             height: 0;
           }

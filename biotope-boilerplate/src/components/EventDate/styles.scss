@@ -3,6 +3,7 @@
 @include host('event-date') {
     .event-date {
         position: relative;
+        margin-top: 47px;
 
         &__numbers {
             font-size: 2em;
@@ -26,6 +27,7 @@
 
     @media screen and (min-width: 768px) {
         .event-date {
+            margin-top: 117px;
             &__numbers {
                 font-size: 6em;
                 top: -117px;

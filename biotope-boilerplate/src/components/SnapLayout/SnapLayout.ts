@@ -11,6 +11,7 @@ import GlyphHeadline from '../GlyphHeadline/GlyphHeadline';
 import GoogleMaps from '../GoogleMaps/GoogleMaps';
 import AddressLabel from '../AddressLabel/AddressLabel';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import MainFooter from '../MainFooter/MainFooter';
 
 interface SnapLayoutProps {
 
@@ -22,7 +23,7 @@ interface SnapLayoutState {
 
 class SnapLayout extends Component<SnapLayoutProps, SnapLayoutState> {
     static componentName = 'snap-layout';
-    static dependencies = [FixedNav, SimpleText, SimpleButton, Speakers, EventDate, Events, VideoStage, GlyphHeadline, GoogleMaps, AddressLabel, RegistrationForm as any];
+    static dependencies = [FixedNav, SimpleText, SimpleButton, Speakers, EventDate, Events, VideoStage, GlyphHeadline, GoogleMaps, AddressLabel, RegistrationForm, MainFooter as any];
 
     constructor() {
         super(false)

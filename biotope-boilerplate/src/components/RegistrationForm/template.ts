@@ -33,7 +33,7 @@ export default (render: Function, data: RegistrationFormTemplateData) => {
                 </div>
             </div>
             <textarea class="registration-form__textarea" placeholder="I want to be there because..."></textarea>
-            <button class="registration-form__button">SEND</button>
+            <simple-button link="#registration">SEND</simple-button>
         </form>
     `;
 }

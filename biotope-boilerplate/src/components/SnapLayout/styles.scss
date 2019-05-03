@@ -76,7 +76,7 @@
     }
 
     .two-columns-grid {
-        @include grid(2, 50);
+        @include grid(1, 0);
     }
 
     .twelve-columns-grid {
@@ -103,5 +103,11 @@
         80% {background-position: 300px 3500px;}
         90% {background-position: -1000px 1000px;}
         100% {background-position: 0 0;}
+    }
+
+    @media screen and (min-width: 768px) {
+        .two-columns-grid {
+            @include grid(2, 50);
+        }
     }
 }

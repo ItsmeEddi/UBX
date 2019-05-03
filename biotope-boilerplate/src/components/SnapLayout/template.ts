@@ -43,6 +43,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
                     <registration-form></registration-form>
                 </div>
             </section>
+            <main-footer></main-footer>
         </div>
     `;
 }
