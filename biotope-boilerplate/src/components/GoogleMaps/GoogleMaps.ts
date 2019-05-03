@@ -1,6 +1,6 @@
 import Component from '@biotope/element';
 import template from './template';
-declare var google
+declare var google;
 
 interface GoogleMapsProps {
 

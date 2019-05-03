@@ -9,7 +9,9 @@ export default (render: Function, data: VideoStageTemplateData) => {
         <style>${styles.toString()}</style>
         <header class="video-stage">
             <div class="video-stage__overlay">
-                test overlay
+                <span>WELCOME TO</span>
+                <span class="video-stage__date">17.October 2019, Munich</span>
+                <h1>Creating digital Opportunities</h1>
             </div>
             <video autoplay loop muted class="video-stage__video">
                 <source src="../resources/video/imagefilm.mp4" type="video/mp4">

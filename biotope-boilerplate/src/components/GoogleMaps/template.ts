@@ -11,4 +11,4 @@ export default (render: Function, data: GoogleMapsTemplateData) => {
             <div id="google-maps" class="map-container__map"></div>
         </div>
     `;
-} 
+}
