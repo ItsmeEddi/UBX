@@ -35,5 +35,11 @@
         svg path{
             fill: #fff;
         }
+
+        &__social-media-container {
+            ul {
+                margin-top: 8px;
+            }
+        }
     }
 }
