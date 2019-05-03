@@ -17,7 +17,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
             <a href="#" class="navbar__logo">${{ html: logo }}</a>
             <ul class="navbar__main-nav">
                 <li>
-                    <a href="#speaker" class="navbar__links">Speaker</a>
+                    <a href="#speaker" class="navbar__links">Speakers</a>
                 </li>
                 <li>
                     <a href="#schedule" class="navbar__links">Schedule</a>

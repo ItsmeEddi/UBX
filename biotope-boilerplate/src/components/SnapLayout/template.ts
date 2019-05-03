@@ -40,7 +40,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
             <section id="registration" class="snap-layout__section dark-blue twelve-columns-grid">
                 <glyph-headline light>Registration</glyph-headline>
                 <div class="offset-second-column">
-                    <simple-text>Welche Rolle spielen Useful Brand Experienxe auf dem Weg um digitalen Business? Unter dem Motto "Create Digital Opportunities" zeigt die UBX19, wie die Macht und Vielfalt digitaler Lösungen und Prozesse genutzt werden können, ...</simple-text>
+                    <simple-text>Would you like to attend the UBX Conference on October 17?<br>Sign up by writing us why you want to join.</simple-text>
                     <registration-form></registration-form>
                 </div>
             </section>
