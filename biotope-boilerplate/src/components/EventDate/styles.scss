@@ -6,6 +6,7 @@
         margin-top: 47px;
 
         &__numbers {
+            font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 2em;
             position: absolute;
             top: -47px;
@@ -21,7 +22,8 @@
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: center;
-            font-weight: 700;
+            font-weight: 400;
+            letter-spacing: 3px;
         }
     }
 

@@ -19,8 +19,8 @@ export default (render: Function, data: VideoStageTemplateData) => {
                     <path d="M434.89 74.45C434.89 72.93 434.72 69.38 432.52 69.38C425.43 69.38 405.85 86.1 394.52 86.1C384.9 86.1 375.61 84.41 375.61 72.76C375.61 51.49 399.25 39 418.15 39C426.6 39 446.15 52.67 446.15 60.44C446.15 65.67 444.97 84.92 442.1 88.44C441.1 99.25 432.98 148.88 437.2 155.63C439.06 158.5 442.1 156.31 442.1 161.2C442.1 165.42 437.37 166.77 433.99 166.77C425.89 166.77 426.74 160.53 426.74 154.45C426.79 127.67 434.89 101.8 434.89 74.45ZM393.32 76.67C398.89 76.67 428.6 62.67 428.6 57.26C428.6 52.7 420.67 49.32 416.78 49.32C401.59 49.32 386.06 57.6 386.06 74.14C387.95 76.81 390.49 76.67 393.32 76.67Z" fill="white"/>
                 </svg>
                 <span class="video-stage__date">17.October 2019, Munich</span>
-                <h1>Creating digital Opportunities</h1>
             </div>
+            <h1>Creating digital Opportunities</h1>
             <video autoplay loop muted class="video-stage__video">
                 <source src="../resources/video/imagefilm.mp4" type="video/mp4">
                 Your browser does not support the video tag.
