@@ -5,8 +5,17 @@ interface SlideShowTemplateData {
 }
 
 export default (render: Function, data: SlideShowTemplateData) => {
-    return render`
+	return render`
         <style>${styles.toString()}</style>
-        <div>Fill me</div>
+        <div class="container snap vertical">
+	        <div class="section-1"><glyph-headline></glyph-headline></div>
+	        <div class="section-2">
+		<div class="container snap">
+			<div class="section-3"><glyph-headline></glyph-headline></div>
+			<div class="section-4"><glyph-headline></glyph-headline></div>
+		</div>  
+	    </div>
+            <div class="section-5"><glyph-headline></glyph-headline></div>
+        </div>
     `;
 }

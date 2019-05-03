@@ -1,0 +1,115 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('registration-form') {
+    .registration-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        // temporary
+        background-color: #06103C;
+        padding: 100px;
+
+        label {
+            color: #fff;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            color: #fff;
+            font-size: 15px;
+            border: 2px solid #fff;
+            padding: 10px;
+            background-color: transparent !important;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid #87e800;
+
+                & + label {
+                    color: #87e800;
+                }
+            }
+        }
+
+        &__radio-container {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"] + label {
+            margin-right: 24px;
+
+            &:before {
+                display: inline-block;
+                content: '●';
+                color: transparent;
+                border: 2px solid #fff;
+                border-radius: 100%;
+                height: 16px;
+                width: 16px;
+                line-height: 16px;
+                margin-right: 8px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        input[type="radio"]:checked + label:before {
+            background: transparent;
+            color: #87e800;
+        }
+
+        &__input-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+
+            div {
+                position: relative;
+            }
+
+            label {
+                position: absolute;
+                padding: 4px;
+                background-color: #06103C;
+                font-size: 12px;
+                line-height: 12px;
+                top: -0.7em;
+                left: 10px;
+            }
+        }
+
+        &__textarea {
+            height: 165px;
+            
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        &__button {
+            padding: 0 40px;
+            line-height: 40px;
+            background-color: transparent;
+            border: 4px solid #87e800;
+            font-size: 18px;
+            font-weight: bold;
+            color: #87e800;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .registration-form__input-container {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 40px;
+        }
+    }
+}

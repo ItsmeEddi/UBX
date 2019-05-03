@@ -1,0 +1,28 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('google-maps') {
+    .map-container {
+        position: relative;
+        height: 500px;
+        
+        // just for componet overview
+        margin-left: 32px;
+        margin-top: 32px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            width: 90%;
+            height: 50%;
+            background-color: #9FE447;
+        }
+
+        &__map {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
