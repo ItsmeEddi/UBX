@@ -33,6 +33,10 @@
                 font-weight: 300;
                 margin: 0;
             }
+
+            svg path {
+                fill: #fff;
+            }
         }
 
         &__date {
