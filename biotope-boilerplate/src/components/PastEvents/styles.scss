@@ -2,4 +2,72 @@
 
 @include host('past-events') {
 
+    .past-events {
+        position: relative;
+        margin-top: 220px;
+        margin-left: 50px;
+
+        &__logo {
+            height: 150px;
+            position: absolute;
+            z-index: 2;
+            top: -230px;
+            left: -30px;
+        }
+
+        &__image {
+            height: 200px;
+            position: absolute;
+            top: -150px;
+            left: -30px;
+        }
+
+        &__content {
+            border: 5px solid #87E800;
+            padding: 40px;
+            width: 200px;
+
+            a {
+                float: right;
+                text-decoration: none;
+                color: #004EFF;
+                font-weight: 700;
+            }
+
+            i {
+                border: solid #004EFF;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 5px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .past-events {
+            margin-top: 390px;
+            margin-left: 0;
+            
+            &__logo {
+                height: 200px;
+                top: -390px;
+                left: -30px;
+            }
+
+            &__image {
+                height: 350px;
+                top: -280px;
+                left: -30px;
+            }
+
+            &__content {
+                width: 450px;
+                padding: 80px 40px 40px 40px;
+            }
+        }
+    }
+
 }
