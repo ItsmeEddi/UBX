@@ -26,6 +26,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
             </section>
             <section id="schedule"class="snap-layout__section white">
                 <glyph-headline dark>Schedule</glyph-headline>
+                <schedule-placeholder></schedule-placeholder>
             </section>
             <section id="location" class="snap-layout__section dark-blue twelve-columns-grid">
                 <glyph-headline light>Location</glyph-headline>
