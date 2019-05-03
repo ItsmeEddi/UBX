@@ -10,7 +10,7 @@
             font-size: 2em;
             position: absolute;
             top: -47px;
-            left: 40px;
+            left: 60px;
             z-index: 2;
             color: #050E3F;
         }
@@ -19,8 +19,7 @@
             background-color: #87E800;
             color: #050E3F;
             width: 300px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px;
             text-align: center;
             font-weight: 400;
             letter-spacing: 3px;
@@ -33,11 +32,11 @@
             &__numbers {
                 font-size: 6em;
                 top: -117px;
-                left: 40px;
+                left: 60px;
             }
             &__title {
                 width: 722px;
-                padding-top: 30px;
+                padding-top: 50px;
             }
         }
     }
