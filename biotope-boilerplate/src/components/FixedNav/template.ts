@@ -23,10 +23,10 @@ export default (render: Function, data: FixedNavTemplateData) => {
                     <a href="#schedule" class="navbar__links">Schedule</a>
                 </li>
                 <li>
-                    <a href="#events" class="navbar__links">Past events</a>
+                    <a href="#location" class="navbar__links">Location</a>
                 </li>
                 <li>
-                    <a href="#location" class="navbar__links">Location</a>
+                    <a href="#events" class="navbar__links">Past events</a>
                 </li>
                 <li>
                     <a href="#registration" class="navbar__links">Registration</a>
