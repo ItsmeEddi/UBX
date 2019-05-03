@@ -1,0 +1,41 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('event-date') {
+    .event-date {
+        position: relative;
+
+        &__numbers {
+            font-size: 2em;
+            position: absolute;
+            top: -47px;
+            left: 40px;
+            z-index: 2;
+            color: #050E3F;
+        }
+
+        &__title {
+            background-color: #87E800;
+            color: #050E3F;
+            width: 300px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .event-date {
+            &__numbers {
+                font-size: 6em;
+                top: -117px;
+                left: 40px;
+            }
+            &__title {
+                width: 722px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+}

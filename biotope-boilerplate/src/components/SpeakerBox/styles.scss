@@ -1,0 +1,125 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('speaker-box') {
+
+    .speaker {
+        position: relative;
+        height: 500px;
+        margin-bottom: 500px;
+
+        &__box-one {
+            width: 230px;
+            height: 436px;
+            left: 100px;
+            background-color: #004EFF;
+            position: absolute;
+        }
+
+        &__box-two {
+            width: 275px;
+            height: 366px;
+            top: 25px;
+            background-color: white;
+            position: absolute;
+        }
+
+        img {
+            height: 362px;
+            top: 25px;
+            left: -25px;
+            position: absolute;
+            z-index:2;
+        }
+
+        &__title {
+            position: absolute;
+            font-size: 2em;
+            left: 50px;
+            top: 450px;
+            line-height: 1.2em;
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        &__title::after {
+            width: 100%;
+            margin-top: 20px;
+            content: '';
+            display: block;
+            height: 5px;
+            background: #87E800;
+            transition: width .3s;
+          }
+
+        &__job {
+            color: white;
+            position: absolute;
+            margin-top: 10px;
+            width: 212px;
+            left: 50px;
+            top: 600px;
+        }
+
+        &__toggle {
+            position: absolute;
+            left: 50px;
+            top: 650px;
+            cursor: pointer;
+            color: #87E800;
+            font-weight: 700;
+
+            &--arrow {
+                border: solid #87E800;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-left: 10px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+        }
+
+        &__description {
+            position: absolute;
+            margin-top: 20px;
+            left: 50px;
+            top: 675px;
+            display: none;
+            width: 275px;
+
+            &--open {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .speaker {
+            margin-bottom: 100px;
+
+        &__title {
+            left: 300px;
+            top: -30px;
+            width: 100px;
+            font-size: 3em;
+        }
+
+        &__job {
+            left: 350px;
+            top: 250px;
+        }
+
+        &__toggle {
+            left: 350px;
+            top: 320px;
+        }
+
+        &__description {
+            left: 350px;
+            top: 350px;
+            width: 375px;
+        }
+
+        }
+    }
+}

@@ -3,59 +3,45 @@
 @include host('snap-layout') {
     .snap-layout {
         &__container {
-            display: flex;
-            position: relative;
             width: 100vw;
             height: 100vh;
-            overflow-x: auto;
-            white-space: nowrap;
-            -moz-scroll-snap-type: x mandatory;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
-
-            &--vertical {
-                flex-direction: column;
-                -moz-scroll-snap-type: y mandatory;
-                scroll-snap-type: y mandatory;
-            }
         }
 
         &__section {
             min-width: 100%;
             min-height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-            font-size: 20px;
-            -moz-scroll-snap-align: start end;
-            scroll-snap-align: start end;
+            padding: 20vh 5vw;
             background: url('/resources/img/noise.png') repeat;
+            animation: grain 1s infinite;
         }
     }
     
-    .section-1 {
-    background-color: #4067BF;
+    .dark-blue {
+        background-color: #050E3F;
+        color: white;
     }
     
-    .section-2 {
-    background-color: #BA7ECD;
+    .white {
+        background-color: white;
+        background: none;
+        color: #050E3F;
     }
-    
-    .section-3 {
-    background-color: #66DDDB;
+
+    #speaker {
+        display: inline-grid;
     }
-    
-    .section-4 {
-    background-color: #F0E34E;
-    }
-    
-    .section-5 {
-    background-color: #E53C56;
-    }
-    
-    .section-6 {
-    background-color: #E770A1;
+
+    @keyframes grain {
+        0% {background-position: 0 0;}
+        10% {background-position: -500px -1000px;}
+        20% {background-position: -1500px 500px;}
+        30% {background-position: 700px -2500px;}
+        40% {background-position: -500px 2500px;}
+        50% {background-position: -1500px 1000px;}
+        60% {background-position: 1500px 0;}
+        70% {background-position: 0 1500px;}
+        80% {background-position: 300px 3500px;}
+        90% {background-position: -1000px 1000px;}
+        100% {background-position: 0 0;}
     }
 }
