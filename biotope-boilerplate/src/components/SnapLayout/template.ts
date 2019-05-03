@@ -16,7 +16,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
                 <glyph-headline dark>UBX 2019</glyph-headline>
                 <div class="offset-second-column">
                     <event-date></event-date>
-                    <simple-text>Welche Rolle spielen Useful Brand Experienxe auf dem Weg um digitalen Business? Unter dem Motto "Create Digital Opportunities" zeigt die UBX19, wie die Macht und Vielfalt digitaler Lösungen und Prozesse genutzt werden können, ...</simple-text>
+                    <simple-text>What role does Useful Brand Experience play in redefining digital business? Under the motto "Creating Digital Opportunities", UBX19 presents how the power and diversity of digital solutions and processes can be used to create rewarding brand experiences. UBX19 combines inspiring keynotes and innovative digitisation cases from all over the world.</simple-text>
                     <simple-button link="#registration">Registration</simple-button>
                 </div>
             </section>
@@ -34,7 +34,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
                 <google-maps></google-maps>
             </section> 
             <section id="events" class="snap-layout__section white">
-                <glyph-headline dark>Past Events</glyph-headline>
+                <glyph-headline dark>Previous years</glyph-headline>
                 <x-events class="two-columns-grid"></x-events>
             </section>    
             <section id="registration" class="snap-layout__section dark-blue twelve-columns-grid">
