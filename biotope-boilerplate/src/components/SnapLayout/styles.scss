@@ -109,7 +109,8 @@
         100% {background-position: 0 0;}
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1080px) {
+
         .two-columns-grid {
             @include grid(2, 50);
         }

@@ -14,11 +14,17 @@ interface SpeakerBoxState {
 }
 
 class SpeakerBox extends Component<SpeakerBoxProps, SpeakerBoxState> {
+    constructor() {
+        super();
+        this.contentToggle = this.contentToggle.bind(this);
+    }
     static componentName = 'speaker-box';
     static attributes = ['first-name', 'last-name', 'image', 'job-info', 'description']
 
     contentToggle() {
-        this.nextElementSibling.classList.toggle('speaker__description--open');
+        console.log(this);
+        const speakerDescriptionEl = this.shadowRoot.querySelector('.speaker__description');
+        speakerDescriptionEl.classList.toggle('speaker__description--open');
     }
 
     get defaultProps() {
