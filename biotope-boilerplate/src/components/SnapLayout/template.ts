@@ -39,7 +39,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
             </section>    
             <section id="registration" class="snap-layout__section dark-blue twelve-columns-grid">
                 <glyph-headline light>Registration</glyph-headline>
-                <div class="offset-second-column">
+                <div class="registration-container">
                     <simple-text>Would you like to attend the UBX Conference on October 17?<br>Sign up by writing us why you want to join.</simple-text>
                     <registration-form></registration-form>
                 </div>
