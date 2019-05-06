@@ -24,7 +24,7 @@ const speakersData = [
         firstName: "Sam",
         lastName: "Conniff Allende",
         image: "resources/img/UBX19_Conniff.png",
-        jobInfo: "Social Entrepreneur Diverse",
+        jobInfo: "Author & Serial Entrepreneur",
         description: 'Sam Conniff Allende is an award-winning serial entrepreneur and founder of start-ups. He advises governments, think tanks and brands from Red Bull to Unilever on CSR and has mentored thousands of young entrepreneurs. At UBX, the author of "Be More Pirate" opens the true and unimagined strategy of pirates as pioneers of change, leadership and social innovation.'
     },
 ]
