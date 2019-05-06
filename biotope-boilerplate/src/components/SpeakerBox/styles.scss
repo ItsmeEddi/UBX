@@ -5,7 +5,7 @@
     .speaker {
         overflow: hidden;
         position: relative;
-        margin-bottom: 20vw;
+        margin-bottom: 10vw;
         margin-top: 85px;
         padding: 2em;
 
@@ -14,10 +14,10 @@
         }
 
         &__box-one {
-            width: 30%;
+            width: 40%;
             height: 100%;
             top: 0;
-            left: 100px;
+            left: 50px;
             background-color: #004EFF;
             position: absolute;
             &::after {
@@ -36,7 +36,7 @@
         &__title {
             position: relative;
             font-size: 2em;
-            left: calc(30% + 80px);
+            left: calc(30% + 70px);
             line-height: 1.2em;
             display: inline-block;
             font-weight: 400;
@@ -55,13 +55,12 @@
           }
 
         &__job {
-            left: calc(30% + 110px);
+            left: calc(30% + 100px);
             color: white;
             position: relative;
             margin-top: 10px;
             display: block;
-            max-width: 50%;
-
+            width: 50%;
         }
 
         &__toggle {
@@ -83,8 +82,8 @@
         }
 
         &__description {
-            left: calc(10% + 110px);
-            width: calc(90% - 110px);
+            left: calc(10%);
+            width: calc(100%);
             position: relative;
             margin-top: 20px;
             display: none;
@@ -101,6 +100,15 @@
 
         &__title {
             font-size: 3em;
+        }
+
+        &__description {
+            left: calc(10% + 110px);
+            width: calc(100% - 110px);
+        }
+
+        &__job {
+            left: calc(30% + 110px);
         }
 
         }
