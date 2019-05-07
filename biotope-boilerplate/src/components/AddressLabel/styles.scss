@@ -4,15 +4,16 @@
     .address-label {
         display: flex;
         color: #fff;
-        
-        // just temporary
-        background-color: #06103C;
+        margin-bottom: 85px;
+        margin-top: 85px;
 
         &__icon {
             margin-right: 16px;
         }
 
         h3 {
+            font-size: 30px;
+            line-height: 35px;
             margin: 0 0 8px 0;
         }
     }

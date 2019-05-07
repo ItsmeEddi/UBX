@@ -1,0 +1,116 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('speaker-box') {
+
+    .speaker {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10vw;
+        margin-top: 85px;
+        padding: 2em;
+
+        &__wrapper {
+            position: relative;
+        }
+
+        &__box-one {
+            width: 40%;
+            height: 100%;
+            top: 0;
+            left: 50px;
+            background-color: #004EFF;
+            position: absolute;
+            &::after {
+                content: '';
+                width: calc(80% + 100px);
+                height: 80%;
+                left: -100px;
+                top: 25px;
+                background-color: white;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__title {
+            position: relative;
+            font-size: 2em;
+            left: calc(30% + 70px);
+            line-height: 1.2em;
+            display: inline-block;
+            font-weight: 400;
+            margin-top: 0;
+            padding-right: 60%;
+        }
+
+        &__title::after {
+            width: 100%;
+            margin-top: 20px;
+            content: '';
+            display: block;
+            height: 5px;
+            background: #87E800;
+            transition: width .3s;
+          }
+
+        &__job {
+            left: calc(30% + 100px);
+            color: white;
+            position: relative;
+            margin-top: 10px;
+            display: block;
+            width: 50%;
+        }
+
+        &__toggle {
+            position: relative;
+            left: calc(30% + 110px);
+            cursor: pointer;
+            color: #87E800;
+            font-weight: 700;
+
+            &--arrow {
+                border: solid #87E800;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-left: 10px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+        }
+
+        &__description {
+            left: calc(10%);
+            width: calc(100%);
+            position: relative;
+            margin-top: 20px;
+            display: none;
+
+            &--open {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .speaker {
+            margin-bottom: 100px;
+
+        &__title {
+            font-size: 3em;
+        }
+
+        &__description {
+            left: calc(10% + 110px);
+            width: calc(100% - 110px);
+        }
+
+        &__job {
+            left: calc(30% + 110px);
+        }
+
+        }
+    }
+}

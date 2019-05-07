@@ -1,5 +1,6 @@
 import Component from '@biotope/element';
 import template from './template';
+import SimpleText from '../SimpleText/SimpleText';
 
 interface AddressLabelProps {
 

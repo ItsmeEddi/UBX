@@ -1,0 +1,76 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('simple-button') {
+    .simple-button {
+        background: none;
+        border: 0;
+        box-sizing: border-box;
+        margin: 1em 0;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 5px #004EFF;
+        color: #004EFF;
+        font-weight: 700;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        position: relative;
+      
+        &::before,
+        &::after {
+          box-sizing: inherit;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        &__draw {
+            transition: color 0.25s;
+        
+          &::before,
+          &::after {
+            border: 5px solid transparent;
+            width: 0;
+            height: 0;
+          }
+        
+          &::before {
+            top: 0;
+            left: 0;
+          }
+        
+          &::after {
+            bottom: 0;
+            right: 0;
+          }
+          
+          &:hover {
+            color: #87E800;
+          }
+        
+          &:hover::before,
+          &:hover::after {
+            width: 100%;
+            height: 100%;
+          }
+        
+          &:hover::before {
+            border-top-color: #87E800;
+            border-right-color: #87E800;
+            transition:
+              width 0.25s ease-out,
+              height 0.25s ease-out 0.25s;
+          }
+        
+          &:hover::after {
+            border-bottom-color: #87E800;
+            border-left-color: #87E800;
+            transition:
+              border-color 0s ease-out 0.5s,
+              width 0.25s ease-out 0.5s,
+              height 0.25s ease-out 0.75s;
+          }
+        }
+    }
+
+    a { text-decoration: none;}
+}

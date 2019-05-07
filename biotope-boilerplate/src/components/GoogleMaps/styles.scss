@@ -4,10 +4,6 @@
     .map-container {
         position: relative;
         height: 500px;
-        
-        // just for componet overview
-        margin-left: 32px;
-        margin-top: 32px;
 
         &:before {
             content: '';
@@ -23,6 +19,7 @@
         &__map {
             height: 100%;
             width: 100%;
+            border: 1px solid #2B3359;
         }
     }
 }

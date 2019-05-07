@@ -1,0 +1,46 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('event-date') {
+    .event-date {
+        position: relative;
+        margin-top: 47px;
+
+        &__numbers {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2em;
+            position: absolute;
+            top: -47px;
+            left: 60px;
+            z-index: 2;
+            color: #050E3F;
+            width: 250px;
+        }
+
+        &__title {
+            background-color: #87E800;
+            color: #050E3F;
+            width: 300px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .event-date {
+            margin-top: 117px;
+            &__numbers {
+                font-size: 6em;
+                top: -117px;
+                left: 60px;
+                width: 650px;
+            }
+            &__title {
+                width: 722px;
+                padding-top: 50px;
+            }
+        }
+    }
+
+}

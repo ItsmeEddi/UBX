@@ -1,0 +1,101 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('fixed-nav') {
+
+    .navbar {
+        font-size: 18px;
+        background-color: #010413;
+        padding-bottom: 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+
+        &__main-nav {
+            list-style-type: none;
+            display: none;
+
+            li {
+                margin: 15px auto;
+            }
+        }
+
+        &__links {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            display: inline-block;
+        }
+
+        &__links:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+
+        &__links::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: rgba(255, 255, 255, 1);
+          transition: width .3s;
+        }
+
+        &__links:hover::after {
+          width: 100%;
+        }
+
+        &__logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-left: 5vw;
+            width: 44px;
+            height: 44px;
+        }
+
+        &__toggle {
+            position: absolute;
+            top: 25px;
+            right: 5vw;
+            cursor: pointer;
+        }
+      }
+      
+      .active {
+        display: block;
+      }
+      
+      @media screen and (min-width: 800px) {
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 0;
+          height: 70px;
+          align-items: center;
+
+          &__main-nav {
+            display: flex;
+            margin-right: 5vw;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li {
+                margin: 0;
+            }
+          }
+
+          &__links {
+            margin-left: 40px;
+          }
+          
+          &__logo {
+            margin-top: 0;
+          }
+
+          &__toggle {
+            display: none;
+          }
+        }
+      }
+
+}

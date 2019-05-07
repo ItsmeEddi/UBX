@@ -1,0 +1,45 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+
+@include host('past-events') {
+
+    .past-events {
+        position: relative;
+        margin-top: 100px;
+
+        &__logo {
+            position: relative;
+            height: 150px;
+            z-index: 99;
+        }
+
+        &__image {
+            width: 80%;
+            margin-top: -70px;
+        }
+
+        &__content {
+            box-sizing: border-box;
+            border: 5px solid #87E800;
+            padding: 40px;
+            width: 95%;
+            margin: -50px 0 0 5%;
+
+            a {
+                float: right;
+                text-decoration: none;
+                color: #004EFF;
+                font-weight: 700;
+            }
+
+            i {
+                border: solid #004EFF;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 5px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                margin-right: 10px;
+            }
+        }
+    }
+}

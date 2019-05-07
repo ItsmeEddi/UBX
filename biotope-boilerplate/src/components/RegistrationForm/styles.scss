@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('registration-form') {
     .registration-form {
@@ -18,10 +19,10 @@
 
             &:focus {
                 outline: none;
-                border: 2px solid #87e800;
+                border: 2px solid $highlight-green;
 
                 & + label {
-                    color: #87e800;
+                    color: $highlight-green;
                 }
             }
         }
@@ -46,7 +47,7 @@
                 border-radius: 100%;
                 height: 16px;
                 width: 16px;
-                line-height: 16px;
+                line-height: 15px;
                 margin-right: 8px;
                 padding: 0;
                 text-align: center;
