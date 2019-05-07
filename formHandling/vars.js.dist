@@ -1,0 +1,14 @@
+const SECRET_KEY = 'somekey';
+
+
+const TO_ADDRESSES = [
+  'abc@abc',
+];
+
+const FROM_SOURCE = 'from@from';
+
+module.exports = {
+  SECRET_KEY,
+  TO_ADDRESSES,
+  FROM_SOURCE,
+};
