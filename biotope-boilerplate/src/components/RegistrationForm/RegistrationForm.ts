@@ -108,14 +108,12 @@ class RegistrationForm extends Component<RegistrationFormProps, RegistrationForm
                     method: 'POST',
                     body: JSON.stringify({ ms, mr, name, email, company, position, text, token })
                 }).then(res => {
-                    console.log('here');
                     if (res.status !== 200) {
                         this.setState({
                             formState: FormState.ERROR
                         });
                         return;
                     }
-                    console.log(this);
                     this.setState({
                         formState: FormState.SUCCESS
                     });

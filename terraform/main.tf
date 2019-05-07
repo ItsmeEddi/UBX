@@ -8,8 +8,8 @@ resource "aws_lambda_function" "ubx-contact" {
   function_name = "jb-ubx-contact"
 
   # The bucket name as created earlier with "aws s3api create-bucket"
-  s3_bucket = "jb-ubx-contact"
-  s3_key    = "v0.0.7/ubx.zip"
+  s3_bucket = "vi-ubx-contactform"
+  s3_key    = "v0.0.2/ubx.zip"
 
   handler = "main.handler"
 
