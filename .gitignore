@@ -1,0 +1,8 @@
+/.DS_Store
+/formHandling/.DS_Store
+/formHandling/vars.js
+/formHandling/ubx.zip
+/terraform/.terraform
+/terraform/terraform.tfstate
+/terraform/terraform.tfstate.backup
+.DS_Store

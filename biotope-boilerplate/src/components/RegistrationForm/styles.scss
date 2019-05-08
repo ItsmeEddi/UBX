@@ -3,15 +3,11 @@
 
 @include host('registration-form') {
     .registration-form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-
         label {
             color: #fff;
         }
 
-        input[type="text"], textarea {
+        input[type="text"], input[type="email"], textarea {
             width: 100%;
             color: #fff;
             font-size: 15px;
@@ -85,7 +81,7 @@
 
         &__textarea {
             height: 165px;
-            
+
             &::placeholder {
                 color: #fff;
             }
@@ -100,6 +96,26 @@
             font-weight: bold;
             color: #87e800;
             cursor: pointer;
+        }
+        &__legal {
+            color: grey;
+            font-size: 0.8em;
+            margin: 0;
+            a {
+                color: grey;
+            }
+        }
+        &__submission-container {
+            text-align: right;
+        }
+
+        .error {
+            label {
+                color: red;
+            }
+            input[type="text"], input[type="email"] {
+                border-color: red;
+            }
         }
     }
 
