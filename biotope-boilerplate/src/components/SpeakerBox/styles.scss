@@ -7,15 +7,15 @@
         position: relative;
         margin-bottom: 10vw;
         margin-top: 85px;
-        padding: 2em;
+        padding: 3em;
 
         &__wrapper {
             position: relative;
         }
 
         &__box-one {
-            width: 40%;
-            height: 100%;
+            width: 50%;
+            height: calc(50% + 100px);
             top: 0;
             left: 50px;
             background-color: #004EFF;
@@ -23,8 +23,8 @@
             &::after {
                 content: '';
                 width: calc(80% + 100px);
-                height: 80%;
-                left: -100px;
+                height: 100%;
+                left: -150px;
                 top: 25px;
                 background-color: white;
                 position: absolute;
@@ -36,12 +36,13 @@
         &__title {
             position: relative;
             font-size: 2em;
-            left: calc(30% + 70px);
+            left: calc(35% + 50px);
             line-height: 1.2em;
             display: inline-block;
             font-weight: 400;
-            margin-top: 0;
+            margin-top: 20px;
             padding-right: 60%;
+            word-break: normal;
         }
 
         &__title::after {
@@ -55,17 +56,17 @@
           }
 
         &__job {
-            left: calc(30% + 100px);
+            left: calc(20% + 80px);
             color: white;
             position: relative;
-            margin-top: 10px;
+            margin-top: 0;
             display: block;
             width: 50%;
         }
 
         &__toggle {
             position: relative;
-            left: calc(30% + 110px);
+            left: calc(20% + 80px);
             cursor: pointer;
             color: #87E800;
             font-weight: 700;
@@ -82,10 +83,10 @@
         }
 
         &__description {
-            left: calc(10%);
-            width: calc(100%);
+            left: 5%;
+            width: 100%;
             position: relative;
-            margin-top: 20px;
+            margin-top: 75px;
             display: none;
 
             &--open {
@@ -93,22 +94,51 @@
             }
         }
     }
+    @media screen and (min-width: 420px) {
+        .speaker { 
+        &__toggle {
+            left: calc(30% + 100px);
+        }
+
+        &__job {
+            left: calc(30% + 100px);
+        }
+    }
+    }
 
     @media screen and (min-width: 768px) {
+
+        .speaker {
+
+        &__box-one {
+            width: 40%;
+            height: calc(100% + 100px);
+        }
+
+        &__description {
+            margin-top: 150px;
+        }
+    }
+
+    }
+
+    @media screen and (min-width: 1080px) {
         .speaker {
             margin-bottom: 100px;
+
+        &__box-one {
+            width: 50%;
+            height: calc(75% + 100px);
+        }
 
         &__title {
             font-size: 3em;
         }
 
         &__description {
-            left: calc(10% + 110px);
-            width: calc(100% - 110px);
-        }
-
-        &__job {
-            left: calc(30% + 110px);
+            left: calc(5% + 100px);
+            width: calc(100% - 100px);
+            margin-top: 75px;
         }
 
         }

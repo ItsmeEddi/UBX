@@ -17,6 +17,7 @@
         &__title {
             position: absolute;
             font-size: 2em;
+            max-width: 400px;
             left: 50px;
             top: 300px;
             line-height: 1.2em;
@@ -52,11 +53,11 @@
          &__box-one {
             width: 400px;
             height: 600px;
-            left: 100px;
+            left: 0;
          }
 
         &__title {
-            left: 400px;
+            left: 300px;
             top: -30px;
             width: 450px;
             font-size: 4em;
@@ -67,7 +68,7 @@
         }
 
         &__date {
-            left: 550px;
+            left: 450px;
             top: 420px;
         }
         }

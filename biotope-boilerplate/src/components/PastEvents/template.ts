@@ -12,8 +12,8 @@ export default (render: Function, data: PastEventsTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="past-events">
-            <img class="past-events__logo" src=${data.logo}>
-            <img class="past-events__image" src=${data.image}>
+            <img class="past-events__logo" alt="past events logo" src=${data.logo}>
+            <img class="past-events__image" alt="past events image" src=${data.image}>
             <div class="past-events__content">
                 <p>${data.description}</p>
                 <a href=${data.link} target="_blank"><i></i>${data.linkText}</a>
