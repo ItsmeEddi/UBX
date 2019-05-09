@@ -1,0 +1,43 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+@import "../../resources/scss/layouts/grid";
+
+@include host('root-registration') {
+    .root-registration {
+        padding: 140px 0;
+        margin: 0 20px;
+        max-width: 1220px;
+
+        &.twelve-column-grid {
+            @include grid(12, 0);
+        }
+
+        glyph-headline {
+            @include startSpanOffset(12, 0);
+        }
+
+        simple-text {
+            color: $white;
+        }
+
+        registration-form, simple-text {
+            @include startSpanOffset(10, 1);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .root-registration {
+            margin: 0 60px;
+
+            registration-form {
+                @include startSpanOffset(8, 1);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .root-registration {
+            margin: 0 auto;
+        }
+    }
+}

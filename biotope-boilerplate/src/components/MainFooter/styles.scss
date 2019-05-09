@@ -2,11 +2,16 @@
 
 @include host('main-footer') {
     .main-footer {
-        display: flex;
-        justify-content: space-between;
         color: #fff;
         background-color: #010413;
-        padding: 20px 5vw;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin: 0 30px;
+        }
 
         &__vi-logo {
             width: 150px;
@@ -40,6 +45,19 @@
             ul {
                 margin-top: 8px;
             }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .main-footer__container {
+            max-width: 1220px;
+            margin: 0 60px;
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .main-footer__container {
+            margin: 0 auto;
         }
     }
 }
