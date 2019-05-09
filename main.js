@@ -53,7 +53,8 @@ const extractType = async (e) => {
         id,
         meta: {
           type: 'Asset',
-          id: 'Asset'
+          id: 'Asset',
+          context: data,
         },
         fields: data.fields,
       }])
@@ -82,7 +83,8 @@ async function unifyData(e) {
     type: 'Object',
     id: e.sys.id,
     meta: {
-      ...e.sys.contentType.sys
+      ...e.sys.contentType.sys,
+      context: e,
     },
     fields: await extractType(e.fields)
   }
@@ -96,7 +98,7 @@ const getPage = async (entrypoint) => {
 
 const renderRichText = (rt) => rt.map(r => {
   if (r.nodeType === 'text') {
-    return r.value;
+    return r.value.split('\n').join('<br />');
   }
   if (r.nodeType === 'paragraph') {
     return `<p>${renderRichText(r.content)}</p>`;
@@ -113,7 +115,7 @@ const renderElements = data => {
   if (data.type === 'Object' && data.meta.id === 'Asset') {
     const file = data.fields.file;
     if (file.contentType === "video/mp4") {
-      return `<video autoplay loop muted class="video-stage__video">
+      return `<video muted class="video-stage__video">
       <source src="${file.url}" type="video/mp4">
       Your browser does not support the video tag.
   </video>`
