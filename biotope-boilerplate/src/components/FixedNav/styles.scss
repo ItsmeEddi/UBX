@@ -64,10 +64,16 @@
       .active {
         display: block;
       }
+
+      .filled {
+        background-color: #010413 !important;
+        transition: background-color 0.25s ease-out;
+      }
       
       @media screen and (min-width: 800px) {
         .navbar {
           display: flex;
+          background-color: RGBA(8, 19, 62, .3);
           justify-content: space-between;
           padding-bottom: 0;
           height: 70px;
