@@ -15,7 +15,7 @@ class SimpleButton extends Component<SimpleButtonProps, SimpleButtonState> {
 
     get defaultProps() {
         return {
-            link: "#0"
+            link: "#"
         }
     }
 

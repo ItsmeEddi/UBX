@@ -17,8 +17,9 @@
     "lint": "echo \"Not implemented yet\""
   },
   "dependencies": {
-    "@biotope/element": "^3.0.2",
+    "@biotope/element": "^3.1.0-0",
     "@biotope/resource-loader": "^2.1.0",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
     "breakpoint-sass": "2.7.1",
     "file-loader": "^3.0.1",
     "handlebars": "4.0.11",

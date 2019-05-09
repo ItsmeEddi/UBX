@@ -1,7 +1,7 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('event-date') {
-    .event-date {
+    .ed {
         position: relative;
         margin-top: 47px;
 
@@ -28,7 +28,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        .event-date {
+        .ed {
             margin-top: 117px;
             &__numbers {
                 font-size: 6em;
