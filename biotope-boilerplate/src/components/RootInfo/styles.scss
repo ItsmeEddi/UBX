@@ -33,6 +33,10 @@
     @media screen and (min-width: 1340px) {
         .root-info {
             margin: 0 auto;
+
+            event-date {
+                @include startSpanOffset(7, 1);
+            }
         }
     }
 }
