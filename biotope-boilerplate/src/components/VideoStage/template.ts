@@ -6,15 +6,16 @@ interface VideoStageTemplateData {
     preheadline: string;
     headline: string;
     videoUrl: string;
+    cs: Function
 }
 
-export default (render: Function, { subheadline, logo, preheadline, headline, videoUrl }: VideoStageTemplateData) => {
+export default (render: Function, { cs, subheadline, logo, preheadline, headline, videoUrl }: VideoStageTemplateData) => {
     return render`
-        <style>${styles.toString()}</style>
+        ${cs(styles)}
         <header class="video-stage">
             <div class="video-stage__overlay">
                 <span>${subheadline}</span>
-                <img src="${logo}" alt="">
+                <img src="${logo}" alt="Logo">
                 <span class="video-stage__date">${preheadline}</span>
             </div>
             <h1>${headline}</h1>

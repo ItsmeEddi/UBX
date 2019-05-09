@@ -24,6 +24,126 @@
 @import "base/types";
 
 /* elements */
+@mixin span($cols, $base: 12) {
+	$totalGaps: ($base - 1) * 40px;
+	width: calc((100% - #{$totalGaps}) / #{$base} * #{$cols} + (#{($cols - 1) * 40px}));
+	@supports(display: grid) {
+					grid-column: span $cols;
+					width: auto;
+	}
+}
+
+@mixin startSpanOffset($cols, $offset: 0, $base: 12) {
+	@include span($cols, $base);
+	$totalGaps: ($base - 1) * 40px;
+	margin-left: calc((100% - #{$totalGaps}) / #{$base} * #{$offset} + (#{$offset * 40px}));
+	@supports(display: grid) {
+					margin-left: 0;
+					grid-column: #{$offset + 1} / span $cols;
+	}
+}
+
+
+@mixin grid($cols, $gap) {
+	$totalGaps: ($cols - 1) * $gap;
+	@supports(display: grid) {
+					display: grid;
+					grid-column-gap: #{$gap}px;
+					grid-template-columns: repeat($cols, 1fr);
+	}
+
+	> * {
+					float: left;
+					margin-right: #{$gap}px;
+					width: calc((100% - #{$totalGaps}) / #{$cols});
+					@supports(display: grid) {
+									float: none;
+									margin: 0;
+									width: auto;
+					}
+					&:last-child {
+							margin-right: 0;
+					}
+	}
+}
+
+
+
+	.snap-layout {
+			&__section {
+					min-height: 100%;
+					padding: 10vh 5vw;
+					background: url('/resources/img/noise.png') repeat;
+					animation: grain 1s infinite;
+			}
+	}
+
+	.dark-blue {
+			background-color: $navi-blue;
+			color: white;
+	}
+
+	.white {
+			background-color: white;
+			background: none;
+			color: #050E3F;
+	}
+
+	#video {
+			padding: 0;
+	}
+
+	.two-columns-grid {
+			@include grid(1, 0);
+	}
+
+	.twelve-columns-grid {
+			@include grid(12, 0);
+	}
+
+	.offset-second-column {
+			@include startSpanOffset(8, 1);
+	}
+
+	.registration-container {
+			@include startSpanOffset(11, 1);
+	}
+
+	glyph-headline, google-maps {
+			@include startSpanOffset(12, 0);
+	}
+
+	@keyframes grain {
+			0% {background-position: 0 0;}
+			10% {background-position: -500px -1000px;}
+			20% {background-position: -1500px 500px;}
+			30% {background-position: 700px -2500px;}
+			40% {background-position: -500px 2500px;}
+			50% {background-position: -1500px 1000px;}
+			60% {background-position: 1500px 0;}
+			70% {background-position: 0 1500px;}
+			80% {background-position: 300px 3500px;}
+			90% {background-position: -1000px 1000px;}
+			100% {background-position: 0 0;}
+	}
+
+	@media screen and (min-width: 1080px) {
+
+			.two-columns-grid {
+					@include grid(2, 50);
+			}
+	}
+
+	@media screen and (min-width: 768px) {
+			.twelve-columns-grid {
+					@include grid(12, 40);
+			}
+
+			.registration-container {
+					@include startSpanOffset(8, 1);
+			}
+	}
+
 
 /* smooth scrolling */
 html {

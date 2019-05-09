@@ -27,7 +27,8 @@ class VideoStage extends Component<VideoStageProps, VideoStageState> {
         }
     }
     render() {
-        return template(this.html, this.props);
+
+        return template(this.html, { ...this.props, cs: this.createStyle });
     }
 }
 
