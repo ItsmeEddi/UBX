@@ -13,7 +13,15 @@ const getAllEntries = (ids) => Promise.all(ids.map(id => getEntry(getUrl(id))))
 
 const extractIds = (datastruct) => datastruct.map(el => el.sys.id);
 
-const unifyAllData = (arr) => Promise.all(arr.map(unifyData))
+const unifyAllData = (arr, key) => Promise.all(arr.map((el) => unifyData(el, key)));
+
+const getValueFromFName = (arr, fname) => {
+  const val = arr.find(val => val.fieldName === fname);
+  if (val === undefined) {
+    console.warn(`${fname} not found`);
+  }
+  return val;
+}
 
 const extractType = async (e) => {
   const arr = [];
@@ -23,33 +31,38 @@ const extractType = async (e) => {
     if (Array.isArray(val)) {
       const ids = extractIds(val);
       const data = await getAllEntries(ids);
-      const unifiedData = await unifyAllData(data);
+      const unifiedData = await unifyAllData(data, key);
       arr.push(unifiedData);
     } else if (type === 'string') {
       arr.push({
         type: 'string',
+        fieldName: key,
         value: val,
       });
     } else if (type === 'boolean') {
       arr.push({
         type: 'boolean',
+        fieldName: key,
         value: val,
       });
     } else if (type === 'object' && val.hasOwnProperty('nodeType')) {
       arr.push({
         type: 'richtext',
+        fieldName: key,
         value: val.content,
       });
     } else if (type === 'object' && val.hasOwnProperty('lon') && val.hasOwnProperty('lat')) {
       arr.push({
         type: 'coordinates',
+        fieldName: key,
         value: { ...val },
       });
     } else if (type === 'object' && val.hasOwnProperty('sys') && val.sys.linkType === "Asset") {
       const id = val.sys.id;
       const data = await getEntry(getAssetUrl(id));
-      arr.push([{
+      arr.push({
         type: 'Object',
+        fieldName: key,
         id,
         meta: {
           type: 'Asset',
@@ -57,7 +70,7 @@ const extractType = async (e) => {
           context: data,
         },
         fields: data.fields,
-      }])
+      })
     } else {
       console.warn('⚠️ something not implemented yet');
     }
@@ -68,7 +81,7 @@ const extractType = async (e) => {
 
 
 
-async function unifyData(e) {
+async function unifyData(e, fieldName = '') {
   try {
     const a = e.sys.id;
   } catch (error) {
@@ -81,6 +94,7 @@ async function unifyData(e) {
   }
   return {
     type: 'Object',
+    fieldName,
     id: e.sys.id,
     meta: {
       ...e.sys.contentType.sys,
@@ -93,7 +107,7 @@ async function unifyData(e) {
 const getPage = async (entrypoint) => {
   const url = getUrl(entrypoint);
   const data = await getEntry(url);
-  return unifyData(data);
+  return unifyData(data, 'landingpage');
 }
 
 const renderRichText = (rt) => rt.map(r => {
@@ -111,7 +125,53 @@ const renderRichText = (rt) => rt.map(r => {
   return '';
 }).join('')
 
-const renderElements = data => {
+const componentMapping = {
+  'stage': stageConnector,
+  'landingpage': landingpageConnector,
+}
+
+function stageConnector({ fields }) {
+  return `
+  <video-stage
+    subheadline='${getValueFromFName(fields, 'subheadline').value}'
+    logo='${getValueFromFName(fields, 'logo').value}'
+    preheadline='${getValueFromFName(fields, 'preHeadline').value}'
+    headline='${getValueFromFName(fields, 'headline').value}'
+    video-url='${getValueFromFName(fields, 'video').fields.file.url}'
+  ></video-stage>
+  `
+}
+
+function landingpageConnector({ fields }) {
+  const data = fields[0];
+  return data.map(el => {
+    const t = el.meta.id;
+    if (t === 'stage') {
+      return `
+        <section id="video" class="snap-layout__section white">
+          ${renderElements(el)}
+        </section>
+      `
+    }
+    if (t === 'intro') {
+      const { fields } = el;
+      return `
+        <section class="snap-layout__section white twelve-columns-grid">
+          <glyph-headline dark>${getValueFromFName(fields, 'sectionHeadline').value}</glyph-headline>
+          <div class="offset-second-column">
+            <event-date date='${getValueFromFName(fields, 'date').value.split('-').join(' / ')}' location='Virtual Identity AG - Munich'></event-date>
+            <simple-text>${renderRichText(getValueFromFName(fields, 'text').value)}</simple-text>
+            ${getValueFromFName(fields, 'showRegistrationLink').value ? `<simple-button link="#registration">Registration</simple-button>` : ''}
+          </div>
+        </section>
+      `
+    }
+    return `<div>${renderElements(el)}</div>`;
+  }).join('');
+}
+
+
+function renderElements(data) {
   if (data.type === 'Object' && data.meta.id === 'Asset') {
     const file = data.fields.file;
     if (file.contentType === "video/mp4") {
@@ -123,6 +183,9 @@ const renderElements = data => {
     return `<img src="${file.url}" />`;
   }
   if (data.hasOwnProperty('type') && data.type === 'Object') {
+    if (componentMapping.hasOwnProperty(data.meta.id)) {
+      return componentMapping[data.meta.id](data);
+    }
     return `<div class="${data.meta.id}">
       ${data.fields.map(f => {
       if (Array.isArray(f)) {
