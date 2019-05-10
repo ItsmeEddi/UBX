@@ -7,8 +7,8 @@ interface AddressLabelTemplateData {
 export default (render: Function, data: AddressLabelTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <div class="address-label">
-            <div class="address-label__icon">
+        <div class="al">
+            <div class="al__icon">
             </div>
             <div>
             <h3>Virtual Identity AG</h3>

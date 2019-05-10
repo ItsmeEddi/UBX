@@ -1,7 +1,7 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('event-date') {
-    .event-date {
+    .ed {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -37,7 +37,7 @@
     }
 
     @media screen and (min-width: 500px) {
-        .event-date {
+        .ed {
             &__numbers {
                 font-size: 3em;
             }
@@ -51,7 +51,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        .event-date {
+        .ed {
             &__numbers {
                 font-size: 3.5em;
             }
@@ -62,7 +62,7 @@
     }
 
     @media screen and (min-width: 992px) {
-        .event-date {
+        .ed {
             &__numbers {
                 font-size: 5em;
             }
@@ -76,7 +76,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        .event-date {
+        .ed {
             &__numbers {
                 font-size: 6em;
             }

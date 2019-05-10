@@ -1,7 +1,7 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('address-label') {
-    .address-label {
+    .al {
         display: flex;
         color: #fff;
         margin: 40px 0 60px 0;

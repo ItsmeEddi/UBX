@@ -1,7 +1,7 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('schedule-placeholder') {
-    .schedule-placeholder {
+    .sp {
         position: relative;
         height: 500px;
         margin-top: 85px;
@@ -48,7 +48,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        .schedule-placeholder {
+        .sp {
             margin-bottom: 100px;
 
          &__box-one {
@@ -59,7 +59,7 @@
 
         &__title {
             left: 300px;
-            top: -30px;
+            top: 10px;
             width: 450px;
             font-size: 4em;
         }
@@ -70,7 +70,7 @@
 
         &__date {
             left: 450px;
-            top: 420px;
+            top: 450px;
         }
         }
     }

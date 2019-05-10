@@ -1,0 +1,15 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+
+@include host('page-layout') {
+
+    .page-layout {
+        background-color: $navi-blue;
+        color: white;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+}

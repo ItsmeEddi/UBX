@@ -7,11 +7,11 @@ interface MainFooterTemplateData {
 export default (render: Function, data: MainFooterTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <footer class="main-footer">
-            <div class="main-footer__container">
-                <div class="main-footer__link-container">
+        <footer class="mf">
+            <div class="mf__container">
+                <div class="mf__link-container">
                     <a href="https://www.virtual-identity.com/" target="_blank">
-                        <svg class="main-footer__vi-logo" viewBox="0 0 330 139">
+                        <svg class="mf__vi-logo" viewBox="0 0 330 139">
                             <path d="M130.23 81.5381L124.88 65.8981H129.39L132.68 76.5681H132.75L136 65.8981H140.27L135 81.5381H130.23Z" fill="white"/>
                             <path d="M142.21 63.4781V59.9381H146.51V63.4781H142.21ZM146.51 65.8981V81.5381H142.21V65.8981H146.51Z" fill="white"/>
                             <path d="M154 65.8981V68.7981C154.211 68.3132 154.487 67.8591 154.82 67.4481C155.163 67.0594 155.56 66.7226 156 66.4481C156.442 66.1527 156.924 65.9205 157.43 65.7581C157.938 65.5966 158.467 65.5156 159 65.5181C159.316 65.522 159.63 65.576 159.93 65.6781V69.6781C159.73 69.6781 159.49 69.5981 159.21 69.5681C158.937 69.5536 158.663 69.5536 158.39 69.5681C157.703 69.5479 157.019 69.6812 156.39 69.9581C155.872 70.2009 155.421 70.5685 155.08 71.0281C154.736 71.5035 154.495 72.0448 154.37 72.6181C154.223 73.2745 154.153 73.9456 154.16 74.6181V81.6681H149.86V65.8981H154Z" fill="white"/>
@@ -41,12 +41,12 @@ export default (render: Function, data: MainFooterTemplateData) => {
                             <path d="M252.14 36.1081L257.24 49.3081L262 36.1081H263.89L257.17 53.9281C256.939 54.4848 256.679 55.0289 256.39 55.5581C256.183 55.9349 255.912 56.2732 255.59 56.5581C255.3 56.8085 254.959 56.9928 254.59 57.0981C254.107 57.2214 253.609 57.2786 253.11 57.2681H252.22C252.033 57.2636 251.847 57.2298 251.67 57.1681V55.5381L252.31 55.6381C252.526 55.6533 252.744 55.6533 252.96 55.6381C253.302 55.646 253.642 55.5848 253.96 55.4581C254.227 55.3395 254.468 55.1697 254.67 54.9581C254.88 54.7343 255.053 54.4776 255.18 54.1981L255.63 53.1981L256.29 51.4581L250.13 36.1081H252.14Z" fill="white"/>
                         </svg>
                     </a>
-                    <ul class="main-footer__links">
+                    <ul class="mf__links">
                         <li><a href="http://ubx.info/konferenz/datenschutz/" target="_blank">Datenschutz</a></li>
                         <li><a href="http://ubx.info/konferenz/impressum/" target="_blank">Impressum</a></li>
                     </ul>
                 </div>
-                <div class="main-footer__social-media-container">
+                <div class="mf__social-media-container">
                     <span>Follow us on</span>
                     <ul>
                         <li>
