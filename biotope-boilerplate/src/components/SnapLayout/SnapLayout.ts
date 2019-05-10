@@ -5,6 +5,7 @@ import FixedNav from '../FixedNav/FixedNav';
 import RootInfo from '../RootInfo/RootInfo';
 import RootSpeakers from '../RootSpeakers/RootSpeakers';
 import RootLocation from '../RootLocation/RootLocation';
+import RootSchedule from '../RootSchedule/RootSchedule';
 import RootRegistration from '../RootRegistration/RootRegistration';
 import VideoStage from '../VideoStage/VideoStage';
 import MainFooter from '../MainFooter/MainFooter';
@@ -25,7 +26,7 @@ interface SnapLayoutState {
 
 class SnapLayout extends Component<SnapLayoutProps, SnapLayoutState> {
     static componentName = 'snap-layout';
-    static dependencies = [RootInfo, RootLocation, RootRegistration, FixedNav, SimpleText, SimpleButton, RootSpeakers, RootEvents, VideoStage, GlyphHeadline, MainFooter, SchedulePlaceholder as any];
+    static dependencies = [RootInfo, RootLocation, RootSchedule, RootRegistration, FixedNav, SimpleText, SimpleButton, RootSpeakers, RootEvents, VideoStage, GlyphHeadline, MainFooter, SchedulePlaceholder as any];
 
     constructor() {
         super(false)

@@ -3,7 +3,7 @@
 @import "../../resources/scss/layouts/grid";
 
 @include host('root-registration') {
-    .root-registration {
+    .registration {
         padding: 140px 0;
         margin: 0 20px;
         max-width: 1220px;
@@ -26,7 +26,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        .root-registration {
+        .registration {
             margin: 0 60px;
 
             registration-form {
@@ -36,7 +36,7 @@
     }
 
     @media screen and (min-width: 1340px) {
-        .root-registration {
+        .registration {
             margin: 0 auto;
         }
     }

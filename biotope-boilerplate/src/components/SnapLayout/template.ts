@@ -22,10 +22,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
         </section>
 
         <section class="snap-layout__section light">
-            <div class="snap-layout__container twelve-clmn-grid" >
-                <glyph-headline dark>Schedule</glyph-headline>
-                <schedule-placeholder></schedule-placeholder>
-            </div>
+            <root-schedule></root-schedule>
         </section>
 
 

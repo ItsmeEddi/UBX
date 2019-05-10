@@ -23,53 +23,6 @@
                 color: $navi-blue;
             }
         }
-
-        &__container {
-            padding: 140px 20px;
-            max-width: 1220px;
-            margin: 0 auto;
-
-            &.twelve-clmn-grid {
-                @include grid(12, 0);
-            }
-            
-            .offset-second-column {
-                @include startSpanOffset(12, 0);
-            }
-        }
-    }
-
-    glyph-headline, google-maps {
-        @include startSpanOffset(12, 0);
-    }
-
-    .registration-container {
-        @include startSpanOffset(11, 1);
-    }
-    
-    @media screen and (min-width: 768px) {
-        .snap-layout__container {
-            padding: 140px 60px;
-
-            .twelve-clmn-grid {
-                @include grid(12, 40);
-            }
-
-            .offset-second-column {
-                @include startSpanOffset(8, 1);
-            }
-        }
-
-        
-        .registration-container {
-            @include startSpanOffset(8, 1);
-        }
-    }
-    
-    @media screen and (min-width: 1340px) {
-        .snap-layout__container {
-            padding: 140px 0;
-        }
     }
 
     // ANIMATION

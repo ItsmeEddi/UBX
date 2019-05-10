@@ -39,7 +39,7 @@ const eventsData = [
 export default (render: Function, data: EventsTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <div class="root-events twelve-column-grid">
+        <div class="events twelve-column-grid">
             <glyph-headline dark>Previous years</glyph-headline>
             ${eventsData.map(({ image, logo, description, link, linkText }) => wire()`<past-events image=${image} logo=${logo} description=${description} link=${link} linkText=${linkText}></past-events>`)}
         </div>
