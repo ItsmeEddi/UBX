@@ -15,7 +15,7 @@
             @include startSpanOffset(12, 0);
         }
 
-        past-events {
+        .past-event {
             @include span(12);
         }
     }
@@ -24,7 +24,7 @@
         .events {
             margin: 0 60px;
 
-            past-events {
+            .past-event {
                 @include span(6);
             }
         }

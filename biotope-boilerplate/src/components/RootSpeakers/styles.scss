@@ -25,7 +25,7 @@
             margin: 0 60px;
 
             speaker-box {
-                @include span(6);
+                @include span(12);
             }
         }
     }
@@ -33,6 +33,10 @@
     @media screen and (min-width: 1340px) {
         .speakers {
             margin: 0 auto;
+
+            speaker-box {
+                @include span(6);
+            }
         }
     }
 }
