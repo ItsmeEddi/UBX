@@ -1,0 +1,38 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/layouts/grid";
+
+@include host('speakers') {
+    .speakers {
+        padding: 140px 0;
+        margin: 0 20px;
+        max-width: 1220px;
+
+        &.twelve-column-grid {
+            @include grid(12, 40);
+        }
+
+        glyph-headline {
+            @include startSpanOffset(12, 0);
+        }
+
+        speaker-box {
+            @include span(12);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .speakers {
+            margin: 0 60px;
+
+            speaker-box {
+                @include span(6);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .speakers {
+            margin: 0 auto;
+        }
+    }
+}
