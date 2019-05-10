@@ -4,5 +4,9 @@
 @include host('animated-stage') {
     #lottie {
         height: 100vh;
+
+        svg {
+            width: auto !important;
+        }
     }
 }

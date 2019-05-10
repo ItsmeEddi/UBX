@@ -43,7 +43,15 @@
             margin-top: 10px;
             width: 212px;
             left: 100px;
-            top: 460px;
+            top: 540px;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            height: 250px;
+            top: 50px;
         }
     }
 
@@ -54,23 +62,30 @@
          &__box-one {
             width: 400px;
             height: 600px;
-            left: 0;
+            left: 50px;
          }
 
         &__title {
-            left: 300px;
+            left: 350px;
             top: 10px;
             width: 450px;
             font-size: 4em;
         }
 
         &__title::after {
-            margin-left: 150px;
+            margin-left: 120px;
         }
 
         &__date {
-            left: 450px;
-            top: 450px;
+            left: 470px;
+            top: 460px;
+        }
+
+        svg {
+            width: 450px;
+            height: 450px;
+            top: 240px;
+            left: -50px;
         }
         }
     }
