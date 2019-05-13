@@ -12,14 +12,12 @@ interface VideoStageTemplateData {
 export default (render: Function, { cs, subheadline, logo, preheadline, headline, videoUrl }: VideoStageTemplateData) => {
     return render`
         ${cs(styles)}
-        <header class="video-stage">
-            <div class="video-stage__overlay">
-                <span>${subheadline}</span>
-                <img src="${logo}" alt="Logo">
-                <span class="video-stage__date">${preheadline}</span>
+        <header class="vs">
+            <div class="vs__overlay">
+                <animated-stage></animated-stage>
             </div>
             <h1>${headline}</h1>
-            <video autoplay loop muted class="video-stage__video">
+            <video autoplay loop muted class="vs__video">
                 <source src=${videoUrl} type="video/mp4">
                 Your browser does not support the video tag.
             </video>

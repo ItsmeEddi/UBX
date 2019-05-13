@@ -8,9 +8,9 @@ interface EventDateTemplateData {
 export default (render: Function, { date, location }: EventDateTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <div class="event-date">
-            <p class="event-date__numbers">${date}</p>
-            <div class="event-date__title"><p>${location}</p></div>
+        <div class="ed">
+            <p class="ed__numbers">${date}</p>
+            <div class="ed__title"><p>${location}</p></div>
         </div>
     `;
 }
