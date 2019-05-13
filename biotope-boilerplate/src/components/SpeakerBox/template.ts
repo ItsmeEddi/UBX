@@ -6,7 +6,6 @@ interface SpeakerBoxTemplateData {
     lastName: string;
     image: string;
     jobInfo: string;
-    description: string;
 }
 
 export default (render: Function, data: SpeakerBoxTemplateData) => {
@@ -23,7 +22,7 @@ export default (render: Function, data: SpeakerBoxTemplateData) => {
         <style>${styles.toString()}</style>
         <style>
             ${dynamicStyles}
-        </style> 
+        </style>
         <div class="speaker">
             <div class="speaker__wrapper">
                 <div class="speaker__box-one"></div>
@@ -31,7 +30,9 @@ export default (render: Function, data: SpeakerBoxTemplateData) => {
                 <span class="speaker__job">${data.jobInfo}</span>
                 <p class="speaker__toggle" onclick="${data.toggleOpen}">more information<i class="speaker__toggle--arrow"></i></p>
             </div>
-            <p class="speaker__description">${data.description}</p>
+            <div class="speaker__description">
+                <slot></slot>
+            </div>
         </div>
     `;
 }
