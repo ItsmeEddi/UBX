@@ -1,20 +1,29 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('address-label') {
-    .address-label {
-        display: flex;
+    .al {
         color: #fff;
-        margin-bottom: 85px;
-        margin-top: 85px;
+        margin: 40px 0 60px 0;
 
         &__icon {
             margin-right: 16px;
+            
+            svg {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         h3 {
             font-size: 30px;
             line-height: 35px;
             margin: 0 0 8px 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .al {
+            display: flex;
         }
     }
 }

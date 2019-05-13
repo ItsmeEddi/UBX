@@ -1,0 +1,12 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+
+@include host('animated-stage') {
+    #lottie {
+        height: 100vh;
+
+        svg {
+            width: auto !important;
+        }
+    }
+}

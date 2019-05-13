@@ -1,5 +1,6 @@
 import Component from '@biotope/element';
 import template from './template';
+import AnimatedStage from '../AnimatedStage/AnimatedStage';
 
 interface VideoStageProps {
     subheadline: string;
@@ -15,6 +16,7 @@ interface VideoStageState {
 
 class VideoStage extends Component<VideoStageProps, VideoStageState> {
     static componentName = 'video-stage';
+    static dependencies = [AnimatedStage as any];
 
     static attributes = ['subheadline', 'logo', 'preheadline', 'headline', 'video-url']
     get defaultProps() {

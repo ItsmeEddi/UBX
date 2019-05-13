@@ -10,6 +10,10 @@ interface SpeakerBoxTemplateData {
 
 export default (render: Function, data: SpeakerBoxTemplateData) => {
     const dynamicStyles = `
+        .speaker__box-one::after {
+            background-image: url(${data.image});
+        }
+
         :host .speaker__box-one::after {
             background-image: url(${data.image});
         }

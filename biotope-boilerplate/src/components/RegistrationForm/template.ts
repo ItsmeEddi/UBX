@@ -42,7 +42,7 @@ export default (render: Function, data: RegistrationFormTemplateData) => {
                 <textarea id="text" class="registration-form__textarea" placeholder="I want to be there because..."></textarea>
                 <p class="registration-form__legal"> This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms"> Terms of Service</a> apply.</p>
                 <div class="registration-form__submission-container">
-                    <simple-button type="submit" onclick=${(e) => data.handleSubmission(e)}>${data.formState === FormState.INITIAL ? 'Send' : 'Sending'}</simple-button>
+                    <simple-button type="submit" onclick=${(e) => data.handleSubmission(e)}>${data.formState === FormState.INITIAL ? 'Apply' : 'Sending'}</simple-button>
                 </div>
             </form>
         `;

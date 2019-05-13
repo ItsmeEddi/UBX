@@ -1,0 +1,31 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/layouts/grid";
+@import "../../resources/scss/settings/settings";
+
+@include host('root-location') {
+    .location {
+        padding: 140px 0;
+        margin: 0 20px;
+        max-width: 1220px;
+
+        &.twelve-column-grid {
+            @include grid(12, 0);
+        }
+
+        glyph-headline, address-label, google-maps {
+            @include startSpanOffset(12, 0);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .location {
+            margin: 0 60px;
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .location {
+            margin: 0 auto;
+        }
+    }
+}

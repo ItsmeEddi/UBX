@@ -35,10 +35,16 @@
     h2 {
       font-size: 36px;
       span {
-        width: 1.4em;
+        width: 1.23em;
+      }
     }
+  }
+
+  @media screen and (min-width: 996px) {
+    h2 span {
+      width: 1.5em;
     }
-}
+  }
 }
 
 // dark theme
