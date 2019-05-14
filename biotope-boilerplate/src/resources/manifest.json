@@ -1,0 +1,15 @@
+{
+    "name": "UBX Conference",
+    "short_name": "UBX",
+    "lang": "en-GB",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#e30613",
+    "background_color": "#ffffff",
+    "icons": [{
+        "src": "img/UBX19_Conniff.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+}
