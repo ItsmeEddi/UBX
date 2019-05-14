@@ -22,7 +22,10 @@ class SpeakerBox extends Component<SpeakerBoxProps, SpeakerBoxState> {
 
     contentToggle() {
         const speakerDescriptionEl = this.shadowRoot.querySelector('.speaker__description');
+        const arrowDirection = this.shadowRoot.querySelector('.speaker__toggle--arrow-down');
+
         speakerDescriptionEl.classList.toggle('speaker__description--open');
+        arrowDirection.classList.toggle('speaker__toggle--arrow-up');
     }
 
     get defaultProps() {

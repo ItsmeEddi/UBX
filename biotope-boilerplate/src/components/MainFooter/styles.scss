@@ -8,11 +8,8 @@
         background-color: #010413;
 
         &__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            margin: 0 30px;
+            padding: 0;
+            margin: 30px;
             width: 100%;
         }
 
@@ -32,6 +29,8 @@
         }
 
         li {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
             display: inline-block;
             margin-right: 16px;
 
@@ -40,11 +39,30 @@
             }
         }
 
+        li:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+
+        li::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: rgba(255, 255, 255, 1);
+          transition: width .3s;
+        }
+
+        li:hover::after {
+          width: 100%;
+        }
+
         svg path{
             fill: #fff;
         }
 
         &__social-media-container {
+            margin-top: 30px;
+
             ul {
                 margin-top: 8px;
             }
@@ -53,8 +71,11 @@
 
     @media screen and (min-width: 768px) {
         .mf__container {
+            display: flex;
+            justify-content: space-between;
             max-width: 1220px;
             margin: 0 60px;
+            padding: 30px 0;
         }
     }
 

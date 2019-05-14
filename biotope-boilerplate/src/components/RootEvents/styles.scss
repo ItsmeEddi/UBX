@@ -8,7 +8,7 @@
         max-width: 1220px;
 
         &.twelve-column-grid {
-            @include grid(12, 40);
+            @include grid(12, 0);
         }
 
         glyph-headline {
@@ -23,6 +23,10 @@
     @media screen and (min-width: 768px) {
         .events {
             margin: 0 60px;
+
+            &.twelve-column-grid {
+                @include grid(12, 40);
+            }
 
             .past-event {
                 @include span(6);

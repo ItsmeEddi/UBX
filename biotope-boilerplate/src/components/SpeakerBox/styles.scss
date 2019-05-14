@@ -67,7 +67,7 @@
             color: #87E800;
             font-weight: 700;
 
-            &--arrow {
+            &--arrow-down {
                 border: solid #87E800;
                 border-width: 0 3px 3px 0;
                 display: inline-block;
@@ -75,6 +75,12 @@
                 margin-left: 10px;
                 transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
+                transition: 0.3s ease-out;
+            }
+
+            &--arrow-up {
+                transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg);
             }
         }
 
