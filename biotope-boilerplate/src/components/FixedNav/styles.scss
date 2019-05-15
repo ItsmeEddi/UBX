@@ -48,10 +48,9 @@
         }
 
         &__logo {
-            opacity: 0;
+            display: inline-block;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.9);
-            display: inline-block;
             font-size: 22px;
             margin-top: 7px;
             width: 100px;
@@ -73,10 +72,6 @@
       .filled {
         background-color: #010413 !important;
         transition: background-color 0.25s ease-out;
-
-        .navbar__logo {
-          opacity: 1;
-        }
       }
       
       @media screen and (min-width: 850px) {
@@ -86,6 +81,16 @@
           background-color: transparent;
           justify-content: space-between;
           padding-bottom: 0;
+
+          .navbar__logo {
+            opacity: 0;
+            cursor: default;
+          }
+
+          &.filled .navbar__logo {
+            opacity: 1;
+            cursor: pointer;
+          }
 
           &__container {
             margin: 0 60px;
