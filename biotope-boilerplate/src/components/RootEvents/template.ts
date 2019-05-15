@@ -40,7 +40,7 @@ export default (render: Function, data: EventsTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="events twelve-column-grid">
-            <glyph-headline dark>Previous years</glyph-headline>
+            <glyph-headline dark headline="Previous years"></glyph-headline>
             ${eventsData.map(({ image, logo, description, link, linkText }) => wire()`<past-events class="past-event" image=${image} logo=${logo} description=${description} link=${link} linkText=${linkText}></past-events>`)}
         </div>
     `;

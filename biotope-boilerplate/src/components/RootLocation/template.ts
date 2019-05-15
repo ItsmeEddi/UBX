@@ -8,7 +8,7 @@ export default (render: Function, data: RootLocationTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="location twelve-column-grid">
-            <glyph-headline light>Location</glyph-headline>
+            <glyph-headline light headline="Location"></glyph-headline>
             <address-label></address-label>
             <google-maps></google-maps>
         </div>
