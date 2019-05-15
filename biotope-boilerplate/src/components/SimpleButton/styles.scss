@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('simple-button') {
     .sb {
@@ -8,8 +9,8 @@
         margin: 1em 0;
         padding: 0.5em 1.5em;
         cursor: pointer;
-        box-shadow: inset 0 0 0 5px #004EFF;
-        color: #004EFF;
+        box-shadow: inset 0 0 0 5px $highlight-blue;
+        color: $highlight-blue;
         font-weight: 700;
         font-size: 1.2em;
         text-transform: uppercase;
@@ -44,7 +45,7 @@
           }
           
           &:hover {
-            color: #87E800;
+            color: $highlight-green;
           }
         
           &:hover::before,
@@ -54,16 +55,16 @@
           }
         
           &:hover::before {
-            border-top-color: #87E800;
-            border-right-color: #87E800;
+            border-top-color: $highlight-green;
+            border-right-color: $highlight-green;
             transition:
               width 0.25s ease-out,
               height 0.25s ease-out 0.25s;
           }
         
           &:hover::after {
-            border-bottom-color: #87E800;
-            border-left-color: #87E800;
+            border-bottom-color: $highlight-green;
+            border-left-color: $highlight-green;
             transition:
               border-color 0s ease-out 0.5s,
               width 0.25s ease-out 0.5s,

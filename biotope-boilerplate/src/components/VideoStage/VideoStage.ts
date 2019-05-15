@@ -6,7 +6,6 @@ interface VideoStageProps {
     subheadline: string;
     logo: string;
     preheadline: string;
-    headline: string;
     videoUrl: string;
 }
 
@@ -18,13 +17,12 @@ class VideoStage extends Component<VideoStageProps, VideoStageState> {
     static componentName = 'video-stage';
     static dependencies = [AnimatedStage as any];
 
-    static attributes = ['subheadline', 'logo', 'preheadline', 'headline', 'video-url']
+    static attributes = ['subheadline', 'logo', 'preheadline', 'video-url']
     get defaultProps() {
         return {
             subheadline: '',
             logo: '',
             preheadline: '',
-            headline: '',
             videoUrl: ''
         }
     }
