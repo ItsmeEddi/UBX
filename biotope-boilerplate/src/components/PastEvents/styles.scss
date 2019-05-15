@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('past-events') {
 
@@ -19,7 +20,7 @@
 
         &__content {
             box-sizing: border-box;
-            border: 5px solid #87E800;
+            border: 5px solid $highlight-green;
             padding: 50px;
             width: 95%;
             margin: -50px 0 0 5%;
@@ -27,12 +28,12 @@
             a {
                 float: right;
                 text-decoration: none;
-                color: #004EFF;
+                color: $highlight-blue;
                 font-weight: 700;
             }
 
             i {
-                border: solid #004EFF;
+                border: solid $highlight-blue;
                 border-width: 0 3px 3px 0;
                 display: inline-block;
                 padding: 5px;

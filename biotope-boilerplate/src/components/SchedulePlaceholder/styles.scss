@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('schedule-placeholder') {
     .sp {
@@ -11,7 +12,7 @@
             width: 300px;
             height: 400px;
             left: 50px;
-            background-color: #87E800;
+            background-color: $highlight-green;
             position: absolute;
         }
 
@@ -34,7 +35,7 @@
             content: '';
             display: block;
             height: 10px;
-            background: #87E800;
+            background: $highlight-green;
             transition: width .3s;
           }
 

@@ -6,6 +6,7 @@ interface SpeakerBoxTemplateData {
     lastName: string;
     image: string;
     jobInfo: string;
+    description: string;
 }
 
 export default (render: Function, data: SpeakerBoxTemplateData) => {
@@ -30,9 +31,7 @@ export default (render: Function, data: SpeakerBoxTemplateData) => {
                 <span class="speaker__job">${data.jobInfo}</span>
                 <p class="speaker__toggle" onclick="${data.toggleOpen}">more information<i class="speaker__toggle--arrow-down"></i></p>
             </div>
-            <div class="speaker__description">
-                <slot></slot>
-            </div>
+            <p class="speaker__description">${data.description}</p>
         </div>
     `;
 }

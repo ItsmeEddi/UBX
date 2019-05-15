@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('google-maps') {
     .map-container {
@@ -13,7 +14,7 @@
             left: -16px;
             width: 90%;
             height: 50%;
-            background-color: #9FE447;
+            background-color: $highlight-green;
         }
 
         &__map {
