@@ -18,7 +18,7 @@ export default (render: Function, { cs, subheadline, logo, preheadline, headline
             </div>
             <h1>${headline}</h1>
             <video autoplay loop muted class="vs__video">
-                <source src=${videoUrl} type="video/mp4">
+                <source src="resources/img/video/imagefilm.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </header>
