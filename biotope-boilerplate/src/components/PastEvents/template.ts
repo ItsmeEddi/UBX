@@ -15,7 +15,7 @@ export default (render: Function, data: PastEventsTemplateData) => {
             <img class="past-event__logo" alt="past events logo" src=${data.logo}>
             <img class="past-event__image" alt="past events image" src=${data.image}>
             <div class="past-event__content">
-                <p>${data.description}</p>
+                <simple-text>${data.description}</simple-text>
                 <a href=${data.link} target="_blank"><i></i>${data.linkText}</a>
             </div>
         </div>

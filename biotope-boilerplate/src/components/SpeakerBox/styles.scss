@@ -33,8 +33,8 @@
 
         &__title {
             position: relative;
-            font-size: 2em;
-            line-height: 1.2em;
+            font-size: 35px;
+            line-height: 40px;
             display: inline-block;
             font-weight: 400;
             margin-top: 50px;
@@ -60,6 +60,8 @@
             display: block;
             width: 40%;
             top: 20px;
+            font-size: 14px;
+            line-height: 20px;
         }
 
         &__toggle {
@@ -68,6 +70,8 @@
             cursor: pointer;
             color: $highlight-green;
             font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
 
             &--arrow-down {
                 border: solid $highlight-green;
@@ -90,6 +94,9 @@
             position: relative;
             margin-top: 25px;
             display: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            line-height: 24px;
 
             &--open {
                 display: block;
@@ -139,6 +146,8 @@
         }
 
         &__title {
+            font-size: 60px;
+            line-height: 65px;
             font-size: 3em;
             padding-right: 80%;
             left: calc(35% + 50px);
@@ -148,14 +157,20 @@
             left: 5%;
             margin-top: 6vw;
             width: 100%;
+            font-size: 16px;
+            line-height: 28px;
         }
 
         &__toggle {
             left: calc(40% + 110px);
+            font-size: 18px;
+            line-height: 28px;
         }
 
         &__job {
             left: calc(40% + 110px);
+            font-size: 18px;
+            line-height: 28px;
         }
     }
 
