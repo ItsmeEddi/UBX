@@ -48,6 +48,7 @@
         }
 
         &__logo {
+            opacity: 0;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.9);
             display: inline-block;
@@ -72,6 +73,10 @@
       .filled {
         background-color: #010413 !important;
         transition: background-color 0.25s ease-out;
+
+        .navbar__logo {
+          opacity: 1;
+        }
       }
       
       @media screen and (min-width: 850px) {
