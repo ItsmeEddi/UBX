@@ -30,7 +30,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
                         <a href="#events" class="navbar__links">Previous years</a>
                     </li>
                     <li>
-                        <a href="#registration" class="navbar__links">Registration</a>
+                        <a href="#registration" class="navbar__links">Apply now</a>
                     </li>
                 </ul>
             </div>

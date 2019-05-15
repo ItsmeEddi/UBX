@@ -3,7 +3,15 @@
 @include host('simple-text') {
     .simple-text {
         font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
         text-align: left;
-        line-height: 32px;
+        line-height: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .simple-text {
+            font-size: 16px;
+            line-height: 28px;
+        }
     }
 }

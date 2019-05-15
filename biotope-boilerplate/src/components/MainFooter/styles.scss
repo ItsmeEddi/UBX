@@ -6,6 +6,7 @@
         justify-content: space-between;
         color: #fff;
         background-color: #010413;
+        font-size: 14px;
 
         &__container {
             padding: 0;
@@ -20,6 +21,19 @@
         a {
             color: #fff;
             text-decoration: none;
+
+            svg path{
+                fill: #fff;
+            }
+        }
+
+        a:hover {
+            color: #b6b6b6;
+
+            svg path{
+                fill: #b6b6b6;
+                transition: 0.5s ease;
+            }
         }
 
         ul {
@@ -43,25 +57,7 @@
           color: rgba(255, 255, 255, 1);
         }
 
-        li::after {
-          content: '';
-          display: block;
-          width: 0;
-          height: 2px;
-          background: rgba(255, 255, 255, 1);
-          transition: width .3s;
-        }
-
-        li:hover::after {
-          width: 100%;
-        }
-
-        svg path{
-            fill: #fff;
-        }
-
         &__social-media-container {
-            margin-top: 30px;
 
             ul {
                 margin-top: 8px;
