@@ -13,15 +13,15 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
             <video-stage></video-stage>
         </section>
 
-        <section id="speaker" class="snap-layout__section light">
+        <section class="snap-layout__section light">
             <root-info></root-info>
         </section>
         
-        <section id="schedule" class="snap-layout__section dark">
+        <section id="speaker" class="snap-layout__section dark">
             <root-speakers></root-speakers>
         </section>
 
-        <section class="snap-layout__section light">
+        <section id="schedule" class="snap-layout__section light">
             <root-schedule></root-schedule>
         </section>
 
