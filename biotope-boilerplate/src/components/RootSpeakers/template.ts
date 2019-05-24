@@ -27,6 +27,20 @@ const speakersData = [
         jobInfo: "Author & Serial Entrepreneur",
         description: 'Sam Conniff Allende is an award-winning serial entrepreneur and founder of start-ups. He advises governments, think tanks and brands from Red Bull to Unilever on CSR and has mentored thousands of young entrepreneurs. At UBX, the author of "Be More Pirate" opens the true and unimagined strategy of pirates as pioneers of change, leadership and social innovation.'
     },
+    {
+        firstName: "Sudan",
+        lastName: "Jackson",
+        image: "resources/img/UBX19_Sudan.png",
+        jobInfo: "Manager Organisational & Cultural Development REWE Digital",
+        description: "Sudan Jackson is responsible for the cultural and organisational development of REWE Digital's technology division. His work focuses on the active creation of a collaborative environment for the creation of modern, innovative, creative and customer-oriented solutions. At UBX, he lets us participate how one can be inspired every day to improve people's (working) lives."
+    },
+    {
+        firstName: "Charles",
+        lastName: "C. Uno",
+        image: "resources/img/UBX19_Onu.png",
+        jobInfo: "Founder & AI Research Lead Ubenwa Intelligence Solutions",
+        description: 'Charles C. Uno has founded a company that applies AI and mobile technology to enable timely diagnosis of birth asphyxia from a newborn cry. He has over six years experience in the development of machine learning software for real-world health care problems such as breast cancer patient care and intensive care unit (ICU) monitoring. At UBX, he will share his passion about developing high impact technologies that address social challenges, especially in resource-poor settings.'
+    },
 ]
 
 export default (render: Function, data: SpeakersTemplateData) => {

@@ -58,7 +58,7 @@
             position: relative;
             margin-top: 0;
             display: block;
-            width: 40%;
+            width: 44%;
             top: 20px;
             font-size: 14px;
             line-height: 20px;
@@ -92,7 +92,7 @@
 
         &__description {
             position: relative;
-            margin-top: 25px;
+            margin-top: 12%;
             display: none;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 14px;
@@ -129,7 +129,7 @@
         }
 
         &__description {
-            width: 78%;
+            width: 100%;
             left: -8%;
         }
     }
@@ -155,8 +155,6 @@
 
         &__description {
             left: 5%;
-            margin-top: 6vw;
-            width: 100%;
             font-size: 16px;
             line-height: 28px;
         }
