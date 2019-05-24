@@ -9,6 +9,8 @@
 
         svg {
             .cls-1{fill:#004eff}
+            width: 320px;
+            height: 320px;
         }
 
         &.twelve-column-grid {
@@ -35,6 +37,8 @@
             svg {
                 @include startSpanOffset(6, 3);
                 margin-top: -100px !important;
+                width: 600px;
+                height: 600px;
             }
         }
     }
