@@ -18,10 +18,20 @@
 
         simple-text {
             color: $white;
+            margin-bottom: 30px !important;
         }
 
         registration-form, simple-text {
-            @include startSpanOffset(10);
+            @include startSpanOffset(12);
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        .registration {
+
+            registration-form {
+                @include startSpanOffset(11);
+            }
         }
     }
 

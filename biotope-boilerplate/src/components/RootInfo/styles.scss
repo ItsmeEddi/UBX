@@ -9,8 +9,9 @@
 
         svg {
             .cls-1{fill:#004eff}
-            width: 320px;
-            height: 320px;
+            width: 300px;
+            height: 300px;
+            min-width: 100%;
         }
 
         &.twelve-column-grid {
@@ -30,7 +31,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 840px) {
         .info {
             margin: 0 60px;
 

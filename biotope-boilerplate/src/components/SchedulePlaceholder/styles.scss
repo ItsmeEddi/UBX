@@ -66,24 +66,25 @@
             margin-bottom: 100px;
 
          &__box-one {
-            width: 400px;
+            width: 350px;
             height: 600px;
-            left: 100px;
+            left: 190px;
          }
 
         &__title {
-            left: 400px;
+            left: 390px;
             top: 10px;
             width: 450px;
             font-size: 4em;
         }
 
         &__title::after {
-            margin-left: 120px;
+            width: 50%;
+            margin-left: 170px;
         }
 
         &__date {
-            left: 530px;
+            left: 570px;
             top: 460px;
         }
 
