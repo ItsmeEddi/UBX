@@ -4,194 +4,142 @@
 @include host('speaker-box') {
 
     .speaker {
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 1vw;
-        margin-top: 1vw;
-
-        &__wrapper {
-            position: relative;
-        }
-
-        &__box-one {
-            top: 0;
-            left: 50px;
-            background-color: $highlight-blue;
-            position: absolute;
-            &::after {
+        padding-top: 6vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 0;
+        margin-top: 100px;
+        
+        &__image {
+            flex: 1 1 0;
+            background-color: #fff;
+            background-size: cover;
+            background-position: center center;
+            box-shadow: 6vw -6vw 0 0 $highlight-blue;
+            
+            &:before {
                 content: '';
-                width: calc(80% + 100px);
-                height: 100%;
-                left: -150px;
-                top: 25px;
-                background-color: $white;
-                position: absolute;
-                background-size: cover;
-                background-repeat: no-repeat;
+                padding-top: 133%;
+                display: block;
+            }		
+        }
+        
+        &__content {
+            flex: 1 1 0;
+            margin-left: 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        &__headline {
+            margin: 1vw 0 0 0;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 40px;
+            color: $white;
+            max-width: 120px;
+            word-break: keep-all;
+            
+            &:after {
+                content: '';
+                display: block;
+                height: 5px;
+                width: 60px;
+                margin-top: 30px;
+                background-color: $highlight-green;
             }
         }
-
-        &__title {
-            position: relative;
-            font-size: 35px;
-            line-height: 40px;
-            display: inline-block;
-            font-weight: 400;
-            margin-top: 50px;
-            margin-bottom: 30px;
-            padding-right: 60%;
-            word-break: normal;
-        }
-
-        &__title::after {
-            width: 100px;
-            margin-top: 20px;
-            content: '';
-            display: block;
-            height: 5px;
-            background: $highlight-green;
-            transition: width .3s;
-          }
-
+        
         &__job {
             color: $white;
-            position: relative;
-            margin-top: 0;
-            display: block;
-            width: 44%;
-            top: 20px;
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 15px;
+            line-height: 1.4em;
+            max-width: 200px;
         }
-
+        
         &__toggle {
-            position: relative;
-            left: calc(20% + 80px);
-            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 800;
             color: $highlight-green;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 20px;
-
+            cursor: pointer;
+            
             &--arrow-down {
                 border: solid $highlight-green;
                 border-width: 0 3px 3px 0;
                 display: inline-block;
                 padding: 3px;
                 margin-left: 10px;
+                margin-bottom: 3px;
                 transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
                 transition: 0.3s ease-out;
             }
 
             &--arrow-up {
+                margin-bottom: -4px;
                 transform: rotate(-135deg);
                 -webkit-transform: rotate(-135deg);
             }
         }
-
+        
         &__description {
-            position: relative;
-            margin-top: 15%;
-            display: none;
+            max-height: 0;
+            margin-top: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 16px;
+            line-height: 1.4em;
+            transition: all .3s ease;
+            overflow: hidden;
 
             &--open {
-                display: block;
+                max-height: 300px;
             }
         }
     }
-    @media screen and (min-width: 320px) {
-        .speaker { 
-            padding: 12vw;
-
-        &__box-one {
-            width: 50%;
-            height: calc(20vw + 150px);
-            background-size: contain;
-            background-position: center;
-        }
-
-        &__title {
-            left: 50%;
-            padding-right: 90%;
-        }
-
-        &__toggle {
-            left: 50%;
-            margin-top: 20px;
-        }
-
-        &__job {
-            left: 50%;
-        }
-
-        &__description {
-            width: 100%;
-            left: -8%;
-        }
-    }
-    }
 
     @media screen and (min-width: 768px) {
-
         .speaker {
-            padding: 7vw;
+            padding-top: 5vw;
 
-        &__box-one {
-            width: 40%;
-            height: calc(20vw + 150px);
-        }
+            &__headline {
+                font-size: 40px;
+                line-height: 45px;
+            }
 
-        &__title {
-            font-size: 60px;
-            line-height: 65px;
-            font-size: 3em;
-            padding-right: 80%;
-            left: calc(35% + 50px);
-        }
+            &__toggle {
+                font-size: 18px;
+            }
 
-        &__description {
-            left: 5%;
-            font-size: 16px;
-            line-height: 28px;
-        }
+            &__job {
+                font-size: 18px;
+            }
 
-        &__toggle {
-            left: calc(40% + 110px);
-            font-size: 18px;
-            line-height: 28px;
+            &__image {
+                box-shadow: 5vw -5vw 0 0 $highlight-blue;
+            }
         }
-
-        &__job {
-            left: calc(40% + 110px);
-            font-size: 18px;
-            line-height: 28px;
-        }
-    }
 
     }
 
     @media screen and (min-width: 1340px) {
         .speaker {
-            padding: 3em;
+            padding-top: 1.5vw;
 
-        &__box-one {
-            width: 50%;
-            height: calc(55% + 100px);
-            background-size: cover;
-        }
+            &__image {
+                margin-bottom: 15%;
+                box-shadow: 1.5vw -1.5vw 0 0 $highlight-blue;
+            }
 
-        &__title {
-            padding-right: 60%;
-        }
+            &__content {
+                margin-left: 1vw;
+            }
 
-        &__description {
-            margin-top: 50px;
-        }
-
+            &__description {
+                margin-top: 20px;
+            }
         }
     }
 }
