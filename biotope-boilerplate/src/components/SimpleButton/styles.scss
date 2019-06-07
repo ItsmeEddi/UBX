@@ -9,8 +9,8 @@
         margin: 1em 0;
         padding: 0.5em 1.5em;
         cursor: pointer;
-        box-shadow: inset 0 0 0 4px $highlight-blue;
-        color: $highlight-blue;
+        box-shadow: inset 0 0 0 4px $highlight;
+        color: $highlight;
         font-weight: 700;
         font-size: 1.2em;
         text-transform: uppercase;
@@ -45,7 +45,7 @@
           }
           
           &:hover {
-            color: $highlight-green;
+            color: $primary-light;
           }
         
           &:hover::before,
@@ -55,16 +55,16 @@
           }
         
           &:hover::before {
-            border-top-color: $highlight-green;
-            border-right-color: $highlight-green;
+            border-top-color: $primary-light;
+            border-right-color: $primary-light;
             transition:
               width 0.25s ease-out,
               height 0.25s ease-out 0.25s;
           }
         
           &:hover::after {
-            border-bottom-color: $highlight-green;
-            border-left-color: $highlight-green;
+            border-bottom-color: $primary-light;
+            border-left-color: $primary-light;
             transition:
               border-color 0s ease-out 0.5s,
               width 0.25s ease-out 0.5s,

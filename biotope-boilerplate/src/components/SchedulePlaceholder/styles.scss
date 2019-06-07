@@ -12,7 +12,7 @@
             width: 240px;
             height: 400px;
             left: 50px;
-            background-color: $highlight-green;
+            background-color: $highlight;
             position: absolute;
         }
 
@@ -35,7 +35,7 @@
             content: '';
             display: block;
             height: 10px;
-            background: $highlight-green;
+            background: $highlight-light;
             transition: width .3s;
           }
 
@@ -55,9 +55,9 @@
             top: 50px;
 
             .st0{fill:none}
-            .st1{fill:#fff}
-            .st2{fill:#87e800}
-            .st3{fill:#004eff}
+            .st1{fill: $white}
+            .st2{fill: $highlight-light}
+            .st3{fill: $primary}
         }
     }
 

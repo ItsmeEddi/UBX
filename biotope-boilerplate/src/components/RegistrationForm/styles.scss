@@ -19,10 +19,10 @@
 
             &:focus {
                 outline: none;
-                border: 2px solid $highlight-green;
+                border: 2px solid $highlight;
 
                 & + label {
-                    color: $highlight-green;
+                    color: $highlight;
                 }
             }
         }
@@ -57,7 +57,7 @@
 
         input[type="radio"]:checked + label:before {
             background: transparent;
-            color: $highlight-green;
+            color: $highlight;
         }
 
         &__input-container {
@@ -72,7 +72,7 @@
             label {
                 position: absolute;
                 padding: 4px;
-                background-color: $navi-blue;
+                background-color: $primary;
                 font-size: 12px;
                 line-height: 12px;
                 top: -0.7em;
@@ -93,18 +93,18 @@
             padding: 0 40px;
             line-height: 40px;
             background-color: transparent;
-            border: 4px solid $highlight-green;
+            border: 4px solid $highlight;
             font-size: 18px;
             font-weight: bold;
-            color: $highlight-green;
+            color: $highlight;
             cursor: pointer;
         }
         &__legal {
-            color: grey;
+            color: $primary-light;
             font-size: 0.8em;
             margin: 0;
             a {
-                color: grey;
+                color: $primary-light;
             }
         }
         &__submission-container {

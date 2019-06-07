@@ -6,8 +6,8 @@
   h2 {
     display: inline-block;
     position: relative;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 400;
     line-height: 1.4em;
     text-transform: uppercase;
     z-index: 9;
@@ -16,75 +16,42 @@
       content: '';
       display: block;
       position: absolute;
-      width: calc(100% + 20px);
-      height: 0.3em;
-      top: 0.53em;
+      width: 60px;
+      height: 5px;
+      bottom: -5px;
+      left: 0;
+      background-color: $primary-light;
       z-index: -1;
     }
 
     span {
       display: inline-block;
-      width: 0.9em;
+      width: 0.7em;
       text-align: center;
-
-      &:first-of-type {
-        margin-left: 20px;
-      }
     }
   }
 
   @media screen and (min-width: 768px) {
     h2 {
-      font-size: 36px;
-      span {
-        width: 1.23em;
-      }
-    }
-  }
-
-  @media screen and (min-width: 996px) {
-    h2 span {
-      width: 1.4em;
-    }
-  }
-
-  @media screen and (min-width: 1190px) {
-    h2 {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 }
 
 // dark theme
 :host([dark]) h2{
-  color: #000;
-
-  &:before {
-    background-color: $highlight-green;
-  }
+  color: $black;
 }
 
 glyph-headline[dark] h2{
-  color: #000;
-  
-  &:before {
-    background-color: $highlight-green;
-  }
+  color: $black;
 }
 
 // light theme
 :host([light]) h2{
-  color: #fff;
-
-  &:before {
-    background-color: $highlight-blue;
-  }
+  color: $white;
 }
 
 glyph-headline[light] h2{
   color: #fff;
-  
-  &:before {
-    background-color: $highlight-blue;
-  }
 }

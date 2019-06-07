@@ -12,10 +12,11 @@
         
         &__image {
             flex: 1 1 0;
-            background-color: #fff;
+            background-color: $white;
             background-size: cover;
             background-position: center center;
-            box-shadow: 6vw -6vw 0 0 $highlight-blue;
+            box-shadow: 6vw -6vw 0 0 $highlight;
+            margin-bottom: 10%;
             
             &:before {
                 content: '';
@@ -47,7 +48,7 @@
                 height: 5px;
                 width: 60px;
                 margin-top: 30px;
-                background-color: $highlight-green;
+                background-color: $highlight-light;
             }
         }
         
@@ -56,6 +57,7 @@
             font-size: 15px;
             line-height: 1.4em;
             max-width: 200px;
+            margin: 20px 0 0 0;
         }
         
         &__toggle {
@@ -63,11 +65,12 @@
             align-items: center;
             font-size: 15px;
             font-weight: 800;
-            color: $highlight-green;
+            color: $highlight;
             cursor: pointer;
+            margin: 10px 0 0 0;
             
             &--arrow-down {
-                border: solid $highlight-green;
+                border: solid $highlight;
                 border-width: 0 3px 3px 0;
                 display: inline-block;
                 padding: 3px;
@@ -91,11 +94,11 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 16px;
             line-height: 1.4em;
-            transition: all .3s ease;
+            transition: all .4s ease;
             overflow: hidden;
 
             &--open {
-                max-height: 300px;
+                max-height: 400px;
             }
         }
     }
@@ -118,7 +121,7 @@
             }
 
             &__image {
-                box-shadow: 5vw -5vw 0 0 $highlight-blue;
+                box-shadow: 5vw -5vw 0 0 $highlight;
             }
         }
 
@@ -130,7 +133,7 @@
 
             &__image {
                 margin-bottom: 15%;
-                box-shadow: 1.5vw -1.5vw 0 0 $highlight-blue;
+                box-shadow: 1.5vw -1.5vw 0 0 $highlight;
             }
 
             &__content {

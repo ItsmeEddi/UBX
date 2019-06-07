@@ -5,7 +5,7 @@
 @include host('page-layout') {
 
     .page-layout {
-        background-color: $navi-blue;
+        background-color: $primary;
         color: white;
 
         &__container {
