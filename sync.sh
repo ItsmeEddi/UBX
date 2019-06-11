@@ -1,4 +1,7 @@
 #!/bin/sh
+cd ./biotope-boilerplate && npm install && npm run build
+
+cd ..
 
 node generateFiles.js
 
