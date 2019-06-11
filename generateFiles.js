@@ -29,17 +29,20 @@ const files = [
   {
     name: "11pages.Conference.html",
     header: conferenceHeader,
-    fileName: "biotope-template.php"
+    fileName: "biotope-template.php",
+    nFilePath: "konferenz"
   },
   {
     name: "11pages.Datenschutz.html",
     header: privacyHeader,
-    fileName: "privacy-template.php"
+    fileName: "privacy-template.php",
+    nFilePath: "konferenz/datenschutz"
   },
   {
     name: "11pages.Impressum.html",
     header: impressHeader,
-    fileName: "impress-template.php"
+    fileName: "impress-template.php",
+    nFilePath: "konferenz/impressum"
   }
 ];
 
@@ -70,4 +73,15 @@ for (let file of files) {
     str = replaceAll(str, replacement.from, replacement.to);
   });
   fs.writeFileSync(file.fileName, str);
+}
+
+// generate for netlify
+for (let file of files) {
+  const contents = fs.readFileSync(`${base}/${file.name}`).toString();
+  let str = `${contents}`;
+  replacements.forEach(replacement => {
+    str = replaceAll(str, replacement.from, replacement.to);
+  });
+  fs.mkdirSync(`./dist/${file.nFilePath}`, { recursive: true });
+  fs.writeFileSync(`./dist/${file.nFilePath}/index.html`, str);
 }
