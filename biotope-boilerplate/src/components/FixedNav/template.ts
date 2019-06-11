@@ -15,7 +15,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
                         <path d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z"/>
                     </svg>
                 </span>
-                <a href="#" class="navbar__logo">${{ html: logo }}</a>
+                <a href="#" class="navbar__logo" aria-label="logo and back to top">${{ html: logo }}</a>
                 <ul class="navbar__main-nav">
                     <li>
                         <a href="#speaker" class="navbar__links">Speakers</a>
