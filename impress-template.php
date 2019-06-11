@@ -1,9 +1,11 @@
+
 <?php /*
  Template Name: Impressum
  */
 
  ?>
 
+  
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -36,6 +38,7 @@
 <meta property="og:url" content="">
 <meta property="og:image" content="/konferenz/resources/img/ubx_teaser.jpg">
 
+
 	<!-- inject:head:html -->
 	<!-- endinject -->
 
@@ -58,7 +61,11 @@
 
 
 	<!-- All JavaScript at the bottom, except for Modernizr and configuration class -->
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.1/webcomponents-loader.js"></script>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.1/webcomponents-loader.js"></script>
+<script nomodule src="https://unpkg.com/whatwg-fetch"></script>
+<script nomodule src="https://unpkg.com/promise-polyfill"></script>
+<script nomodule src="https://unpkg.com/object-assign-polyfill"></script>
+
 <script src="/konferenz/resources/js/scripts.head.all.min.js"></script>
 
 <!-- Site-specific configurations like CDN resource folder or current page ID -->
@@ -66,6 +73,7 @@
 	biotope.configuration.set('data.staticResourcesBase', '/konferenz/resources/');
 	biotope.configuration.set('data.staticResourcesContentRepoBase', '/konferenz/resources-content/');
 </script>
+
 
 	<!-- DEV-note: include page specific styles and scripts after this comment -->
 </head>
@@ -389,7 +397,7 @@
 <!-- concatenate and minify script for live environment -->
 <script src="/konferenz/resources/js/scripts.all.min.js"></script>
 
-
+	
 
 	<!-- DEV-note: include page specific scrips after this comment -->
 </body>
