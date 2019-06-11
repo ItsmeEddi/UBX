@@ -29,7 +29,7 @@ const files = [
   {
     name: "11pages.Conference.html",
     header: conferenceHeader,
-    fileName: "conference-template.php"
+    fileName: "biotope-template.php"
   },
   {
     name: "11pages.Datenschutz.html",
@@ -43,11 +43,31 @@ const files = [
   }
 ];
 
+const replacements = [
+  {
+    from: 'href="resources',
+    to: 'href="/konferenz/resources'
+  },
+  {
+    from: 'src="resources',
+    to: 'src="/konferenz/resources'
+  }
+];
+
+const replaceAll = (str, from, to) => {
+  const find = from;
+  const re = new RegExp(find, "g");
+  return str.replace(re, to);
+};
+
 const base = path.join(__dirname, "biotope-boilerplate/dist");
 
 for (let file of files) {
   const contents = fs.readFileSync(`${base}/${file.name}`).toString();
-  const str = `${file.header}
+  let str = `${file.header}
   ${contents}`;
+  replacements.forEach(replacement => {
+    str = replaceAll(str, replacement.from, replacement.to);
+  });
   fs.writeFileSync(file.fileName, str);
 }
