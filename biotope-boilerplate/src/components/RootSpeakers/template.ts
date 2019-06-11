@@ -47,7 +47,7 @@ export default (render: Function, data: SpeakersTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="speakers twelve-column-grid">
-            <glyph-headline light headline="Speakers"></glyph-headline>
+            <simple-headline light>Speakers</simple-headline>
             ${speakersData.map(({ firstName, lastName, image, jobInfo, description }) => wire()`<speaker-box firstName=${firstName} lastName=${lastName} image=${image} jobInfo=${jobInfo} description=${description}></speaker-box>`)}
         </div>
     `;

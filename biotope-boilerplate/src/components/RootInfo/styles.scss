@@ -18,12 +18,12 @@
             @include grid(12, 0);
         }
 
-        glyph-headline {
+        simple-headline {
             @include startSpanOffset(12, 0);
         }
 
         simple-text {
-            padding-top: 40px;
+            padding-top: 80px;
         }
 
         event-date, simple-text, simple-button, svg {
@@ -40,6 +40,10 @@
                 margin-top: -100px !important;
                 width: 600px;
                 height: 600px;
+            }
+
+            simple-headline {
+                @include startSpanOffset(6, 0);
             }
         }
     }

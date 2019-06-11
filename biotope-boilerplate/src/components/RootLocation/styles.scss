@@ -12,7 +12,7 @@
             @include grid(12, 0);
         }
 
-        glyph-headline, address-label, google-maps {
+        simple-headline, address-label, google-maps {
             @include startSpanOffset(12, 0);
         }
     }

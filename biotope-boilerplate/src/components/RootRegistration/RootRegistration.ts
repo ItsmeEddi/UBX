@@ -1,7 +1,7 @@
 import Component from '@biotope/element';
 import template from './template';
 
-import GlyphHeadline from '../GlyphHeadline/GlyphHeadline';
+import SimpleHeadline from '../SimpleHeadline/SimpleHeadline';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
 import SimpleText from '../SimpleText/SimpleText';
 
@@ -16,7 +16,7 @@ interface RootRegistrationState {
 
 class RootRegistration extends Component< RootRegistrationProps, RootRegistrationState > {
     static componentName = 'root-registration';
-    static dependencies = [GlyphHeadline, RegistrationForm, SimpleText as any];
+    static dependencies = [SimpleHeadline, RegistrationForm, SimpleText as any];
 
     render() {
         return template(this.html, {});

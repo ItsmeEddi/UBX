@@ -8,8 +8,7 @@ export default (render: Function, data: RootInfoTemplateData) => {
   return render`
         <style>${styles.toString()}</style>
         <div class="info twelve-column-grid">
-            <glyph-headline dark headline="UBX 2019"></glyph-headline>
-            <event-date></event-date>
+            <simple-headline dark lowercase>How can Useful Brand Experience redefine the digital business?</simple-headline>
             <simple-text>What role does Useful Brand Experience play in redefining digital business? Under the motto "Creating Digital Opportunities", UBX19 presents how the power and diversity of digital solutions and processes can be used to create rewarding brand experiences. UBX19 combines inspiring keynotes and innovative digitisation cases from all over the world.</simple-text>
             <simple-button link="#registration">Apply now</simple-button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 250 800 800">
