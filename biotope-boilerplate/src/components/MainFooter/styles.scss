@@ -16,11 +16,13 @@
 
         &__vi-logo {
             width: 150px;
+            margin-bottom: 8px;
         }
 
         a {
             color: #fff;
             text-decoration: none;
+            height: 48px;
 
             svg path{
                 fill: #fff;
@@ -38,6 +40,7 @@
 
         ul {
             list-style: none;
+            height: 48px;
             margin: 0;
             padding: 0;
         }
