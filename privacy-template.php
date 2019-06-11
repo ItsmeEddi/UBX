@@ -59,7 +59,7 @@
 
 
 	<!-- All JavaScript at the bottom, except for Modernizr and configuration class -->
-
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.1/webcomponents-loader.js"></script>
 <script src="/konferenz/resources/js/scripts.head.all.min.js"></script>
 
 <!-- Site-specific configurations like CDN resource folder or current page ID -->

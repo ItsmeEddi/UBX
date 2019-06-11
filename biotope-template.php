@@ -17,7 +17,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <title>UBX Conference: Creating Digital Opportunities</title>
-<link rel="shortcut icon" href="../../resources/img/favicon.ico" />
+<link rel="shortcut icon" href="/konferenz/resources/img/favicon.ico" />
 <meta name="description"
     content="The UBX conference on 17 October 2019 in Munich will show how the diversity of digital solutions can be used to create positive brand experiences.">
 
@@ -34,7 +34,7 @@
 
 <!--DEV-NOTE: next two exntries are optional. define a custom share image and URL or remove this two lines -->
 <meta property="og:url" content="">
-<meta property="og:image" content="resources/img/ubx_teaser.jpg">
+<meta property="og:image" content="/konferenz/resources/img/ubx_teaser.jpg">
 
 	<!-- inject:head:html -->
 	<!-- endinject -->
@@ -58,7 +58,7 @@
 
 
 	<!-- All JavaScript at the bottom, except for Modernizr and configuration class -->
-
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.1/webcomponents-loader.js"></script>
 <script src="resources/js/scripts.head.all.min.js"></script>
 
 <!-- Site-specific configurations like CDN resource folder or current page ID -->
@@ -74,7 +74,8 @@
 	<main class="content">
 		<article>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARr8Ibkxk8wCZ36Jcv8UxfS64FyTGJRmg"></script>
-<snap-layout data-resources="[{paths: ['components/SnapLayout/index.js']}]"></snap-layout>
+			<script src="resources/components/Conference/index.js"></script>
+<x-conference></x-conference>
 
 		</article>
 	</main>
