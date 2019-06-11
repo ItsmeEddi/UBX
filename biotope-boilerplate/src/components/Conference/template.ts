@@ -1,11 +1,7 @@
-import * as styles from './styles.scss';
+import * as styles from "./styles.scss";
 
-interface SnapLayoutTemplateData {
-
-}
-
-export default (render: Function, data: SnapLayoutTemplateData) => {
-    return render`
+export default (render: Function, data: {}) => {
+	return render`
         <style>${styles.toString()}</style>
         <fixed-nav></fixed-nav>
 
@@ -16,7 +12,7 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
         <section class="snap-layout__section light">
             <root-info></root-info>
         </section>
-        
+
         <section id="speaker" class="snap-layout__section dark">
             <root-speakers></root-speakers>
         </section>
@@ -28,11 +24,11 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
 
         <section id="location" class="snap-layout__section dark">
             <root-location></root-location>
-        </section> 
+        </section>
 
         <section id="events" class="snap-layout__section light">
             <root-events></root-events>
-        </section>    
+        </section>
 
         <section id="registration" class="snap-layout__section dark">
             <root-registration></root-registration>
@@ -40,4 +36,4 @@ export default (render: Function, data: SnapLayoutTemplateData) => {
 
         <main-footer></main-footer>
     `;
-}
+};
