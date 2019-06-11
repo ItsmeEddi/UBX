@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ./biotope-boilerplate && npm run build
+cd ./biotope-boilerplate && npm install && npm run build
 
 cd ..
 
