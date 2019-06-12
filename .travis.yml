@@ -9,4 +9,8 @@ install:
 script:
   - npm run test
 after_success:
-  - npm run lh -- https://ubx.netlify.com/konferenz/
+  - cd ..
+  - cd ./site-checker
+  - npm install
+  - npm run start
+  - ./lighthouse.sh
