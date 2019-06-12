@@ -6,4 +6,4 @@ url="$value/konferenz/"
 
 echo "testing with url: $url"
 
-npm run lh -- $url
+npm run lh --budget-path=budget.json -- $url
