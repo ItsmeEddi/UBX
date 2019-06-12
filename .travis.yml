@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "10"
+install:
+  - cd biotope-boilerplate
+  - npm install
+script:
+  - cd biotope-boilerplate
+  - npm run test
+after_success:
+  - cd biotope-boilerplate
+  - npm run lh -- https://ubx.netlify.com/konferenz/
