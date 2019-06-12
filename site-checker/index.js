@@ -12,7 +12,12 @@ const client = new NetlifyAPI(token);
 
 const wait = timeout => new Promise(res => setTimeout(res, timeout));
 
-const commitHash = process.env.TRAVIS_COMMIT;
+let commitHash = process.env.TRAVIS_COMMIT;
+const prCommitHash = process.env.TRAVIS_PULL_REQUEST_SHA;
+
+if (prCommitHash !== "") {
+  commitHash = prCommitHash;
+}
 
 console.log(`Waiting for commit with hash: ${commitHash}`);
 
