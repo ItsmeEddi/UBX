@@ -12,10 +12,7 @@
     "start": "cross-env NODE_ENV=development gulp serve",
     "build": "cross-env NODE_ENV=production gulp build",
     "lh": "lighthousebot",
-    "test:travis": "mocha test/travis/build.js",
-    "test:ci": "echo \"Not implemented yet\"",
-    "test:e2e": "echo \"Not implemented yet\"",
-    "lint": "echo \"Not implemented yet\""
+    "test": "echo \"Not implemented yet\""
   },
   "dependencies": {
     "@biotope/element": "^3.1.0-0",
