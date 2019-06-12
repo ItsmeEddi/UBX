@@ -6,11 +6,7 @@ before_install:
   - cd ./biotope-boilerplate
 install:
   - npm install
-before_script:
-  - ls -la
-  - cd ./biotope-boilerplate
 script:
   - npm run test
 after_success:
-  - cd ./biotope-boilerplate
   - npm run lh -- https://ubx.netlify.com/konferenz/
