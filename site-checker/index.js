@@ -12,10 +12,10 @@ const client = new NetlifyAPI(token);
 
 const wait = timeout => new Promise(res => setTimeout(res, timeout));
 
-let commitHash = process.env.TRAVIS_COMMIT;
+let commitHash = process.env.TRAVIS_COMMIT || "";
 const prCommitHash = process.env.TRAVIS_PULL_REQUEST_SHA;
 
-if (prCommitHash !== "") {
+if (prCommitHash !== "" && prCommitHash !== undefined) {
   commitHash = prCommitHash;
 }
 
@@ -26,13 +26,13 @@ const getSiteUrl = async () => {
     site_id: "2d43cf38-cbfb-44f3-8f74-eb920d7170a5"
   });
   const site = sites.filter(site => site.commit_ref === commitHash);
-  if (site.length === 0) {
-    console.log("waiting");
-    await wait(30000);
-    return getSiteUrl();
-  } else {
+  if (site.length !== 0 && site[0].state === "ready") {
+    console.log(site);
     return site[0].deploy_ssl_url;
   }
+  console.log("waiting");
+  await wait(30000);
+  return getSiteUrl();
 };
 
 const fiveMinutes = 300000;
