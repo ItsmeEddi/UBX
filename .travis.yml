@@ -1,12 +1,16 @@
 language: node_js
 node_js:
   - "10"
+before_install:
+  - ls -la
+  - cd ./biotope-boilerplate
 install:
-  - cd biotope-boilerplate
   - npm install
+before_script:
+  - ls -la
+  - cd ./biotope-boilerplate
 script:
-  - cd biotope-boilerplate
   - npm run test
 after_success:
-  - cd biotope-boilerplate
+  - cd ./biotope-boilerplate
   - npm run lh -- https://ubx.netlify.com/konferenz/
