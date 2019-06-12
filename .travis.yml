@@ -12,5 +12,5 @@ after_success:
   - cd ..
   - cd ./site-checker
   - npm install
-  - npm run start
+  - npm start
   - ./lighthouse.sh
