@@ -12,8 +12,7 @@ const client = new NetlifyAPI(token);
 
 const wait = timeout => new Promise(res => setTimeout(res, timeout));
 
-let commitHash =
-  process.env.TRAVIS_COMMIT || "8c9ede73d5e3862f11420f9fb7d5df1a28cc8182";
+let commitHash = process.env.TRAVIS_COMMIT || "";
 const prCommitHash = process.env.TRAVIS_PULL_REQUEST_SHA;
 
 if (prCommitHash !== "" && prCommitHash !== undefined) {
