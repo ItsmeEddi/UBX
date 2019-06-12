@@ -12,8 +12,13 @@
             @include grid(12, 0);
         }
 
-        simple-headline, address-label, google-maps {
+        simple-headline, address-label {
             @include startSpanOffset(12, 0);
+        }
+
+        simple-text {
+            margin-top: 30px;
+            @include startSpanOffset(6, 0);
         }
     }
 

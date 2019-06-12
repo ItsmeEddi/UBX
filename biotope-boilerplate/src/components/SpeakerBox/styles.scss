@@ -68,6 +68,14 @@
             color: $highlight;
             cursor: pointer;
             margin: 10px 0 0 0;
+
+            &:hover {
+                color: $highlight-dark;
+
+                &--arrow-down {
+                    border: solid $highlight-dark;
+                }
+            }
             
             &--arrow-down {
                 border: solid $highlight;

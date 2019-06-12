@@ -51,6 +51,7 @@ simple-headline[light] h2{
 // lowercase version
 :host([lowercase]) h2{
     text-transform: none;
+    letter-spacing: 0;
     &:before {
         bottom: -40px;
     }
@@ -58,6 +59,7 @@ simple-headline[light] h2{
 
 simple-headline[lowercase] h2 {
     text-transform: none;
+    letter-spacing: 0;
     &:before {
         bottom: -40px;
     }

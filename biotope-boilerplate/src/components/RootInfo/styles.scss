@@ -1,5 +1,6 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/layouts/grid";
+@import "../../resources/scss/settings/settings";
 
 @include host('root-info') {
     .info {
@@ -8,7 +9,8 @@
         max-width: 1220px;
 
         svg {
-            .cls-1{fill:#004eff}
+            .cls-1{fill: $primary}
+            .cls-2{fill: $highlight};
             width: 300px;
             height: 300px;
             min-width: 100%;
@@ -45,6 +47,10 @@
             simple-headline {
                 @include startSpanOffset(6, 0);
             }
+
+            simple-text {
+                @include startSpanOffset(8, 0);
+            }
         }
     }
 
@@ -53,12 +59,12 @@
             margin: 0 auto;
 
             event-date, simple-text, simple-button {
-                @include startSpanOffset(7, 0);
+                @include startSpanOffset(6, 0);
             }
 
             svg {
-                @include startSpanOffset(6, 6);
-                margin-top: -350px !important;
+                @include startSpanOffset(5, 7);
+                margin-top: -300px !important;
             }
         }
     }

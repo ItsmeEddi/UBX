@@ -1,10 +1,11 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('fixed-nav') {
 
     .navbar {
         font-size: 18px;
-        background-color: #010413;
+        background-color: $white;
         padding-bottom: 10px;
         position: fixed;
         width: 100%;
@@ -26,12 +27,13 @@
 
         &__links {
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.9);
+            color: $highlight;
             display: inline-block;
+            font-weight: 800;
         }
 
         &__links:hover {
-          color: rgba(255, 255, 255, 1);
+          color: $highlight-dark;
         }
 
         &__links::after {
@@ -39,7 +41,7 @@
           display: block;
           width: 0;
           height: 2px;
-          background: rgba(255, 255, 255, 1);
+          background: $highlight-dark;
           transition: width .3s;
         }
 
@@ -50,10 +52,13 @@
         &__logo {
             display: inline-block;
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.9);
             font-size: 22px;
             margin-top: 7px;
             width: 100px;
+
+            .cls-1 {
+              fill: #333;
+            }
         }
 
         &__toggle {
@@ -61,7 +66,7 @@
             top: 25px;
             right: 5vw;
             cursor: pointer;
-            color: rgba(255, 255, 255, 0.9);
+            color: $black;
         }
       }
       
@@ -70,8 +75,10 @@
       }
 
       .filled {
-        background-color: #010413 !important;
-        transition: background-color 0.25s ease-out;
+        background-color: $white !important;
+        transition: all 0.4s ease-out;
+        border-bottom: 1px solid  #ededed;
+        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
       }
       
       @media screen and (min-width: 850px) {
