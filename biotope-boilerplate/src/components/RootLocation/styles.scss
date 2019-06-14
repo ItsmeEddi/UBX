@@ -9,16 +9,32 @@
         max-width: 1220px;
 
         &.twelve-column-grid {
-            @include grid(12, 0);
+            @include grid(12, 64);
         }
 
-        simple-headline, address-label {
-            @include startSpanOffset(12, 0);
+        &__text {
+            @include span(8);
+        }
+
+        &__images {
+            background-color: $primary-light;
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 100%;
+            @include span(4);
+
+            img {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: -20px;
+                margin-left: -20px;
+            }
         }
 
         simple-text {
             margin-top: 30px;
-            @include startSpanOffset(6, 0);
         }
     }
 
