@@ -13,15 +13,18 @@
         }
 
         &__text {
-            @include span(8);
+            @include span(10);
         }
 
         &__images {
             background-color: $primary-light;
             margin-top: 20px;
             margin-left: 20px;
-            height: 100%;
-            @include span(4);
+            height: 99%;
+            max-width: 60vw;
+            @include span(10);
+            @include startSpanOffset(10, 1);
+
 
             img {
                 display: inline-block;
@@ -38,15 +41,23 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 840px) {
         .location {
             margin: 0 60px;
+            
+            &__text {
+                @include startSpanOffset(6, 0);
+            }
+
+            &__images {
+                @include startSpanOffset(6, 3);
+            }
         }
-    }
+        }
 
     @media screen and (min-width: 1340px) {
         .location {
             margin: 0 auto;
-        }
     }
+}
 }
