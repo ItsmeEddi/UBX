@@ -10,6 +10,9 @@ export default (render: Function, data: EventsTemplateData) => {
         <style>${styles.toString()}</style>
         <div class="events twelve-column-grid">
             <simple-headline dark>FORMER TALKS</simple-headline>
+            <former-talk></former-talk>
+            <former-talk></former-talk>
+            <former-talk></former-talk>
         </div>
     `;
 }

@@ -15,8 +15,9 @@
             @include startSpanOffset(12, 0);
         }
 
-        .past-event {
+        former-talk {
             @include span(12);
+            margin-top: 70px;
         }
     }
 
@@ -25,11 +26,11 @@
             margin: 0 60px;
 
             &.twelve-column-grid {
-                @include grid(12, 40);
+                @include grid(12, 64);
             }
 
-            .past-event {
-                @include span(6);
+            former-talk {
+                @include span(4);
             }
         }
     }

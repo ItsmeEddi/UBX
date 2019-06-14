@@ -14,7 +14,7 @@ export default (render: Function, data: AddressLabelTemplateData) => {
               Isarwinkel 16<br>
               81379 Munich
             </p>
-            <a href="#" class="al__route">Route planen</a>
+            <a href="https://goo.gl/maps/ddpuXh7jRG2Uwamt6" target="_blank" class="al__route">Route planen</a>
             </div>
         </div>
     `;
