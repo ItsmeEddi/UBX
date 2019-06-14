@@ -72,8 +72,9 @@
             &:hover {
                 color: $highlight-dark;
 
-                &--arrow-down {
+                .speaker__toggle--arrow-down {
                     border: solid $highlight-dark;
+                    border-width: 0 3px 3px 0;
                 }
             }
             

@@ -39,7 +39,7 @@
         .registration {
             margin: 0 60px;
 
-            registration-form {
+            registration-form, simple-text {
                 @include startSpanOffset(10);
             }
         }

@@ -8,14 +8,14 @@
 			min-height: 100%;
 
 			&.dark {
-				background-color: $navi-blue;
+				background-color: $primary;
 				color: $white;
 			}
 
 			&.light {
 				background-color: $white;
 				background: none;
-				color: $navi-blue;
+				color: $black;
 			}
 		}
 	}
