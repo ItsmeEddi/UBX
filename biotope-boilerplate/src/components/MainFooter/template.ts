@@ -10,7 +10,7 @@ export default (render: Function, data: MainFooterTemplateData) => {
         <footer class="mf">
             <div class="mf__container">
                 <div class="mf__link-container">
-                    <a href="https://www.virtual-identity.com/" target="_blank">
+                    <a href="https://www.virtual-identity.com/" target="_blank" rel="noreferrer" aria-label="link to Virtual Identity">
                         <svg class="mf__vi-logo" viewBox="0 0 330 139">
                             <path d="M130.23 81.5381L124.88 65.8981H129.39L132.68 76.5681H132.75L136 65.8981H140.27L135 81.5381H130.23Z" fill="white"/>
                             <path d="M142.21 63.4781V59.9381H146.51V63.4781H142.21ZM146.51 65.8981V81.5381H142.21V65.8981H146.51Z" fill="white"/>
@@ -50,21 +50,21 @@ export default (render: Function, data: MainFooterTemplateData) => {
                     <span>Follow us on</span>
                     <ul>
                         <li>
-                            <a href="https://twitter.com/virtualidentity" target="_blank">
+                            <a href="https://twitter.com/virtualidentity" target="_blank" rel="noreferrer" aria-label="link to Twitter">
                             <svg height="24" viewBox="0 0 250 204">
                                 <path d="M78.5 203.2C172.8 203.2 224.4 125 224.4 57.3C224.4 55.1 224.4 52.9 224.3 50.7C234.3 43.5 243 34.4 249.9 24.1C240.7 28.2 230.8 30.9 220.4 32.2C231 25.9 239.1 15.8 243 3.8C233.1 9.7 222.1 13.9 210.4 16.2C201 6.2 187.7 0 173 0C144.7 0 121.7 23 121.7 51.3C121.7 55.3 122.2 59.2 123 63C80.4 60.9 42.6 40.4 17.3 9.4C12.9 17 10.4 25.8 10.4 35.2C10.4 53 19.5 68.7 33.2 77.9C24.8 77.6 16.9 75.3 10 71.5C10 71.7 10 71.9 10 72.2C10 97 27.7 117.8 51.1 122.5C46.8 123.7 42.3 124.3 37.6 124.3C34.3 124.3 31.1 124 28 123.4C34.5 143.8 53.5 158.6 75.9 159C58.3 172.8 36.2 181 12.2 181C8.1 181 4 180.8 0 180.3C22.6 194.7 49.6 203.2 78.5 203.2Z" fill="white"/>
                             </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/user/virtualidentityag" target="_blank">
+                            <a href="https://www.youtube.com/user/virtualidentityag" rel="noreferrer" target="_blank" aria-label="link to YouTube">
                             <svg height="24" viewBox="0 0 176 124">
                                 <path d="M172.3 19.4C171.309 15.6426 169.346 12.2128 166.607 9.45644C163.868 6.70005 160.451 4.7145 156.7 3.7C143 7.15256e-07 88 0 88 0C88 0 33 7.15256e-07 19.2 3.7C15.4675 4.72978 12.071 6.72211 9.35075 9.47749C6.63047 12.2329 4.68184 15.6546 3.7 19.4C-2.38419e-07 33.2 0 62 0 62C0 62 -2.38419e-07 90.8 3.7 104.6C4.69051 108.357 6.65418 111.787 9.39302 114.544C12.1319 117.3 15.549 119.286 19.3 120.3C33 124 88 124 88 124C88 124 143 124 156.8 120.3C160.551 119.286 163.968 117.3 166.707 114.544C169.446 111.787 171.409 108.357 172.4 104.6C176 90.8 176 62 176 62C176 62 176 33.2 172.3 19.4ZM70 88.2V35.8L116 62L70 88.2Z" fill="white"/>
                             </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="https://de-de.facebook.com/virtualidentityag/" target="_blank">
+                            <a href="https://de-de.facebook.com/virtualidentityag/" rel="noreferrer" target="_blank" aria-label="link to Facebook">
                             <svg height="24" viewBox="0 0 1024 1018">
                                 <path d="M1024 512C1024 229.2 794.8 0 512 0C229.2 0 0 229.2 0 512C0 767.6 187.2 979.4 432 1017.8V660H302V512H432V399.2C432 270.9 508.4 200 625.4 200C681.4 200 740 210 740 210V336H675.4C611.8 336 592 375.5 592 416V512H734L711.3 660H592V1017.8C836.8 979.4 1024 767.6 1024 512Z" fill="white"/>
                             </svg>
