@@ -9,7 +9,7 @@ export default (render: Function, data: PageLayoutTemplateData) => {
         <style>${styles.toString()}</style>
         <div class="page-layout">
             <div class="page-layout__container twelve-column-grid">
-                <h1><glyph-headline light headline=${data.headline}></glyph-headline></h1>
+                <h1><simple-headline light>${data.headline}</simple-headline></h1>
                 <simple-text><slot></slot></simple-text>
             </div>
         </div>

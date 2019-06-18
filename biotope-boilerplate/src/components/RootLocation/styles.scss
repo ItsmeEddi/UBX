@@ -9,7 +9,7 @@
         max-width: 1220px;
 
         &.twelve-column-grid {
-            @include grid(12, 64);
+            @include grid(12, 0);
         }
 
         &__text {
@@ -37,6 +37,7 @@
         }
 
         simple-text {
+            display: inline-block;
             margin-top: 30px;
         }
     }
@@ -44,6 +45,10 @@
     @media screen and (min-width: 840px) {
         .location {
             margin: 0 60px;
+
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
             
             &__text {
                 @include startSpanOffset(6, 0);

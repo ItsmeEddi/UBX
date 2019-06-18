@@ -37,6 +37,10 @@
         .info {
             margin: 0 60px;
 
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
+
             svg {
                 @include startSpanOffset(6, 3);
                 margin-top: -100px !important;

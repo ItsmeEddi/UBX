@@ -39,6 +39,10 @@
         .registration {
             margin: 0 60px;
 
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
+
             registration-form, simple-text {
                 @include startSpanOffset(10);
             }
