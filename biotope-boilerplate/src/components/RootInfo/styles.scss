@@ -67,7 +67,7 @@
             }
 
             svg {
-                @include startSpanOffset(5, 7);
+                @include startSpanOffset(5, 6);
                 margin-top: -300px !important;
             }
         }
