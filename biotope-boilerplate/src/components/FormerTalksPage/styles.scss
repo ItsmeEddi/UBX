@@ -1,0 +1,56 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+@import "../../resources/scss/layouts/grid";
+
+@include host('former-talks-page') {
+    .page-layout {
+        min-height: 100vh;
+
+        &__container {
+            padding: 140px 0;
+            margin: 0 30px;
+            @include grid(12, 0);
+        }
+
+        h1 {
+            @include startSpanOffset(12, 0);
+        }
+
+        .dropdown-container {
+            @include span(12);
+            text-align: right;
+        }
+
+        former-talk {
+            @include span(12);
+            margin-top: 70px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .page-layout {
+            &__container {
+                margin: 0 60px;
+                @include grid(12, 44);
+            }
+
+            former-talk {
+                @include span(6);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .page-layout {
+            &__container {
+                margin: 0 auto;
+                max-width: 1220px;
+            }
+
+            former-talk {
+                @include span(4);
+            }
+        }
+        
+    }
+}

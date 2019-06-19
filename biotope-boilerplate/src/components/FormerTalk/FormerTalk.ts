@@ -2,9 +2,14 @@ import Component from '@biotope/element';
 import template from './template';
 
 interface FormerTalkProps {
+    year: number;
+    filter: string;
     title: string;
-    speaker: string;
-    year: string;
+    prename: string;
+    lastname: string;
+    company: string;
+    country: string;
+    role: string;
     youtube: string;
 }
 
@@ -14,14 +19,19 @@ interface FormerTalkState {
 
 class FormerTalk extends Component<FormerTalkProps, FormerTalkState> {
     static componentName = 'former-talk';
-    static attributes = ['title', 'speaker', 'year', 'youtube']
+    static attributes = ['title', 'speaker', 'year', 'youtube', 'prename', 'lastname', 'company', 'country', 'role']
 
     get defaultProps() {
         return {
-            title: "",
-            speaker: "",
-            year: "",
-            youtube: ""
+            "year": 0,
+            "filter": '',
+            "title": '',
+            "prename": '',
+            "lastname": '',
+            "company": '',
+            "country": '',
+            "role": '',
+            "youtube": ''
         }
     }
 

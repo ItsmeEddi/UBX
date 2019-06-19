@@ -20,10 +20,10 @@
         }
 
         h1 {
-            margin: 0;
+            margin-bottom: 64px;
             @include startSpanOffset(12, 0);
         }
-
+        
         simple-text {
             @include startSpanOffset(12, 1);
         }

@@ -1,6 +1,6 @@
 import Component from '@biotope/element';
 import template from './template';
-import GlyphHeadline from '../GlyphHeadline/GlyphHeadline';
+import SimpleHeadline from '../SimpleHeadline/SimpleHeadline';
 import SimpleText from '../SimpleText/SimpleText';
 
 interface PageLayoutProps {
@@ -13,7 +13,7 @@ interface PageLayoutState {
 
 class PageLayout extends Component<PageLayoutProps, PageLayoutState> {
     static componentName = 'page-layout';
-    static dependencies = [GlyphHeadline, SimpleText as any];
+    static dependencies = [SimpleHeadline, SimpleText as any];
 
     static attributes = ['headline']
 
