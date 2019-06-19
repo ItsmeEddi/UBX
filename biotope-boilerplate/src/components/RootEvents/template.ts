@@ -19,10 +19,10 @@ const talksData = [
         youtube: "https://www.youtube.com/embed/U5ym66TGblU"
     },
     {
-        title: "What is Artificial Intelligence and why is it relevant for business?",
-        speaker: "Rand Hindi, CEO Snips",
+        title: "Why Direct Line Uses Drones to Fix Big Problems?",
+        speaker: "Mark Evans, Direct Line",
         year: "17",
-        youtube: "https://www.youtube.com/embed/CX6dKkLcK4k"
+        youtube: "https://www.youtube.com/embed/u8--LPoMweM"
     },
 ]
 

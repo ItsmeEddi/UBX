@@ -13,9 +13,7 @@ export default (render: Function, data: RootLocationTemplateData) => {
                 <simple-text>The conference is hosted by Virtual Identity. For the fifth time the digital agency transform its Munich office into the conference venue.</simple-text>
                 <address-label></address-label>
             </div>
-            <div class="location__images">
-                <img  alt="Virtual Identity building" src="resources/img/ubx_vi-building.jpg">
-            </div>
+            <img  class="location__image" alt="Virtual Identity building" src="resources/img/ubx_vi-building.jpg">
         </div>
     `;
 }

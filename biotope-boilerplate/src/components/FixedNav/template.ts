@@ -29,7 +29,7 @@ export default (render: Function, data: FixedNavTemplateData) => {
                         <a href="#location" class="navbar__links">Location</a>
                     </li>
                     <li>
-                        <a href="#events" class="navbar__links">Previous years</a>
+                        <a href="#events" class="navbar__links">Former Talks</a>
                     </li>
                     <li>
                         <a href="#registration" class="navbar__links">Apply now</a>

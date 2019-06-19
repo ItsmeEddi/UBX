@@ -16,24 +16,13 @@
             @include span(10);
         }
 
-        &__images {
-            background-color: $primary-light;
-            margin-top: 20px;
-            margin-left: 20px;
-            height: 99%;
-            max-width: 60vw;
-            @include span(10);
-            @include startSpanOffset(10, 1);
-
-
-            img {
-                display: inline-block;
-                position: relative;
-                width: 100%;
-                height: auto;
-                margin-top: -20px;
-                margin-left: -20px;
-            }
+        &__image {
+            @include startSpanOffset(11, 0);
+            width: 100% !important;
+            box-sizing: border-box;
+            display: inline-block;
+            box-shadow: 20px 20px 0 0 $primary-light;
+            margin-top: 30px;
         }
 
         simple-text {
@@ -54,7 +43,8 @@
                 @include startSpanOffset(6, 0);
             }
 
-            &__images {
+            &__image {
+                margin-top: -80px;
                 @include startSpanOffset(6, 3);
             }
         }

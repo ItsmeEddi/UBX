@@ -55,7 +55,9 @@
             text-decoration: none;
             font-size: 22px;
             margin-top: 7px;
+            margin-left: 40px;
             width: 100px;
+            padding: 10px 0;
 
             .cls-1 {
               fill: #333;
@@ -143,6 +145,7 @@
 
           &.filled .navbar__logo {
             opacity: 1;
+            fill: $black;
             cursor: pointer;
           }
 
@@ -152,7 +155,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 60px;
+            height: 80px;
           }
 
           &__main-nav {
