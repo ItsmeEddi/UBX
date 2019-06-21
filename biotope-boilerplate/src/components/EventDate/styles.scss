@@ -1,4 +1,5 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('event-date') {
     .ed {
@@ -14,7 +15,7 @@
             line-height: 2em;
             margin: 0;
             z-index: 2;
-            color: #050E3F;
+            color: $black;
         }
 
         &__title {
@@ -22,8 +23,8 @@
             width: 100%;
             justify-content: center;
             align-items: flex-end;
-            background-color: #87E800;
-            color: #050E3F;
+            background-color: $primary;
+            color: $black;
             font-weight: 400;
             letter-spacing: 3px;
             margin-top: -2em;

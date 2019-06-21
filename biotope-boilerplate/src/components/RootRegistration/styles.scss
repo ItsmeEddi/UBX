@@ -12,13 +12,13 @@
             @include grid(12, 0);
         }
 
-        glyph-headline {
+        simple-headline {
             @include startSpanOffset(12, 0);
         }
 
         simple-text {
             color: $white;
-            margin-bottom: 30px !important;
+            margin: 30px 0;
         }
 
         registration-form, simple-text {
@@ -39,8 +39,12 @@
         .registration {
             margin: 0 60px;
 
-            registration-form {
-                @include startSpanOffset(10);
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
+
+            registration-form, simple-text {
+                @include startSpanOffset(11);
             }
         }
     }
@@ -48,6 +52,10 @@
     @media screen and (min-width: 1340px) {
         .registration {
             margin: 0 auto;
+
+            registration-form, simple-text {
+                @include startSpanOffset(8);
+            }
         }
     }
 }

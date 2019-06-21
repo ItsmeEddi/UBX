@@ -1,0 +1,66 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+
+@include host('simple-headline') {
+    h2 {
+        position: relative;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 5px;
+            bottom: -8px;
+            left: 0;
+            background-color: $primary-light;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+// dark theme
+:host([dark]) h2{
+    color: $black;
+}
+  
+simple-headline[dark] h2{
+    color: $black;
+}
+
+// light theme
+:host([light]) h2{
+    color: $white;
+}
+
+simple-headline[light] h2{
+    color: #fff;
+}
+
+// lowercase version
+:host([lowercase]) h2{
+    text-transform: none;
+    letter-spacing: 0;
+    &:before {
+        bottom: -40px;
+    }
+}
+
+simple-headline[lowercase] h2 {
+    text-transform: none;
+    letter-spacing: 0;
+    &:before {
+        bottom: -40px;
+    }
+}

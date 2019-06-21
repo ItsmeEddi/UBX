@@ -4,40 +4,27 @@
 @include host('address-label') {
     .al {
         color: #fff;
-        margin: 40px 0 60px 0;
-
-        &__icon {
-            margin-right: 16px;
-            
-            svg {
-                width: 150px;
-                height: 150px;
-
-                .cls-1{fill:#87e800}
-                .cls-2{fill:#004eff}
-                .cls-5{fill:#fff}
-            }
-        }
-
-        h3 {
-            font-size: 24px;
-            line-height: 34px;
-            letter-spacing: 3px;
-            font-weight: 400;
-            margin-bottom: 0;
-        }
 
         &__address {
-            font-size: 18px !important;
-            line-height: 28px !important;
-            font-family: Roboto, sans-serif !important;
-            margin: 6px 0;
+            font-size: 22px;
+        }
+
+        &__route {
+            color: $highlight;
+            font-weight: 800;
+            font-size: 15px;
+            text-decoration: none;
+            transition: color .2s ease;
+
+            &:hover {
+                color: $highlight-dark;
+            }
         }
     }
 
-    @media screen and (min-width: 480px) {
-        .al {
-            display: flex;
+    @media screen and (min-width: 768px) {
+        .al__route {
+            font-size: 18px;
         }
     }
 }

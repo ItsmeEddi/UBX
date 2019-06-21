@@ -5,14 +5,14 @@
     .sp {
         position: relative;
         height: 500px;
-        margin-top: 85px;
+        margin: 85px 0;
         word-break: normal;
 
         &__box-one {
-            width: 240px;
+            width: 220px;
             height: 400px;
             left: 50px;
-            background-color: $highlight-green;
+            background-color: $highlight;
             position: absolute;
         }
 
@@ -20,7 +20,7 @@
             position: absolute;
             font-size: 2em;
             max-width: 400px;
-            left: 50px;
+            left: 65px;
             top: 300px;
             line-height: 1.2em;
             display: inline-block;
@@ -29,13 +29,13 @@
         }
 
         &__title::after {
-            width: 70%;
+            width: 60px;
             margin-top: 30px;
-            margin-left: 50px;
+            margin-left: 0px;
             content: '';
             display: block;
-            height: 10px;
-            background: $highlight-green;
+            height: 5px;
+            background: $highlight-light;
             transition: width .3s;
           }
 
@@ -43,7 +43,7 @@
             position: absolute;
             margin-top: 10px;
             width: 212px;
-            left: 100px;
+            left: 65px;
             top: 540px;
         }
 
@@ -55,43 +55,43 @@
             top: 50px;
 
             .st0{fill:none}
-            .st1{fill:#fff}
-            .st2{fill:#87e800}
-            .st3{fill:#004eff}
+            .st1{fill: $white}
+            .st2{fill: $highlight-light}
+            .st3{fill: $primary}
         }
     }
 
     @media screen and (min-width: 820px) {
         .sp {
-            margin-bottom: 100px;
+            margin-bottom: 180px;
 
          &__box-one {
-            width: 350px;
+            width: 300px;
             height: 600px;
-            left: 190px;
+            left: 150px;
          }
 
         &__title {
-            left: 390px;
-            top: 10px;
-            width: 450px;
-            font-size: 4em;
+            left: 300px;
+            top: 60px;
+            width: 350px;
+            font-size: 3em;
         }
 
         &__title::after {
-            width: 50%;
-            margin-left: 170px;
+            width: 60px;
+            margin-left: 180px;
         }
 
         &__date {
-            left: 570px;
-            top: 460px;
+            left: 480px;
+            top: 400px;
         }
 
         svg {
-            width: 450px;
-            height: 450px;
-            top: 240px;
+            width: 350px;
+            height: 350px;
+            top: 350px;
             left: 0;
         }
         }

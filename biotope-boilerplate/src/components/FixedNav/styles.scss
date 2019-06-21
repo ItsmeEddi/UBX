@@ -1,10 +1,11 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
 
 @include host('fixed-nav') {
 
     .navbar {
         font-size: 18px;
-        background-color: #010413;
+        background-color: $white;
         padding-bottom: 10px;
         position: fixed;
         width: 100%;
@@ -26,12 +27,13 @@
 
         &__links {
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.9);
+            color: $highlight;
             display: inline-block;
+            font-weight: 800;
         }
 
         &__links:hover {
-          color: rgba(255, 255, 255, 1);
+          color: $highlight-dark;
         }
 
         &__links::after {
@@ -39,7 +41,8 @@
           display: block;
           width: 0;
           height: 2px;
-          background: rgba(255, 255, 255, 1);
+          margin-top: 2px;
+          background: $highlight-dark;
           transition: width .3s;
         }
 
@@ -50,10 +53,15 @@
         &__logo {
             display: inline-block;
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.9);
             font-size: 22px;
             margin-top: 7px;
+            margin-left: 40px;
             width: 100px;
+            padding: 10px 0;
+
+            .cls-1 {
+              fill: #333;
+            }
         }
 
         &__toggle {
@@ -61,7 +69,41 @@
             top: 25px;
             right: 5vw;
             cursor: pointer;
-            color: rgba(255, 255, 255, 0.9);
+            color: $black;
+
+            svg {
+              fill: $highlight;
+
+              path {
+                transition: 0.1s all ease-out;
+              }
+            }
+            svg:hover {
+              fill: $highlight-dark;
+            }
+        }
+      }
+
+      .cross-animation {
+        svg {
+          fill: $highlight-dark;
+
+          path {
+            transition: 0.1s all ease-in;
+          }
+
+          #line-one {
+            transform: rotate(45deg) translate(7px, -10px);
+            transform-origin: top left;
+          }
+          #line-two {
+            opacity: 0;
+            transform: translate(-50px, 0);
+          }
+          #line-three {
+            transform: rotate(-45deg) translate(-14px, -5px);
+            transform-origin: top bottom;
+          }
         }
       }
       
@@ -70,8 +112,22 @@
       }
 
       .filled {
-        background-color: #010413 !important;
-        transition: background-color 0.25s ease-out;
+        background-color: $white !important;
+        transition: all 0.4s ease-out;
+        border-bottom: 1px solid  #ededed;
+        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+
+        .navbar__links {
+          color: $highlight;
+        }
+
+        .navbar__links:hover {
+          color: $highlight-dark;
+        }
+
+        .navbar__links::after {
+          background: $highlight-dark;
+        }
       }
       
       @media screen and (min-width: 850px) {
@@ -89,6 +145,7 @@
 
           &.filled .navbar__logo {
             opacity: 1;
+            fill: $black;
             cursor: pointer;
           }
 
@@ -98,7 +155,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 60px;
+            height: 80px;
           }
 
           &__main-nav {
@@ -114,7 +171,15 @@
           &__links {
             margin-left: 20px;
             font-size: 16px;
-            
+            color: $white;
+          }
+
+          &__links:hover {
+            color: $white;
+          }
+
+          &__links::after {
+            background: $white;
           }
           
           &__logo {

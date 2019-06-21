@@ -1,4 +1,6 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/layouts/grid";
+@import "../../resources/scss/settings/settings";
 
 @include host('video-stage') {
     .vs {
@@ -9,17 +11,58 @@
         height: 100vh;
 
         &__overlay {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            flex-wrap: wrap;
             position: absolute;
             height: 100%;
             min-width: 100%;
             color: #fff;
             background-color: rgba(8, 19, 62, 0.3);
             z-index: 666;
+            padding: 0 80px;
+
+            .twelve-column-grid {
+                @include grid(12, 0);
+                grid-template-columns: repeat(12, minmax(10px, 1fr));
+                height: 100%;
+                margin: 0 30px;
+
+                .info-overlay {
+                    display: flex;
+                    align-items: center;
+                    @include startSpanOffset(6, 0);
+
+                    &__box {
+                        background-color: $primary;
+                        opacity: .9;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 40px;
+                        margin-top: 90px;
+                        overflow: visible;
+
+                        svg {
+                            height: 45px;
+                        }
+    
+                        h1 {
+                            line-height: 1.1em;
+                            font-weight: 400;
+                            word-break: normal;
+                            margin: 20px 0;
+                            font-size: 38px;
+                            max-width: 20px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            line-height: 1.3em;
+                            word-break: normal;
+                            white-space: nowrap;
+                            max-width: 20px;
+                        }
+                    }
+                }
+
+            }
         }
 
         &__video {
@@ -29,17 +72,46 @@
             object-fit: cover;
             position: absolute;
         }
+    }
 
-        h1 {
-            position: absolute;
-            bottom: 20%;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 30px;
-            line-height: 1em;
-            letter-spacing: 0.2em;
-            margin: 0;
-            text-align: center;
+    @media screen and (min-width: 840px) {
+        .vs__overlay .twelve-column-grid {
+            @include grid(12, 44);
+            margin: 0 60px;
+
+            .info-overlay {
+                @include startSpanOffset(4, 0);
+
+                &__box {
+                    h1 {
+                        font-size: 56px;
+                        margin: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .vs__overlay .twelve-column-grid {
+            max-width: 1220px;
+            margin: 0 auto;
+
+            .info-overlay {
+                @include startSpanOffset(3, 0);
+
+                &__box {
+
+                    h1 {
+                        font-size: 80px;
+                        margin: 40px 0;
+                    }
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
         }
     }
 }

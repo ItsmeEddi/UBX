@@ -11,11 +11,11 @@ interface SpeakerBoxTemplateData {
 
 export default (render: Function, data: SpeakerBoxTemplateData) => {
     const dynamicStyles = `
-        speaker-box[image="${data.image}"] .speaker__box-one::after {
+        speaker-box[image="${data.image}"] .speaker__image {
             background-image: url(${data.image});
         }
 
-        :host .speaker__box-one::after {
+        :host .speaker__image {
             background-image: url(${data.image});
         }
     `;
@@ -25,13 +25,15 @@ export default (render: Function, data: SpeakerBoxTemplateData) => {
             ${dynamicStyles}
         </style>
         <div class="speaker">
-            <div class="speaker__wrapper">
-                <div class="speaker__box-one"></div>
-                <h3 class="speaker__title">${data.firstName}<br>${data.lastName}</h3>
-                <span class="speaker__job">${data.jobInfo}</span>
-                <p class="speaker__toggle" onclick="${data.toggleOpen}">more information<i class="speaker__toggle--arrow-down"></i></p>
+            <div class="speaker__image"></div>
+            <div class="speaker__content">
+                <h3 class="speaker__headline">${data.firstName}<br>${data.lastName}</h3>
+                <div>
+                    <p class="speaker__job">${data.jobInfo}</p>
+                    <p class="speaker__toggle" onclick="${data.toggleOpen}">more information<span class="speaker__toggle--arrow-down"></span></p>
+                </div>
             </div>
-            <p class="speaker__description">${data.description}</p>
+            <div class="speaker__description">${data.description}</div>
         </div>
     `;
 }

@@ -27,7 +27,7 @@ export default (render: Function, data: RegistrationFormTemplateData) => {
                     </div>
                     <div class=${data.errorEmail}>
                         <input oninput=${() => data.verifyInput('email')} name="email" id="email" type="email" required>
-                        <label for="email">Email*</label>
+                        <label for="email">E-Mail*</label>
                     </div>
                     <div>
                         <input name="company" id="company" type="text">

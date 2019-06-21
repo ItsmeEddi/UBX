@@ -1,5 +1,6 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/layouts/grid";
+@import "../../resources/scss/settings/settings";
 
 @include host('root-events') {
     .events {
@@ -11,12 +12,50 @@
             @include grid(12, 0);
         }
 
-        glyph-headline {
+        simple-headline {
             @include startSpanOffset(12, 0);
         }
 
-        .past-event {
+        former-talk, a {
             @include span(12);
+            margin-top: 70px;
+        }
+
+        a {
+            color: $highlight;
+            text-decoration: none;
+            font-weight: 700;
+
+            &:hover {
+                color: $highlight-dark;
+
+                .arrow-right {
+                    border: solid $highlight-dark;
+                    border-width: 0 3px 3px 0;
+                }
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                height: 5px;
+                width: 60px;
+                margin-bottom: 20px;
+                background-color: $primary-light;
+                text-align: right;
+            }
+
+            .arrow-right {
+                border: solid $highlight;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-left: 10px;
+                margin-bottom: 1px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transition: 0.3s ease-out;
+            }
         }
     }
 
@@ -25,11 +64,15 @@
             margin: 0 60px;
 
             &.twelve-column-grid {
-                @include grid(12, 40);
+                @include grid(12, 44);
             }
 
-            .past-event {
+            former-talk {
                 @include span(6);
+            }
+
+            a {
+                @include span(3);
             }
         }
     }
@@ -37,6 +80,20 @@
     @media screen and (min-width: 1340px) {
         .events {
             margin: 0 auto;
+
+            former-talk {
+                @include span(4);
+            }
+
+            a {
+                @include span(12);
+                text-align: right;
+
+                &:before {
+                    width: auto;
+                    margin-left: 95%;
+                }
+            }
         }
     }
 }

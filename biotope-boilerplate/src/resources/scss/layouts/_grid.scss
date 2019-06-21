@@ -31,7 +31,8 @@
             width: calc((100% - #{$totalGaps}) / #{$cols});
             @supports(display: grid) {
                     float: none;
-                    margin: 0;
+                    margin-left: 0;
+                    margin-right: 0;
                     width: auto;
             }
             &:last-child {

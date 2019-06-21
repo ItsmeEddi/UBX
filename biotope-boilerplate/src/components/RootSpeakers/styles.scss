@@ -11,7 +11,7 @@
             @include grid(12, 0);
         }
 
-        glyph-headline {
+        simple-headline {
             @include startSpanOffset(12, 0);
         }
 
@@ -25,11 +25,11 @@
             margin: 0 60px;
 
             &.twelve-column-grid {
-                @include grid(12, 40);
+                @include grid(12, 44);
             }
 
             speaker-box {
-                @include span(12);
+                @include span(6);
             }
         }
     }
@@ -39,7 +39,7 @@
             margin: 0 auto;
 
             speaker-box {
-                @include span(6);
+                @include span(4);
             }
         }
     }

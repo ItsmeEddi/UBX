@@ -12,20 +12,47 @@
             @include grid(12, 0);
         }
 
-        glyph-headline, address-label, google-maps {
-            @include startSpanOffset(12, 0);
+        &__text {
+            @include span(10);
+        }
+
+        &__image {
+            @include startSpanOffset(11, 0);
+            width: 100% !important;
+            box-sizing: border-box;
+            display: inline-block;
+            box-shadow: 20px 20px 0 0 $primary-light;
+            margin-top: 30px;
+        }
+
+        simple-text {
+            display: inline-block;
+            margin-top: 30px;
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 840px) {
         .location {
             margin: 0 60px;
+
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
+            
+            &__text {
+                @include startSpanOffset(6, 0);
+            }
+
+            &__image {
+                margin-top: -80px;
+                @include startSpanOffset(6, 3);
+            }
         }
-    }
+        }
 
     @media screen and (min-width: 1340px) {
         .location {
             margin: 0 auto;
-        }
     }
+}
 }

@@ -2,11 +2,77 @@
 @import "../../resources/scss/settings/settings";
 
 @include host('animated-stage') {
-    #lottie {
-        height: 100vh;
+    .stage {
+            word-break: normal;
+    
+            &__box-one {
+                width: calc(10% + 110px);
+                height: calc(10% + 200px);
+                left: 20%;
+                top: 40%;
+                background-color: $primary;
+                opacity: 0.8;
+                position: absolute;
+            }
+    
+            &__title {
+                left: 23%;
+                top: 47%;
+                position: absolute;
+                font-size: 2em;
+                max-width: 250px;
+                line-height: 1.2em;
+                display: inline-block;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+    
+            &__date {
+                position: absolute;
+                line-height: 1.2em;
+                display: inline-block;
+                font-weight: 400;
+                left: 23%;
+                top: calc(50% + 120px);
+                font-size: 1em;
+            }
 
-        svg {
-            width: auto !important;
+            svg {
+                position: absolute;
+                width: 100px;
+                left: 23%;
+                top: 42%;
+            }
+        }
+    
+        @media screen and (min-width: 850px) {
+            .stage { 
+    
+             &__box-one {
+                width: calc(10% + 110px);
+                height: calc(10% + 390px);
+                left: 20%;
+                top: 20%;
+             }
+    
+            &__title {
+                left: 22%;
+                top: 27%;
+                width: 450px;
+                font-size: 4em;
+            }
+    
+            &__date {
+                left: 22%;
+                top: calc(30% + 270px);
+                font-size: 1.5em;
+            }
+
+            svg {
+                width: 100px;
+                left: 22%;
+                top: 24%;
+            }
+            }
         }
     }
-}

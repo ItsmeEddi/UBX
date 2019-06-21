@@ -18,6 +18,7 @@ class FixedNav extends Component<FixedNavProps, FixedNavState> {
         let navBarToggle = this.shadowRoot.querySelector(".navbar__toggle");
 
         navBarToggle.addEventListener("click", function () {
+            this.classList.toggle("cross-animation");
             mainNav.classList.toggle("active");
         });
 

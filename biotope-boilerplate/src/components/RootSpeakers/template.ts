@@ -41,13 +41,20 @@ const speakersData = [
         jobInfo: "Founder & AI Research Lead Ubenwa Intelligence Solutions",
         description: 'Charles C. Uno has founded a company that applies AI and mobile technology to enable timely diagnosis of birth asphyxia from a newborn cry. He has over six years experience in the development of machine learning software for real-world health care problems such as breast cancer patient care and intensive care unit (ICU) monitoring. At UBX, he will share his passion about developing high impact technologies that address social challenges, especially in resource-poor settings.'
     },
+    {
+        firstName: "Daniel",
+        lastName: "Young",
+        image: "resources/img/UBX19_Young.png",
+        jobInfo: "Head of Digital Experience easyJet",
+        description: 'Daniel Young is a high caliber digital experience specialist, delivering pioneering solutions and driving commercial and customer experience results. In his role as Head of Digital Experience at easyJet, he is responsible for all customer-facing mobile app development, associated mobile initiatives and innovation projects. How to deliver best-in-class mobile customer experience through award-winning mobile leadership, Dan will explain at UBX.'
+    },
 ]
 
 export default (render: Function, data: SpeakersTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="speakers twelve-column-grid">
-            <glyph-headline light headline="Speakers"></glyph-headline>
+            <simple-headline light>Speakers</simple-headline>
             ${speakersData.map(({ firstName, lastName, image, jobInfo, description }) => wire()`<speaker-box firstName=${firstName} lastName=${lastName} image=${image} jobInfo=${jobInfo} description=${description}></speaker-box>`)}
         </div>
     `;
