@@ -21,6 +21,7 @@
 
             .twelve-column-grid {
                 @include grid(12, 0);
+                grid-template-columns: repeat(12, minmax(10px, 1fr));
                 height: 100%;
                 margin: 0 30px;
 
@@ -35,7 +36,6 @@
                         width: 100%;
                         box-sizing: border-box;
                         padding: 40px;
-                        height: fit-content;
                         margin-top: 90px;
                         overflow: visible;
 
@@ -49,6 +49,7 @@
                             word-break: normal;
                             margin: 20px 0;
                             font-size: 38px;
+                            max-width: 20px;
                         }
 
                         p {
@@ -56,6 +57,7 @@
                             line-height: 1.3em;
                             word-break: normal;
                             white-space: nowrap;
+                            max-width: 20px;
                         }
                     }
                 }
