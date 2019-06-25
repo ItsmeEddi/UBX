@@ -2,6 +2,8 @@
 @import "../../resources/scss/settings/settings";
 
 @include host('former-talk') {
+    display: flex;
+    
     .talk {
         background-color: $highlight;
         margin-top: 20px;
