@@ -6,8 +6,17 @@
     
     .talk {
         background-color: $highlight;
+        position: relative;
         margin-top: 20px;
         margin-left: 20px;
+
+        h4 {
+            position: absolute;
+            top: -75px;
+            left: -20px;
+            font-size: 18px;
+            color: $highlight;
+        }
 
         &__video {
             display: inline-block;

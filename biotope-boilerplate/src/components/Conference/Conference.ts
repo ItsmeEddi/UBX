@@ -13,7 +13,6 @@ import MainFooter from "../MainFooter/MainFooter";
 import SimpleText from "../SimpleText/SimpleText";
 import SimpleButton from "../SimpleButton/SimpleButton";
 import RootEvents from "../RootEvents/RootEvents";
-import GlyphHeadline from "../GlyphHeadline/GlyphHeadline";
 import SchedulePlaceholder from "../SchedulePlaceholder/SchedulePlaceholder";
 
 class Conference extends Component<{}, {}> {
@@ -29,7 +28,6 @@ class Conference extends Component<{}, {}> {
 		RootSpeakers,
 		RootEvents,
 		VideoStage,
-		GlyphHeadline,
 		MainFooter,
 		SchedulePlaceholder as any
 	];

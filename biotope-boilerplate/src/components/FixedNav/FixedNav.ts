@@ -22,14 +22,18 @@ class FixedNav extends Component<FixedNavProps, FixedNavState> {
             mainNav.classList.toggle("active");
         });
 
-        document.addEventListener("scroll", function () {
-            if (window.pageYOffset > 0) {
-                navBar.classList.add("filled");
-            }
-            else {
-                navBar.classList.remove("filled");
-            }
-        });
+        if(!this.hasAttribute('fixed')) {
+            document.addEventListener("scroll", function () {
+                if (window.pageYOffset > 0) {
+                    navBar.classList.add("filled");
+                }
+                else {
+                    navBar.classList.remove("filled");
+                }
+            });
+        } else {
+            navBar.classList.add("filled");
+        }
     }
 
     render() {

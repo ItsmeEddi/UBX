@@ -16,11 +16,12 @@ export default (render: Function, data: FormerTalkTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="talk">
+            <h4>${data.filter}</h4>
             <div class="talk__video">
                 <iframe src="${data.youtube}" frameborder="0" allow="encrypted-media; gyroscope;" allowfullscreen></iframe>
             </div>
             <div class="talk__text">
-            <h3>${data.title}</h3>
+                <h3>${data.title}</h3>
                 <p class="talk__description">${data.prename} ${data.lastname}, ${data.role} at ${data.company}, ${data.country}</p>
                 <p class="talk__year">at UBX ${data.year}</p>
             </div>

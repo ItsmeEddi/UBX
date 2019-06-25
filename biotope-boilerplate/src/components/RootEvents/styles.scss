@@ -16,9 +16,14 @@
             @include startSpanOffset(12, 0);
         }
 
-        former-talk, a {
+        former-talk {
             @include span(12);
-            margin-top: 70px;
+            margin-top: 90px;
+        }
+
+        a {
+            @include span(12);
+            margin-top: 45px;
         }
 
         a {

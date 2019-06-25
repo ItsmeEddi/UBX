@@ -1,7 +1,7 @@
 [
   {
     "year": "#ubx16",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "Should Advertising Die?",
     "prename": "Maria Garcia",
     "lastname": "Campos",
@@ -12,7 +12,7 @@
   },
   {
     "year": "#ubx16",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "Wir sagen \"JA\" - Marketing ∞ Beziehungskunst",
     "prename": "Gunter",
     "lastname": "Dueck",
@@ -23,7 +23,7 @@
   },
   {
     "year": "#ubx16",
-    "filter": "How to",
+    "filter": "howto",
     "title": "How Marketing can push boundaries with the Internet of Things",
     "prename": "Scott",
     "lastname": "Jenson",
@@ -34,7 +34,7 @@
   },
   {
     "year": "#ubx16",
-    "filter": "How to",
+    "filter": "howto",
     "title": "Wie kommen wir auf gute Ideen",
     "prename": "Bas",
     "lastname": "Kast",
@@ -45,7 +45,7 @@
   },
   {
     "year": "#ubx16",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "Business Romantic: Das neue romantische Zeitalter",
     "prename": "Tim",
     "lastname": "Leberecht",
@@ -56,7 +56,7 @@
   },
   {
     "year": "#ubx16",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Purposes-based UBX: Design Thinking at Johnson & Johnson",
     "prename": "Cordy",
     "lastname": "Swope",
@@ -67,7 +67,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Less ads, more acts! Why brands should think human-first",
     "prename": "Polle",
     "lastname": "de Maagt",
@@ -78,7 +78,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Fleetlights - Why Direct Line Uses Drones to Fix Big Problems",
     "prename": "Mark",
     "lastname": "Evans",
@@ -89,7 +89,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Innovative Werbung aus Japan: Das Klopapier für Smartphones",
     "prename": "Katja",
     "lastname": "Friedrich",
@@ -100,7 +100,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "What is Artificial Intelligence and why is it relevant for business?",
     "prename": "Rand",
     "lastname": "Hindi",
@@ -111,7 +111,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "Das Comeback der Realität",
     "prename": "Florian",
     "lastname": "Kaps",
@@ -122,7 +122,7 @@
   },
   {
     "year": "#ubx17",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Behind the scenes of the KLM Care Tag and Night Light",
     "prename": "Andrew",
     "lastname": "Spitz",
@@ -133,7 +133,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Cool Emotions App",
     "prename": "Gustavo Ernesto",
     "lastname": "Astiazarán Elías",
@@ -144,7 +144,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "Gehirn vs. Künstliche Intelligenz",
     "prename": "Henning",
     "lastname": "Beck",
@@ -155,7 +155,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "In defense of useless brand experiences",
     "prename": "Polle",
     "lastname": "de Maagt",
@@ -166,7 +166,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "What Evolution tells us about Advertising",
     "prename": "Ethan",
     "lastname": "Decker",
@@ -177,7 +177,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Intervention",
+    "filter": "intervention",
     "title": "Podiumsdiskussion \"Unerwünschte Nebenwirkungen von Werbung",
     "prename": "Laura Sophie",
     "lastname": "Dornheim",
@@ -188,7 +188,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "Werbung in der Sinnkrise?",
     "prename": "Markus",
     "lastname": "Feiks, M.A.",
@@ -199,7 +199,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "Neue Inspirationsquelle: Künstliche Intelligenz als kreative Muse",
     "prename": "Roman",
     "lastname": "Lipski",
@@ -210,7 +210,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "AAMI Smart Plates",
     "prename": "Michelle",
     "lastname": "Martinis",
@@ -221,7 +221,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Impulse",
+    "filter": "impulse",
     "title": "Humor in Business",
     "prename": "Andrew",
     "lastname": "Tarvin",
@@ -232,7 +232,7 @@
   },
   {
     "year": "#ubx18",
-    "filter": "Cases",
+    "filter": "cases",
     "title": "Seeing AI App",
     "prename": "Jürgen",
     "lastname": "Wirtgen",
