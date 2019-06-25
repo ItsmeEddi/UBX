@@ -22,7 +22,7 @@ export default (render: Function, data: FormerTalkTemplateData) => {
             </div>
             <div class="talk__text">
                 <h3>${data.title}</h3>
-                <p class="talk__description">${data.prename} ${data.lastname}, ${data.role} at ${data.company}, ${data.country}</p>
+                <p class="talk__description">${data.prename} ${data.lastname}, ${data.role}${data.company ? ` at ${data.company}` : ''}, ${data.country}</p>
                 <p class="talk__year">at UBX ${data.year}</p>
             </div>
         </div>

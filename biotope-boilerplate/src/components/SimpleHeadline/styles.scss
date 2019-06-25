@@ -10,6 +10,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         margin: 0;
+        padding-bottom: 8px; 
 
         &:before {
             content: '';
@@ -17,8 +18,8 @@
             position: absolute;
             width: 60px;
             height: 5px;
-            bottom: -8px;
             left: 0;
+            bottom: 0;
             background-color: $primary-light;
         }
     }
@@ -52,15 +53,11 @@ simple-headline[light] h2{
 :host([lowercase]) h2{
     text-transform: none;
     letter-spacing: 0;
-    &:before {
-        bottom: -40px;
-    }
+    padding-bottom: 40px;
 }
 
 simple-headline[lowercase] h2 {
     text-transform: none;
     letter-spacing: 0;
-    &:before {
-        bottom: -40px;
-    }
+    padding-bottom: 40px;
 }

@@ -16,6 +16,17 @@
             @include startSpanOffset(12, 0);
         }
 
+        &__apply-container {
+            margin-top: 124px;
+            @include startSpanOffset(12, 0);
+
+            simple-button {
+                $hackBecauseOfEmButtonMarginSetInSimpleButtonComponent: 1em;
+                margin-top: calc(50px - #{$hackBecauseOfEmButtonMarginSetInSimpleButtonComponent});
+                display: inline-block;
+            }
+        }
+
         &__filter {
             grid-column: 1 / -1;
             display: flex;
@@ -40,7 +51,8 @@
                 border: 4px solid $highlight;
                 list-style: none;
                 cursor: pointer;
-                margin-left: 25px;
+                margin-top: 25px;
+                width: 100%;
 
                 &.active {
                     color: $highlight-dark;
@@ -70,8 +82,20 @@
                 @include grid(12, 44);
             }
 
+            &__apply-container {
+                @include startSpanOffset(6, 0);
+            }
+
             former-talk {
                 @include span(6);
+            }
+
+            &__filter {
+                ul li {
+                    margin-top: 0;
+                    margin-left: 25px;
+                    width: auto;
+                }
             }
         }
     }

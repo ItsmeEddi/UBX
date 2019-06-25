@@ -1,6 +1,7 @@
 import Component from '@biotope/element';
 import template from './template';
 import SimpleHeadline from '../SimpleHeadline/SimpleHeadline';
+import SimpleButton from '../SimpleButton/SimpleButton';
 import FormerTalk from '../FormerTalk/FormerTalk';
 import filters from './talksFilter';
 import FixedNav from "../FixedNav/FixedNav";
@@ -20,7 +21,7 @@ export interface FormerTalksPageState {
 
 class FormerTalksPage extends Component< FormerTalksPageProps, FormerTalksPageState > {
     static componentName = 'former-talks-page';
-    static dependencies = [SimpleHeadline, FormerTalk, MainFooter, FixedNav as any];
+    static dependencies = [SimpleHeadline, FormerTalk, MainFooter, FixedNav, SimpleButton as any];
 
     constructor() {
         super();
