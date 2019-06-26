@@ -47,7 +47,9 @@ export default (render: Function, data: EventsTemplateData) => {
         <div class="events twelve-column-grid">
             <simple-headline dark>FORMER TALKS</simple-headline>
             ${talksData.map(({ year, company, country, lastname, prename, youtube, role, title, filter}) => wire()`<former-talk year=${year} company=${company} country=${country} lastname="${lastname}" prename="${prename}" youtube="${youtube}" role="${role}" title="${title}" filter="${filter}"></former-talk>`)}
-            <a href="https://www.youtube.com/user/virtualidentityag/videos" target="_blank">More videos<span class="arrow-right"></span></a>
+            <div class="link-container">
+                <a href="https://www.youtube.com/user/virtualidentityag/videos" target="_blank">More videos<span class="arrow-right"></span></a>
+            </div>
         </div>
     `;
 }
