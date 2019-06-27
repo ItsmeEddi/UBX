@@ -118,6 +118,7 @@
 
         .navbar__links {
           color: $highlight;
+          transition: .3s ease-out;
         }
 
         .navbar__links:hover {
