@@ -16,9 +16,30 @@
             @include startSpanOffset(12, 0);
         }
 
-        former-talk, a {
+        former-talk {
             @include span(12);
-            margin-top: 70px;
+            margin-top: 90px;
+        }
+
+        .link-container {
+            @include span(12);
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            margin-top: 45px;
+            padding-top: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 5px;
+                width: 60px;
+                right: 0;
+                top: 0;
+                margin-bottom: 20px;
+                background-color: $primary-light;
+            }
         }
 
         a {
@@ -33,16 +54,6 @@
                     border: solid $highlight-dark;
                     border-width: 0 3px 3px 0;
                 }
-            }
-
-            &:before {
-                content: '';
-                display: block;
-                height: 5px;
-                width: 60px;
-                margin-bottom: 20px;
-                background-color: $primary-light;
-                text-align: right;
             }
 
             .arrow-right {
@@ -71,8 +82,14 @@
                 @include span(6);
             }
 
-            a {
-                @include span(3);
+            .link-container {
+                @include span(6);
+                align-items: flex-end;
+
+                &:before {
+                    top: auto;
+                    bottom: 30px;
+                }
             }
         }
     }
@@ -85,14 +102,8 @@
                 @include span(4);
             }
 
-            a {
+            .link-container {
                 @include span(12);
-                text-align: right;
-
-                &:before {
-                    width: auto;
-                    margin-left: 95%;
-                }
             }
         }
     }

@@ -1,8 +1,0 @@
-@import "node_modules/@biotope/element/lib/host.mixin";
-
-@include host('contact-map') {
-    .map-frame {
-        width: 100vw;
-        height: 100vh;
-    }
-}

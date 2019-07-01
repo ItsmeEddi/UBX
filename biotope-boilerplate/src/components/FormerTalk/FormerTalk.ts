@@ -19,7 +19,7 @@ interface FormerTalkState {
 
 class FormerTalk extends Component<FormerTalkProps, FormerTalkState> {
     static componentName = 'former-talk';
-    static attributes = ['title', 'speaker', 'year', 'youtube', 'prename', 'lastname', 'company', 'country', 'role']
+    static attributes = ['title', 'filter', 'speaker', 'year', 'youtube', 'prename', 'lastname', 'company', 'country', 'role']
 
     get defaultProps() {
         return {

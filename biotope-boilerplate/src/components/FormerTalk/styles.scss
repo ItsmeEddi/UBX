@@ -2,10 +2,22 @@
 @import "../../resources/scss/settings/settings";
 
 @include host('former-talk') {
+    display: flex;
+    
     .talk {
         background-color: $highlight;
+        position: relative;
         margin-top: 20px;
         margin-left: 20px;
+        width: 100%;
+
+        h4 {
+            position: absolute;
+            top: -75px;
+            left: -20px;
+            font-size: 18px;
+            color: $highlight;
+        }
 
         &__video {
             display: inline-block;
