@@ -1,0 +1,96 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+
+@include host('schedule-timeline') {
+    h4 {
+        position: relative;
+        font-size: 22px;
+        font-weight: $font-weight-normal;
+        line-height: 1.5em;
+        padding-bottom: 10px;
+        margin: 0 0 25px 134px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            width: 60px;
+            background-color: $primary-light;
+        }
+    }
+
+    .schedule {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        padding: 25px 0;
+
+        &__line {
+            position: absolute;
+            z-index: -1;
+            list-style: none;
+            top: 0;
+            left: 94px;
+            height: 100%;
+            width: 4px;
+            background-color: $black;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                height: 4px;
+                width: 32px;
+                left: -14px;
+                background-color: $black;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+        }
+
+        &__item {
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__timeslot {
+            flex-shrink : 0;
+            width: 60px;
+            text-align: right;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            line-height: 32px;
+        }
+
+        &__dott {
+            flex-shrink : 0;
+            height: 26px;
+            width: 26px;
+            border-radius: 100%;
+            border: 3px solid $white;
+            background-color: $black;
+            margin: 0 20px;
+        }
+
+        &__name {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        p.simple-text {
+            margin: 0;
+        }
+    }
+}
