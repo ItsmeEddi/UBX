@@ -9,7 +9,7 @@ export default (render: Function, data: RootScheduleTemplateData) => {
         <style>${styles.toString()}</style>
         <div class="schedule twelve-column-grid">
             <simple-headline dark>Schedule</simple-headline>
-            <schedule-placeholder></schedule-placeholder>
+            <schedule-timeline></schedule-timeline>
         </div>
     `;
 }

@@ -3,12 +3,13 @@
 
 @include host('schedule-timeline') {
     h4 {
+        display: inline-block;
         position: relative;
         font-size: 22px;
         font-weight: $font-weight-normal;
         line-height: 1.5em;
         padding-bottom: 10px;
-        margin: 0 0 25px 134px;
+        margin: 25px 0 25px 134px;
 
         &:after {
             content: '';
@@ -19,6 +20,10 @@
             width: 60px;
             background-color: $primary-light;
         }
+    }
+
+    svg {
+        display: none;
     }
 
     .schedule {
@@ -91,6 +96,84 @@
 
         p.simple-text {
             margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        svg {
+            display: block;
+            position: absolute;
+        }
+
+        h4 {
+            &:nth-of-type(1) svg {
+                height: 130px;
+                top: -80px;
+                right: -200px;
+            }
+    
+            &:nth-of-type(2) svg {
+                height: 80px;
+                top: -50px;
+                left: -220px;
+            }
+    
+            &:nth-of-type(3) svg {
+                height: 130px;
+                top: -30px;
+                right: -200px;
+            }
+    
+            &:nth-of-type(4) svg {
+                height: 102px;
+                left: -200px;
+                top: -70px;
+                transform: scaleX(-1);
+
+                .fill {
+                    fill: $primary;
+                }
+            }
+    
+            &:nth-of-type(5) svg {
+                height: 190px;
+                right: -190px;
+                top: -40px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        h4 {
+            &:nth-of-type(1) svg {
+                height: 200px;
+                top: -140px;
+                right: -460px;
+            }
+    
+            &:nth-of-type(2) svg {
+                height: 120px;
+                top: -5px;
+                left: -340px;
+            }
+    
+            &:nth-of-type(3) svg {
+                height: 180px;
+                top: -140px;
+                right: -420px;
+            }
+    
+            &:nth-of-type(4) svg {
+                height: 120px;
+                left: -260px;
+                top: -85px;
+            }
+    
+            &:nth-of-type(5) svg {
+                height: 340px;
+                right: -530px;
+                top: -210px;
+            }
         }
     }
 }
