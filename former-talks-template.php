@@ -5,7 +5,7 @@
 
  ?>
 
-  
+
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -92,7 +92,7 @@
 <!-- concatenate and minify script for live environment -->
 <script src="/konferenz/resources/js/scripts.all.min.js"></script>
 
-	
+
 
 	<!-- DEV-note: include page specific scrips after this comment -->
 </body>
