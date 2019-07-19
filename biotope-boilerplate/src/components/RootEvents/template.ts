@@ -8,7 +8,7 @@ interface EventsTemplateData {
 const talksData = [
     {
         year: "17",
-        filter: "Cases",
+        filter: "cases",
         title: "Less ads, more acts! Why brands should think human-first",
         prename: "Polle",
         lastname: "de Maagt",
@@ -30,7 +30,7 @@ const talksData = [
     },
     {
         year: "17",
-        filter: "Cases",
+        filter: "cases",
         title: "Fleetlights - Why Direct Line Uses Drones to Fix Big Problems",
         prename: "Mark",
         lastname: "Evans",
