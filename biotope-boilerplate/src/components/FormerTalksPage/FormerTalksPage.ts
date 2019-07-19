@@ -41,7 +41,7 @@ class FormerTalksPage extends Component< FormerTalksPageProps, FormerTalksPageSt
     }
 
     connectedCallback() {
-        fetch('components/FormerTalksPage/talks.json')
+        fetch(`${ROOT}resources/components/FormerTalksPage/talks.json`)
             .then(response => {
                 return response.json();
             })
@@ -80,7 +80,7 @@ class FormerTalksPage extends Component< FormerTalksPageProps, FormerTalksPageSt
     }
 
     render() {
-        return template(this.html, { 
+        return template(this.html, {
             state: this.state,
             onFilterClick: this.onFilterClick,
             onClearClick: this.onClearClick,

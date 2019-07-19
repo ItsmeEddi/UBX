@@ -17,6 +17,14 @@ const impressHeader = `
  ?>
 `;
 
+const formerTalksHeader = `
+<?php /*
+ Template Name: Former-Talks
+ */
+
+ ?>
+`;
+
 const conferenceHeader = `
 <?php /*
  Template Name: Biotope
@@ -43,6 +51,12 @@ const files = [
     header: impressHeader,
     fileName: "impress-template.php",
     nFilePath: "konferenz/impressum"
+  },
+  {
+    name: "11pages.FormerTalksPage.html",
+    header: formerTalksHeader,
+    fileName: "former-talks-template.php",
+    nFilePath: "konferenz/former-talks"
   }
 ];
 
