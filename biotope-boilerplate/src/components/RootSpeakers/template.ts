@@ -48,6 +48,27 @@ const speakersData = [
         jobInfo: "Head of Digital Experience easyJet",
         description: 'Daniel Young is a high caliber digital experience specialist, delivering pioneering solutions and driving commercial and customer experience results. In his role as Head of Digital Experience at easyJet, he is responsible for all customer-facing mobile app development, associated mobile initiatives and innovation projects. How to deliver best-in-class mobile customer experience through award-winning mobile leadership, Dan will explain at UBX.'
     },
+    {
+        firstName: "Bjørn",
+        lastName: "Karmann",
+        image: "resources/img/UBX19_Karmann.png",
+        jobInfo: "Interaction Designer Tellart, Amsterdam",
+        description: 'The multiple award-winning designer Bjørn Karmann is constantly pushing the thinking of machine learning as a means of prototyping and enriching spatial interaction. At UBX, Bjørn and his fellow designer Tore Knudsen will talk about their joint invention Project Alias, a teachable „parasite“ designed to give users more control over their smart assistants through a simple app. They will explain why they freely share the plans for 3D printing and reflect on how the big tech players are influencing privacy and shaping our lives.'
+    },
+    {
+        firstName: "Tore",
+        lastName: "Knudsen",
+        image: "resources/img/UBX19_Knudsen.png",
+        jobInfo: "Interaction Designer Topp Innovation & Design, Malmø",
+        description: 'Tore Knudsen mainly works with UX design and prototyping for digital products and experiences. His personal work is often driven by the interest to explore and challenge our relationship with modern technology, and he has won multiple awards with work that strives to do so. Along with his designing counterpart Bjørn Karmann, Tore will talk about their joint invention Project Alias – recently awarded the prestigious Starts Prize – at UBX. Showing how thoughtful UX design is able to forces smart home systems to respect our privacy.'
+    },
+    {
+        firstName: "Christian",
+        lastName: "Greb",
+        image: "resources/img/UBX19_Greb.png",
+        jobInfo: "Diplom Psychologist & Chief Innovation Officer at Precire",
+        description: 'Christian Greb explores and analyses linguistic and written communication by using AI. His credo: words transport more than pure content. By combining technology with human emotions, he identifies hidden personality traits and special abilities and potentials. At UBX, the co-founder of Precire shows how written and spoken language is decoded and broken down into tens of thousands of tiny digital building blocks and elements using software – practical approaches included.'
+    },
 ]
 
 export default (render: Function, data: SpeakersTemplateData) => {
