@@ -7,11 +7,11 @@ interface SpeakersTemplateData {
 
 const speakersData = [
     {
-        firstName: "Tom",
-        lastName: "De Bruyne",
-        image: "resources/img/UBX19_deBruyn.png",
-        jobInfo: "Founder & Creative Director SUE Behavioural Design",
-        description: 'Tom De Bruyne is an expert in persuasion design, persuasion psychology, marketing strategy, and innovation. Using behavioural methods, he creates opportunities for brands and organisations to connect with consumers in a new context. His credo: "In order to convince, you have to think ideas the other way round". At UBX, he will be demonstrating what this means.'
+        firstName: "Daniel",
+        lastName: "Young",
+        image: "resources/img/UBX19_Young.png",
+        jobInfo: "Head of Digital Experience easyJet",
+        description: 'Daniel Young is a high caliber digital experience specialist, delivering pioneering solutions and driving commercial and customer experience results. In his role as Head of Digital Experience at easyJet, he is responsible for all customer-facing mobile app development, associated mobile initiatives and innovation projects. How to deliver best-in-class mobile customer experience through award-winning mobile leadership, Dan will explain at UBX.'
     },
     {
         firstName: "Dirk",
@@ -42,11 +42,11 @@ const speakersData = [
         description: 'Charles C. Uno has founded a company that applies AI and mobile technology to enable timely diagnosis of birth asphyxia from a newborn cry. He has over six years experience in the development of machine learning software for real-world health care problems such as breast cancer patient care and intensive care unit (ICU) monitoring. At UBX, he will share his passion about developing high impact technologies that address social challenges, especially in resource-poor settings.'
     },
     {
-        firstName: "Daniel",
-        lastName: "Young",
-        image: "resources/img/UBX19_Young.png",
-        jobInfo: "Head of Digital Experience easyJet",
-        description: 'Daniel Young is a high caliber digital experience specialist, delivering pioneering solutions and driving commercial and customer experience results. In his role as Head of Digital Experience at easyJet, he is responsible for all customer-facing mobile app development, associated mobile initiatives and innovation projects. How to deliver best-in-class mobile customer experience through award-winning mobile leadership, Dan will explain at UBX.'
+        firstName: "Tom",
+        lastName: "De Bruyne",
+        image: "resources/img/UBX19_deBruyn.png",
+        jobInfo: "Founder & Creative Director SUE Behavioural Design",
+        description: 'Tom De Bruyne is an expert in persuasion design, persuasion psychology, marketing strategy, and innovation. Using behavioural methods, he creates opportunities for brands and organisations to connect with consumers in a new context. His credo: "In order to convince, you have to think ideas the other way round". At UBX, he will be demonstrating what this means.'
     },
     {
         firstName: "Bjørn",
@@ -68,6 +68,20 @@ const speakersData = [
         image: "resources/img/UBX19_Greb.png",
         jobInfo: "Diplom Psychologist & Chief Innovation Officer at Precire",
         description: 'Christian Greb explores and analyses linguistic and written communication by using AI. His credo: words transport more than pure content. By combining technology with human emotions, he identifies hidden personality traits and special abilities and potentials. At UBX, the co-founder of Precire shows how written and spoken language is decoded and broken down into tens of thousands of tiny digital building blocks and elements using software – practical approaches included.'
+    },
+    {
+        firstName: "Anne-Kathrin",
+        lastName: "Bedoy",
+        image: "resources/img/UBX19_Bedoy.png",
+        jobInfo: "",
+        description: "Anne-Kathrin Bedoy heads the digital agenda of the dermocosmetics division at L'Oréal Germany. Together with Linda Schreurs, who is on the same mission for L'Oréal's skincare brand La Roche-Posay, she implements ‘My Skin Track UV', the first wearable sensor and companion app to determine personal UV exposure, pollution, pollen levels and humidity. At UBX, their tandem lecture will show how scientific and technological progress can take the user experience onto a new level."
+    },
+    {
+        firstName: "Linda",
+        lastName: "Schreurs",
+        image: "resources/img/UBX19_Schreurs.png",
+        jobInfo: "",
+        description: "Linda Schreurs is in charge of La Roche-Posay’s digital line, one of the most successfull dermocosmetic brands of L'Oréal. Together with Anne-Kathrin Bedoy, who heads the digital agenda of the dermocosmetics division at L'Oréal Germany, she implements  'My Skin Track UV', the first wearable sensor and companion app to determine personal UV exposure, pollution, pollen levels and humidity. At UBX, their tandem lecture will show how scientific and technological progress can take the user experience onto a new level."
     },
 ]
 
