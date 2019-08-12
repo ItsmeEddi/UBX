@@ -73,14 +73,14 @@ const speakersData = [
         firstName: "Anne-Kathrin",
         lastName: "Bedoy",
         image: "resources/img/UBX19_Bedoy.png",
-        jobInfo: "",
+        jobInfo: "Digital & Communication Director Active Cosmetics, L'Oréal",
         description: "Anne-Kathrin Bedoy heads the digital agenda of the dermocosmetics division at L'Oréal Germany. Together with Linda Schreurs, who is on the same mission for L'Oréal's skincare brand La Roche-Posay, she implements ‘My Skin Track UV', the first wearable sensor and companion app to determine personal UV exposure, pollution, pollen levels and humidity. At UBX, their tandem lecture will show how scientific and technological progress can take the user experience onto a new level."
     },
     {
         firstName: "Linda",
         lastName: "Schreurs",
         image: "resources/img/UBX19_Schreurs.png",
-        jobInfo: "",
+        jobInfo: "Senior Digital & Communication Manager La Roche-Posay, L'Oréal",
         description: "Linda Schreurs is in charge of La Roche-Posay’s digital line, one of the most successfull dermocosmetic brands of L'Oréal. Together with Anne-Kathrin Bedoy, who heads the digital agenda of the dermocosmetics division at L'Oréal Germany, she implements  'My Skin Track UV', the first wearable sensor and companion app to determine personal UV exposure, pollution, pollen levels and humidity. At UBX, their tandem lecture will show how scientific and technological progress can take the user experience onto a new level."
     },
 ]
