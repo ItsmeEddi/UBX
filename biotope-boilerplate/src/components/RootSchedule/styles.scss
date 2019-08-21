@@ -3,6 +3,7 @@
 
 @include host('root-schedule') {
     .schedule {
+        position: relative;
         padding: 140px 0;
         margin: 0 20px;
         max-width: 1220px;
@@ -14,16 +15,27 @@
         simple-headline {
             @include startSpanOffset(12, 0);
         }
+
+        schedule-timeline {
+            @include startSpanOffset(12, 0);
+            margin: 50px 0;
+        }
     }
 
     @media screen and (min-width: 768px) {
         .schedule {
             margin: 0 60px;
+
+            &.twelve-column-grid {
+                @include grid(12, 44);
+            }
+
+            schedule-timeline {
+                @include startSpanOffset(7, 1);
+            }
         }
 
-        &.twelve-column-grid {
-            @include grid(12, 44);
-        }
+
     }
 
     @media screen and (min-width: 1340px) {
@@ -32,6 +44,10 @@
 
             event-date {
                 @include startSpanOffset(7, 1);
+            }
+
+            schedule-timeline {
+                @include startSpanOffset(6, 2);
             }
         }
     }

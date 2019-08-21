@@ -1,0 +1,179 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+
+@include host('schedule-timeline') {
+    h4 {
+        display: inline-block;
+        position: relative;
+        font-size: 22px;
+        font-weight: $font-weight-normal;
+        line-height: 1.5em;
+        padding-bottom: 10px;
+        margin: 25px 0 25px 134px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            width: 60px;
+            background-color: $primary-light;
+        }
+    }
+
+    svg {
+        display: none;
+    }
+
+    .schedule {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        padding: 25px 0;
+
+        &__line {
+            position: absolute;
+            z-index: -1;
+            list-style: none;
+            top: 0;
+            left: 94px;
+            height: 100%;
+            width: 4px;
+            background-color: $black;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                height: 4px;
+                width: 32px;
+                left: -14px;
+                background-color: $black;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+        }
+
+        &__item {
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 25px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__timeslot {
+            flex-shrink : 0;
+            width: 60px;
+            text-align: right;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            line-height: 32px;
+        }
+
+        &__dott {
+            flex-shrink : 0;
+            height: 26px;
+            width: 26px;
+            border-radius: 100%;
+            border: 3px solid $white;
+            background-color: $black;
+            margin: 0 20px;
+        }
+
+        &__slot-description {
+            margin: 0 0 2px 0;
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        p.simple-text {
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        svg {
+            display: block;
+            position: absolute;
+        }
+
+        h4 {
+            &:nth-of-type(1) svg {
+                height: 130px;
+                top: -80px;
+                right: -200px;
+            }
+    
+            &:nth-of-type(2) svg {
+                height: 80px;
+                top: -50px;
+                left: -220px;
+            }
+    
+            &:nth-of-type(3) svg {
+                height: 130px;
+                top: -30px;
+                right: -200px;
+            }
+    
+            &:nth-of-type(4) svg {
+                height: 102px;
+                left: -200px;
+                top: -70px;
+                transform: scaleX(-1);
+
+                .fill {
+                    fill: $primary;
+                }
+            }
+    
+            &:nth-of-type(5) svg {
+                height: 190px;
+                right: -190px;
+                top: -40px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        h4 {
+            &:nth-of-type(1) svg {
+                height: 200px;
+                top: -140px;
+                right: -460px;
+            }
+    
+            &:nth-of-type(2) svg {
+                height: 120px;
+                top: -5px;
+                left: -340px;
+            }
+    
+            &:nth-of-type(3) svg {
+                height: 180px;
+                top: -140px;
+                right: -420px;
+            }
+    
+            &:nth-of-type(4) svg {
+                height: 120px;
+                left: -260px;
+                top: -85px;
+            }
+    
+            &:nth-of-type(5) svg {
+                height: 340px;
+                right: -530px;
+                top: -210px;
+            }
+        }
+    }
+}
