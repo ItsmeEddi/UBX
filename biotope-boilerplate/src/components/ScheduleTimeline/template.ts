@@ -11,81 +11,76 @@ interface ScheduleTimelineTemplateData {
 
 const scheduleData = [
     {
-        headline: "09:00 Start & Tune In",
+        headline: "09:00 Welcome & Tune In",
         illustration: clock,
         items: [
             {
                 timeslot: "09:15",
-                speaker: "speaker 1",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
+                speaker: ["Tom de Bruyne"],
+                description: "The Future of Innovation is Psychological"
             },
             {
                 timeslot: "09:45",
-                speaker: "speaker 2",
-                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+                speaker: ["Dirk von Gehlen"],
+                description: "Kulturpragmatismus"
             }
         ]
     },
     {
-        headline: "10:15 Coffee Break",
+        headline: "10:15 Break",
         illustration: bubbles,
         items: [
             {
                 timeslot: "10:45",
-                speaker: "speaker 3",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
+                speaker: ["Sudan Martin Jackson"],
+                description: "The importance of Human-Human interactions in the Digital Age"
             },
             {
                 timeslot: "11:15",
-                speaker: "speaker 4",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
-            },
-            {
-                timeslot: "11:45",
-                speaker: "speaker 5",
-                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+                speaker: [],
+                description: "Paneldiskussion: Wie wird man zum Digital Leader?"
             }
         ]
     },
     {
-        headline: "12:15 Lunch Break",
+        headline: "12:00 Lunch Break",
         illustration: mug,
         items: [
             {
                 timeslot: "13:30",
-                speaker: "speaker 6",
-                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+                speaker: ["Bjørn Karmann & Tore Knudsen"],
+                description: "Project Alias"
             },
             {
                 timeslot: "14:00",
-                speaker: "speaker 7",
-                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+                speaker: ["Easy Jet Look & Book App | Dan Young", "My Skin Track UV | Anne-Kathrin Bedoy & Linda Schreurs", "Ubenwa App | Charles C. Onu"],
+                description: "Cases"
             },
             {
-                timeslot: "14:30",
-                speaker: "speaker 8",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
+                timeslot: "15:00",
+                speaker: ["Dagmar Schuller", "Christian Greb", "Cindy Ricarda Roberts"],
+                description: "Paneldiskussion"
             }
         ]
     },
     {
-        headline: "15:00 Coffee Break",
+        headline: "15:30 Break",
         illustration: mug,
         items: [
             {
-                timeslot: "15:30",
-                speaker: "Doing Sessions",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
+                timeslot: "16:00",
+                speaker: [],
+                description: "Doing Sessions"
             },
             {
-                timeslot: "17:00",
-                speaker: "speaker 9",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt "
+                timeslot: "17:30",
+                speaker: ["Sam Conniff"],
+                description: "How to be more Pirate?"
             }
         ]
     },
     {
-        headline: "17:30 Get Together & Drinks",
+        headline: "18:00 Drink & Talk",
         illustration: mindblown,
     }
 ]
@@ -106,8 +101,8 @@ export default (render: Function, data: ScheduleTimelineTemplateData) => {
                         <div class="schedule__timeslot">${timeslot}</div>
                         <div class="schedule__dott"></div>
                         <div>
-                            <p class="schedule__name">${speaker}</p>
-                            <simple-text>${description}</simple-text>
+                            <p class="schedule__slot-description">${description}</p>
+                            ${speaker.map(s => wire()`<simple-text>${s}</simple-text>`)}
                         </div>
                     </li>
                 `)}

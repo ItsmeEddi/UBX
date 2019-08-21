@@ -62,7 +62,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
 
             &:last-of-type {
                 margin-bottom: 0;
@@ -88,8 +88,8 @@
             margin: 0 20px;
         }
 
-        &__name {
-            margin: 0 0 10px 0;
+        &__slot-description {
+            margin: 0 0 2px 0;
             font-size: 22px;
             line-height: 32px;
         }
