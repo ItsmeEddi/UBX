@@ -42,7 +42,7 @@ export default (render: Function, data: MainFooterTemplateData) => {
                         </svg>
                     </a>
                     <ul class="mf__links">
-                        <li><a href="http://ubx.info/konferenz/datenschutz/" target="_blank">Datenschutz</a></li>
+                        <li><a href="http://ubx.info/konferenz/datenschutz/" target="_blank">Data protection</a></li>
                         <li><a href="http://ubx.info/konferenz/impressum/" target="_blank">Impressum</a></li>
                     </ul>
                 </div>
