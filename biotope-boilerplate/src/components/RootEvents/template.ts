@@ -8,7 +8,7 @@ interface EventsTemplateData {
 const talksData = [
     {
         year: "17",
-        filter: "Cases",
+        filter: "cases",
         title: "Less ads, more acts! Why brands should think human-first",
         prename: "Polle",
         lastname: "de Maagt",
@@ -18,19 +18,19 @@ const talksData = [
         youtube: "https://www.youtube.com/embed/ynruFgJRifQ"
     },
     {
-        year: "18",
-        filter: "Cases",
-        title: "Cool Emotions App",
-        prename: "Gustavo Ernesto",
-        lastname: "Astiazarán Elías",
-        company: "DOC.com (formerly Docademic)",
-        country: "Mexico",
-        role: "Chief Marketing Officer",
-        youtube: "https://www.youtube.com/embed/ETjA7r3JxBo"
+        year: "#ubx18",
+        filter: "cases",
+        title: "AAMI Smart Plates",
+        prename: "Michelle",
+        lastname: "Martinis",
+        company: "Suncorp Group",
+        country: "Australia",
+        role: "Executive Manager, AAMI Brand, Marketing & Customer Experience",
+        youtube: "https://www.youtube.com/embed/GNO8LdDKF48"
     },
     {
         year: "17",
-        filter: "Cases",
+        filter: "cases",
         title: "Fleetlights - Why Direct Line Uses Drones to Fix Big Problems",
         prename: "Mark",
         lastname: "Evans",
