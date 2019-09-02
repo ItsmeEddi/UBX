@@ -1,0 +1,45 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/settings/settings";
+@include host('cookie-confirmation') {
+    .cookie__wrapper {
+        &-active {
+            background-color: $highlight;
+            opacity: 0.8;
+            transition: .8s;
+            animation: slideIn .8s;
+            position: fixed;
+            width: 100%;
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(120%);
+                }
+                100% {
+                    transform: translateY(calc(100%-50px));
+                }
+            }
+        }
+        &-inactive {
+            display: none;
+        }
+    }
+    .cookie__button {
+        opacity: 1;
+        width: 100%;
+        background-color: $primary-light;
+        height: 50px;
+        border: none;
+        font-size: $body-line-height;
+        font-family: $font-family-sans-serif;
+        cursor: pointer;
+        margin: 15px;
+        &:hover {
+            border: 1px dotted black;
+        }
+    }
+    .cookie__text {
+        opacity: 1;
+        text-align: center;
+        font-size: $body-font-size;
+        font-family: $font-family-sans-serif;
+    }
+}
