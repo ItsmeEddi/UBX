@@ -28,27 +28,20 @@ class CookieConfirmation extends Component< CookieConfirmationProps, CookieConfi
         }
     }
 
-    constructor() {
-        super();
-        this.hideBanner = this.hideBanner.bind(this);
-    }
-
-    hideBanner() {
-        function addClass() {
-            // const banner = this.shadowRoot.querySelector('.cookie__wrapper-active');
-            // banner.classList.add('cookie__wrapper-inactive');
-            console.log('CLICK');
-        };
+    connectedCallback() {
+        const cookieWrapper = this.shadowRoot.querySelector('.cookie__wrapper-active');
         const allowButton = this.shadowRoot.querySelector('.cookie__button');
-        allowButton.addEventListener('click', addClass);
+        allowButton.addEventListener('click', displayNone);
+        function displayNone() {
+            cookieWrapper.classList.add('cookie__wrapper-inactive');
+        };
     }
 
     render() {
         return template(this.html, { 
             ...this.props, 
             ...this.state, 
-            ...this.methods,
-            hideBanner: this.hideBanner
+            ...this.methods
         }, 
         this.createStyle);
     }

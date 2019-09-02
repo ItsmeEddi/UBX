@@ -1,12 +1,12 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/settings/settings";
-@include host('cookie-confirmation') {
+@include host("cookie-confirmation") {
     .cookie__wrapper {
         &-active {
             background-color: $highlight;
             opacity: 0.8;
-            transition: .8s;
-            animation: slideIn .8s;
+            transition: 0.8s;
+            animation: slideIn 0.8s;
             position: fixed;
             width: 100%;
             @keyframes slideIn {
