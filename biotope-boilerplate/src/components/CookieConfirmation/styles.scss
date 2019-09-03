@@ -34,4 +34,9 @@
         font-family: $font-family-sans-serif;
         color: white;
     }
+    a {
+        text-decoration: none;
+        color: $highlight;
+        font-weight: $font-weight-bold;
+    }
 }
