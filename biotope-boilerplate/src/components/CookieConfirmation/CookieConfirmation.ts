@@ -38,14 +38,14 @@ class CookieConfirmation extends Component< CookieConfirmationProps, CookieConfi
         allowButton.addEventListener('click', removeBanner);
         function removeBanner() {
             cookieWrapper.parentNode.removeChild(cookieWrapper);
-            setCookie("UBX-2019-CookieAcceptance", username, 365);
+            setCookie("UBX-2019-CookieAcceptance", 365);
         };
-        
-        function setCookie(cname, cvalue, exdays) {
+        function setCookie(cname, exdays) {
             let d = new Date();
+            let today = new Date();
             d.setTime(d.getTime() + (exdays*24*60*60*1000));
             let expires = "expires="+ d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            document.cookie = cname + "=" + today + ";" + expires + ";path=/";
         };
         
         function getCookie(cname) {
@@ -63,7 +63,6 @@ class CookieConfirmation extends Component< CookieConfirmationProps, CookieConfi
             }
             return "";
         };
-        let username;
         function checkCookie() {
             let username = getCookie("UBX-2019-CookieAcceptance");
             if (username != "") {
