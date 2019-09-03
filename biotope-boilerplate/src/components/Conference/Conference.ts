@@ -9,6 +9,7 @@ import RootSchedule from "../RootSchedule/RootSchedule";
 import RootRegistration from "../RootRegistration/RootRegistration";
 import VideoStage from "../VideoStage/VideoStage";
 import MainFooter from "../MainFooter/MainFooter";
+import CookieConfirmation from "../CookieConfirmation/CookieConfirmation";
 
 import SimpleText from "../SimpleText/SimpleText";
 import SimpleButton from "../SimpleButton/SimpleButton";
@@ -29,6 +30,7 @@ class Conference extends Component<{}, {}> {
 		RootEvents,
 		VideoStage,
 		MainFooter,
+		CookieConfirmation,
 		SchedulePlaceholder as any
 	];
 

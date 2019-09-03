@@ -7,6 +7,7 @@ export default (render: Function, data: {}) => {
 
         <section class="snap-layout__section light">
             <video-stage></video-stage>
+            <cookie-confirmation></cookie-confirmation>
         </section>
 
         <section class="snap-layout__section light">
