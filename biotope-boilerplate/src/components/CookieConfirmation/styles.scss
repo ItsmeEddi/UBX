@@ -2,17 +2,15 @@
 @import "../../resources/scss/settings/settings";
 @include host("cookie-confirmation") {
     .cookie__wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         position: fixed;
         width: 100%;
-        height: 150px;
+        height: auto;
         bottom: 0;
         background-color: $primary;
         transition: 0.8s;
         animation: slideIn 0.8s;
         z-index: 1000;
+        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
         @keyframes slideIn {
             0% {
                 transform: translateY(120%);
@@ -22,19 +20,46 @@
             }
         }
     }
-    .cookie__button {
-        align-self: center;
-        flex-grow: 1;
-        margin-left: 50px;
+    .cookie__banner {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 1220px;
+        margin: 0 30px;
     }
     .cookie__text {
-        flex-grow: 2;
-        text-align: center;
         color: white;
+        font-size: 15px;
     }
     a {
         text-decoration: none;
         color: $highlight;
         font-weight: $font-weight-bold;
+    }
+    @media screen and (min-width: 768px) {
+        .cookie__banner {
+            margin: 0 60px;
+        }
+        .cookie__text {
+            font-size: 18px;
+        }
+    }
+    @media screen and (min-width: 1110px) {
+        .cookie__banner {
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: baseline;
+        }
+        .cookie__button {
+            margin-left: 20px;
+        }
+        .cookie__text {
+            text-align: start;
+        }
+    }
+    @media screen and (min-width: 1340px) {
+        .cookie__banner {
+            margin: 0 auto;
+        }
     }
 }

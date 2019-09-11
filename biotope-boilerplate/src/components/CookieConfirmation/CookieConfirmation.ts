@@ -1,7 +1,6 @@
 import Component from '@biotope/element';
 import template from './template';
 import SimpleButton from '../SimpleButton/SimpleButton';
-import SimpleText from '../SimpleText/SimpleText';
 
 import { CookieConfirmationProps, CookieConfirmationState, CookieConfirmationMethods } from './defines';
 
@@ -10,8 +9,7 @@ import { CookieConfirmationProps, CookieConfirmationState, CookieConfirmationMet
 class CookieConfirmation extends Component< CookieConfirmationProps, CookieConfirmationState > {
     static componentName = 'cookie-confirmation';
     static dependencies = [
-        SimpleButton,
-        SimpleText as any
+        SimpleButton as any
 	];
 
     static attributes = [
