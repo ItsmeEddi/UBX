@@ -18,10 +18,6 @@
             }
             &__vi-logo {
                 width: 150px;
-                margin-bottom: 8px;
-            }
-            &__links li {
-                margin-top: 25px;
             }
             a {
                 color: $white;
@@ -48,9 +44,10 @@
             }
             figcaption {
                 text-align: start;
-                size: 14px;
+                font-size: 12px;
                 display: block;
                 top: 0;
+                line-height: 1.3;
             }
             figure img {
                 height: 48px;
@@ -87,7 +84,7 @@
                     display: flex;
                     justify-content: space-between;
                     max-width: 1220px;
-                    margin: 0 60px;
+                    margin: 0 30px;
                     padding: 30px 0;
                     padding-bottom: 0;
                 }
@@ -101,6 +98,9 @@
                 &__partner-container {
                     display: flex;
                     flex-direction: row;
+                }
+                &__container {
+                    margin: 0 60px;
                 }
                 figure {
                     margin-right: 50px;
