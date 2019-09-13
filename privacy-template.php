@@ -46,7 +46,6 @@
 
 	<!-- CSS: implied media=all -->
 <!-- CSS should be concatenated and minified in production use -->
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <!-- The following files are merged into resources/css/styles.all.min.css -->
 <link rel="stylesheet" href="/konferenz/resources/css/styles.all.min.css">
 
