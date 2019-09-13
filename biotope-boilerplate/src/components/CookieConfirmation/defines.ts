@@ -5,27 +5,28 @@
 /**
  * Props
  */
- interface CookieConfirmationProps {
+interface CookieConfirmationProps {
 
- }
+}
 
 /**
  * State
  */
- interface CookieConfirmationState {
-
- }
+interface CookieConfirmationState {
+	shown: boolean;
+}
 
 /**
  * Methods
  */
- interface CookieConfirmationMethods {
+interface CookieConfirmationMethods {
+	acceptCookie: Function;
 
- }
+}
 
 
 export {
-    CookieConfirmationProps,
+	CookieConfirmationProps,
 	CookieConfirmationState,
 	CookieConfirmationMethods
 }
