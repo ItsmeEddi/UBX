@@ -1,6 +1,6 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/settings/settings";
-
+*, *:after, *:before { box-sizing: border-box }
 @include host('fixed-nav') {
 
     .navbar {

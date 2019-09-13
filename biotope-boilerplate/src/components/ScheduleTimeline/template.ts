@@ -38,7 +38,7 @@ const scheduleData = [
             {
                 timeslot: "11:15",
                 speaker: [],
-                description: "Paneldiskussion: Wie wird man zum Digital Leader?"
+                description: "Podiumsdiskussion: Wie wird man zum Digital Leader?"
             }
         ]
     },
@@ -59,7 +59,7 @@ const scheduleData = [
             {
                 timeslot: "15:00",
                 speaker: ["Dagmar Schuller", "Christian Greb", "Cindy Ricarda Roberts"],
-                description: "Paneldiskussion"
+                description: "Podiumsdiskussion"
             }
         ]
     },

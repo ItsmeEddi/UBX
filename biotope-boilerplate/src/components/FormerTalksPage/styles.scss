@@ -1,7 +1,7 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/settings/settings";
 @import "../../resources/scss/layouts/grid";
-
+*, *:after, *:before { box-sizing: border-box }
 @include host('former-talks-page') {
     .page-layout {
         min-height: 100vh;
