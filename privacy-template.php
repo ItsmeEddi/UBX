@@ -46,7 +46,7 @@
 
 	<!-- CSS: implied media=all -->
 <!-- CSS should be concatenated and minified in production use -->
-
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <!-- The following files are merged into resources/css/styles.all.min.css -->
 <link rel="stylesheet" href="/konferenz/resources/css/styles.all.min.css">
 
@@ -60,7 +60,15 @@
 </style>
 
 
-	<!-- All JavaScript at the bottom, except for Modernizr and configuration class -->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVJN724');</script>
+<!-- End Google Tag Manager -->
+
+<!-- All JavaScript at the bottom, except for Modernizr and configuration class -->
 <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.1/webcomponents-loader.js"></script>
 <script nomodule src="https://unpkg.com/whatwg-fetch"></script>
 <script nomodule src="https://unpkg.com/promise-polyfill"></script>
@@ -79,6 +87,10 @@
 </head>
 
 <body role="document" class="">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVJN724"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<main class="content">
 		<article>
 			<page-layout headline="Data protection declaration / information according to art. 13 DSGVO" data-resources="[{paths: ['components/PageLayout/index.js']}]">

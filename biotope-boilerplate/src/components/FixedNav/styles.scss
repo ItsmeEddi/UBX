@@ -1,6 +1,6 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/settings/settings";
-
+*, *:after, *:before { box-sizing: border-box }
 @include host('fixed-nav') {
 
     .navbar {
@@ -30,7 +30,6 @@
             color: $highlight;
             display: inline-block;
             font-weight: 800;
-            font-size: 16px;
         }
 
         &__links:hover {
