@@ -1,35 +1,37 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
 @import "../../resources/scss/settings/settings";
 @include host("cookie-confirmation") {
-    .cookie__wrapper {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        background-color: $primary;
-        transition: 0.8s;
-        animation: slideIn 0.8s;
-        z-index: 1000;
-        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
-        @keyframes slideIn {
-            0% {
-                transform: translateY(120%);
-            }
-            100% {
-                transform: translateY(calc(100%-50px));
+    .cookie {
+        &__wrapper {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            bottom: 0;
+            background-color: $primary;
+            transition: 0.8s;
+            animation: slideIn 0.8s;
+            z-index: 1000;
+            box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(120%);
+                }
+                100% {
+                    transform: translateY(calc(100%-50px));
+                }
             }
         }
-    }
-    .cookie__banner {
-        padding: 30px 0;
-        display: flex;
-        flex-direction: column;
-        max-width: 1220px;
-        margin: 0 20px;
-    }
-    .cookie__text {
-        color: white;
-        font-size: 15px;
+        &__banner {
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            max-width: 1220px;
+            margin: 0 20px;
+        }
+        &__text {
+            color: white;
+            font-size: 15px;
+        }
     }
     a {
         text-decoration: none;
@@ -37,24 +39,28 @@
         font-weight: $font-weight-bold;
     }
     @media screen and (min-width: 768px) {
-        .cookie__banner {
-            margin: 0 60px;
-        }
-        .cookie__text {
-            font-size: 18px;
+        .cookie {
+            &__banner {
+                margin: 0 60px;
+            }
+            &__text {
+                font-size: 18px;
+            }
         }
     }
     @media screen and (min-width: 1110px) {
-        .cookie__banner {
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: baseline;
-        }
-        .cookie__button {
-            margin-left: 20px;
-        }
-        .cookie__text {
-            text-align: start;
+        .cookie {
+            &__banner {
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: baseline;
+            }
+            &__button {
+                margin-left: 20px;
+            }
+            &__text {
+                text-align: start;
+            }
         }
     }
     @media screen and (min-width: 1340px) {
