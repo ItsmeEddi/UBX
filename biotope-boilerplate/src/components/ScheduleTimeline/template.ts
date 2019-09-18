@@ -22,7 +22,7 @@ const scheduleData = [
             {
                 timeslot: "09:45",
                 speaker: ["Dirk von Gehlen"],
-                description: "Kulturpragmatismus"
+                description: "Kulturpragmatismus: ein entspannterer Umgang mit dem Neuen in einer immer komplexeren Welt"
             }
         ]
     },
@@ -55,18 +55,18 @@ const scheduleData = [
                 timeslot: "14:00",
                 speaker: ["Easy Jet Look & Book App | Dan Young", "My Skin Track UV | Anne-Kathrin Bedoy & Linda Schreurs", "Ubenwa App | Charles C. Onu"],
                 description: "Cases"
-            },
-            {
-                timeslot: "15:00",
-                speaker: ["Dagmar Schuller", "Christian Greb", "Cindy Ricarda Roberts"],
-                description: "Podiumsdiskussion"
             }
         ]
     },
     {
-        headline: "15:30 Break",
+        headline: "15:00 Break",
         illustration: mug,
         items: [
+            {
+                timeslot: "15:30",
+                speaker: ["Dagmar Schuller", "Christian Greb", "Cindy Ricarda Roberts"],
+                description: "Podiumsdiskussion: Because (A)I can"
+            },
             {
                 timeslot: "16:00",
                 speaker: [],
