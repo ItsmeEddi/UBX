@@ -1,0 +1,140 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/layouts/grid";
+@import "../../resources/scss/settings/settings";
+
+@include host('root-blog') {
+    .blog {
+        padding: 140px 0;
+        margin: 0 20px;
+        max-width: 1220px;
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        &.twelve-column-grid {
+            @include grid(12, 0);
+        }
+
+        simple-headline {
+            @include startSpanOffset(12, 0);
+        }
+
+        &__list {
+            @include span(12);
+        }
+
+        &__entry {
+            margin-top: 40px;
+            a:hover {
+                h3 {
+                    color: $highlight;
+                }
+            }
+        }
+
+        &__intro {
+            color: $highlight;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        &__image {
+            padding: 5px 20px 0 0;
+        }
+
+        img {
+            max-width: 100%;
+            box-shadow: 20px 20px 0 0px $highlight;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 38px;
+            margin: 25px 0 0;
+        }
+
+        &__lead {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 25px;
+            margin: 10px 0 0;
+        }
+
+        &__time {
+            font-size: 16px;
+            margin: 10px 0 0;
+        }
+
+
+        .link-container {
+            @include span(12);
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            margin-top: 45px;
+            padding-top: 20px;
+
+            a {
+                color: $highlight;
+                font-weight: 700;
+                
+                .arrow-right {
+                    border: solid $highlight;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    margin-left: 10px;
+                    margin-bottom: 1px;
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transition: 0.3s ease-out;
+                }
+
+                &:hover {
+                    color: $highlight-dark;
+                    .arrow-right {
+                        border: solid $highlight-dark;
+                        border-width: 0 3px 3px 0;
+                    }
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 5px;
+                width: 60px;
+                right: 0;
+                top: 0;
+                margin-bottom: 20px;
+                background-color: $primary-light;
+            }
+        }
+    }
+
+    @media screen and (min-width: 845px) {
+        .blog {
+            margin: 0 auto;
+            
+            &__entry {
+                position: relative;
+                padding-left: 420px;
+            }
+            &__image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 360px;
+            }
+
+            h3 {
+                margin-top: 5px;
+            }
+        }
+    }
+}

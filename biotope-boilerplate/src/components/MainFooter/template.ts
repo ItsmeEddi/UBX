@@ -44,18 +44,6 @@ export default (render: Function, data: MainFooterTemplateData) => {
                                 </svg>
                             </a>
                         </figure>
-                        <figure>
-                            <a href="https://www.digital-leader-award.de/" target="_blank" aria-label="link to Digital Leader Award">
-                                <img src="resources/img/DLA_logo.jpg" alt="Digital Leader Award">
-                                <figcaption>Network partner of UBX19</figcaption>
-                            </a>
-                        </figure>
-                        <figure>
-                            <a href="https://www.computerfutures.com/en-gb/" target="_blank" aria-label="link to Computer Futures">
-                                <img src="resources/img/CW_logo.jpg" alt="ComputerWoche - Voice of Digital">
-                                <figcaption>Media partner of UBX19</figcaption>
-                            </a>
-                        </figure>
                     </div>
                     <ul class="mf__links">
                         <li><a href="http://ubx.info/konferenz/datenschutz/" target="_blank">Data protection</a></li>
