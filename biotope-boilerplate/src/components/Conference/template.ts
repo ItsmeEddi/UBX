@@ -22,17 +22,20 @@ export default (render: Function, data: {}) => {
             <root-schedule></root-schedule>
         </section>
 
-
-        <section id="location" class="snap-layout__section dark">
-            <root-location></root-location>
+        <section id="events" class="snap-layout__section dark">
+            <root-events></root-events>
         </section>
 
-        <section id="events" class="snap-layout__section light">
-            <root-events></root-events>
+        <section id="blog" class="snap-layout__section light">
+            <root-blog></root-blog>
         </section>
 
         <section id="registration" class="snap-layout__section dark">
             <root-registration></root-registration>
+        </section>
+
+        <section id="location" class="snap-layout__section light">
+            <root-location></root-location>
         </section>
 
         <main-footer></main-footer>
