@@ -117,24 +117,40 @@
         }
     }
 
+    @media screen and (min-width: 768px) {
+        .blog {
+            margin: 0 60px;
+        }
+    }
+
     @media screen and (min-width: 845px) {
         .blog {
-            margin: 0 auto;
-            
             &__entry {
                 position: relative;
                 padding-left: 420px;
+                min-height: 220px;
             }
             &__image {
                 position: absolute;
                 left: 0;
                 top: 0;
                 width: 360px;
+                padding: 0;
+            }
+
+            img {
+                max-height: 200px;
             }
 
             h3 {
                 margin-top: 5px;
             }
+        }
+    }
+
+    @media screen and (min-width: 1340px) {
+        .blog {
+            margin: 0 auto;
         }
     }
 }

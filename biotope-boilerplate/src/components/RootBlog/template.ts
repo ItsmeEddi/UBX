@@ -9,7 +9,7 @@ const blogData = [
     {
         link: "https://medium.com/ubx-useful-brand-experiences/creativity-in-the-machine-age-die-maschine-als-muse-94c919b7c607",
         intro: "Article on medium",
-        image: "https://miro.medium.com/max/1690/0*SyUFT8Myq9ssK_pl.jpg",
+        image: "resources/img/blog_1.jpg",
         title: "„Creativity in the Machine Age”: Die Maschine als Muse",
         lead: "Neue Technologien und neue Geräte — Maschinen übernehmen zunehmend menschliche Handlungen und Aufgaben. Dass das vielen Menschen Angst macht, ist nichts Neues.",
         time: "3 min read"
@@ -17,7 +17,7 @@ const blogData = [
     {
         link: "https://medium.com/ubx-useful-brand-experiences/advertising-non-sense-vom-sinn-und-unsinn-der-werbung-914e88018484",
         intro: "Article on medium",
-        image: "https://miro.medium.com/max/1690/0*hAUI1hb9Cpk8fP9U.jpg",
+        image: "resources/img/blog_2.jpg",
         title: "„Advertising (Non-)Sense”: Vom Sinn und Unsinn der Werbung",
         lead: "Störende Video- und Filmunterbrechungen, Pop-Ups auf dem Smartphone oder eine viel zu große Masse an Newslettern — Werbung kann unglaublich nerven.",
         time: "4 min read"
