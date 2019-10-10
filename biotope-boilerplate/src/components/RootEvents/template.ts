@@ -45,7 +45,7 @@ export default (render: Function, data: EventsTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
         <div class="events twelve-column-grid">
-            <simple-headline dark>FORMER TALKS</simple-headline>
+            <simple-headline light>FORMER TALKS</simple-headline>
             ${talksData.map(({ year, company, country, lastname, prename, youtube, role, title, filter}) => wire()`<former-talk year=${year} company=${company} country=${country} lastname="${lastname}" prename="${prename}" youtube="${youtube}" role="${role}" title="${title}" filter="${filter}"></former-talk>`)}
             <div class="link-container">
                 <a href="http://ubx.info/konferenz/former-talks/" target="_blank">More videos<span class="arrow-right"></span></a>

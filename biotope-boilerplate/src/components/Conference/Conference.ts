@@ -15,6 +15,7 @@ import SimpleText from "../SimpleText/SimpleText";
 import SimpleButton from "../SimpleButton/SimpleButton";
 import RootEvents from "../RootEvents/RootEvents";
 import SchedulePlaceholder from "../SchedulePlaceholder/SchedulePlaceholder";
+import RootBlog from "../RootBlog/RootBlog";
 
 class Conference extends Component<{}, {}> {
 	static componentName = "x-conference";
@@ -31,7 +32,8 @@ class Conference extends Component<{}, {}> {
 		VideoStage,
 		MainFooter,
 		CookieConfirmation,
-		SchedulePlaceholder as any
+		SchedulePlaceholder as any,
+		RootBlog
 	];
 
 	constructor() {
