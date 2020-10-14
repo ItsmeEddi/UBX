@@ -21,8 +21,11 @@
         }
 
         simple-text {
-            padding-top: 80px;
+            padding-top: 50px;
             margin-bottom: 16px;
+            a {
+                color: #333;
+            }
         }
 
         simple-headline, event-date, simple-text, simple-button, svg {
