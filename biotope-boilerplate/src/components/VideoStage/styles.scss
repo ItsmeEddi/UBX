@@ -53,11 +53,15 @@
                         }
 
                         p {
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 1.3em;
                             word-break: normal;
                             white-space: nowrap;
                             max-width: 20px;
+
+                            a {
+                                color: #fff;
+                            }
                         }
                     }
                 }

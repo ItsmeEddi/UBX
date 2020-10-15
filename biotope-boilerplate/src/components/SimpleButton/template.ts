@@ -7,6 +7,6 @@ interface SimpleButtonTemplateData {
 export default (render: Function, data: SimpleButtonTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <a href=${data.link}><button class="sb sb__draw"><slot></button></a>
+        <a href=${data.link} target="_blank"><button class="sb sb__draw"><slot></button></a>
     `;
 }
