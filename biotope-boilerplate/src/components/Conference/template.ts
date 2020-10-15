@@ -10,17 +10,17 @@ export default (render: Function, data: {}) => {
             <cookie-confirmation></cookie-confirmation>
         </section>
 
-        <section class="snap-layout__section light">
+        <section id="about" class="snap-layout__section light">
             <root-info></root-info>
         </section>
 
-        <section id="speaker" class="snap-layout__section dark">
+        <!--<section id="speaker" class="snap-layout__section dark">
             <root-speakers></root-speakers>
-        </section>
+        </section>-->
 
-        <section id="schedule" class="snap-layout__section light">
+        <!--<section id="schedule" class="snap-layout__section light">
             <root-schedule></root-schedule>
-        </section>
+        </section>-->
 
         <section id="events" class="snap-layout__section dark">
             <root-events></root-events>
@@ -30,13 +30,13 @@ export default (render: Function, data: {}) => {
             <root-blog></root-blog>
         </section>
 
-        <section id="registration" class="snap-layout__section dark">
+        <!--<section id="registration" class="snap-layout__section dark">
             <root-registration></root-registration>
-        </section>
+        </section>-->
 
-        <section id="location" class="snap-layout__section light">
+        <!--<section id="location" class="snap-layout__section light">
             <root-location></root-location>
-        </section>
+        </section>-->
 
         <main-footer></main-footer>
     `;
