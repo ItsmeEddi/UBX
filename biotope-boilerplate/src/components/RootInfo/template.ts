@@ -1,17 +1,15 @@
-import * as styles from './styles.scss';
+import * as styles from "./styles.scss";
 
-interface RootInfoTemplateData {
-
-}
+interface RootInfoTemplateData {}
 
 export default (render: Function, data: RootInfoTemplateData) => {
-  return render`
+	return render`
         <style>${styles.toString()}</style>
         <div class="info twelve-column-grid">
             <simple-headline dark lowercase>What is UBX about?</simple-headline>
-            <simple-text>UBX stands for Useful Brand Experience. For 5 years Virtual Identity  has been bringing together speakers, users and customers. Inspiring keynotes and innovative digitisation cases from all over the world presented how the power and diversity of digital solutions and processes can be used to create rewarding brand experiences. Useful brand experience is our attempt, to encourage the marketing world to create solutions for the users instead of annyoing them. We thrive to deliver inspiring talks with speakers from around the globe, that tackle that challenge ever day.</simple-text>
-            <simple-text><strong>#UBX20</strong><br>After 5 successful years, the UBX conference is now going digital. To protect the health of all possible participants, we made the decision to pause the live conference this year in respect of Covid-19. Instead we initiated the ubxZoom series where we review the past years by inviting former speakers to our online stage. They will take a look at their earlier talks and find out what has changed or developed since then. <a href="mailto:events@virtual-identity.com?subject=Subscription Virtual Identity Events" target="_blank">Want to stay updated?</a></simple-text>
-            <simple-text>Want to be join us? Please check out our upcoming events</simple-text>
+            <simple-text>UBX stands for Useful Brand Experience. Virtual Identity has been bringing together speakers, users and customers. Inspiring keynotes and innovative digitisation cases from all over the world presented how the power and diversity of digital solutions and processes can be used, to create rewarding brand experiences.<hr>Useful brand experience is our attempt, to encourage the marketing world to create solutions for the users instead of annyoing them. We thrive to deliver inspiring talks with speakers from around the globe, that tackle that challenge every day.</simple-text>
+            <simple-text><strong>#UBX20</strong><hr>After 5 successful years, the UBX conference is now going digital. To protect the health of all possible participants, we made the decision to pause the live conference this year in respect of Covid-19. <hr>Instead we initiated the ubxZoom series where we review the past years by inviting former speakers to our online stage. They will take a look at their earlier talks and find out what has changed or developed since then. <hr>Want to stay updated? <a href="mailto:events@virtual-identity.com?subject=Subscription Virtual Identity Events" target="_blank"><strong>Sign up</strong></a> to be informed about our upcoming events.</simple-text>
+            <simple-text>Want to be a part? Please check out our upcoming events.</simple-text>
             <simple-button link="https://www.virtual-identity.com/events">Join now</simple-button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 250 800 800">
   <g id="Draw_Layer-2" data-name="Draw Layer">
@@ -57,4 +55,4 @@ export default (render: Function, data: RootInfoTemplateData) => {
 
         </div>
     `;
-}
+};
