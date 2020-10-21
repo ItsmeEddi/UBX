@@ -2,74 +2,88 @@
 @import "../../resources/scss/layouts/grid";
 @import "../../resources/scss/settings/settings";
 
-@include host('root-info') {
-    .info {
-        padding: 140px 0;
-        margin: 0 20px;
-        max-width: 1220px;
+@include host("root-info") {
+	.info {
+		padding: 140px 0;
+		margin: 0 20px;
+		max-width: 1220px;
 
-        svg {
-            .cls-1{fill: $primary}
-            .cls-2{fill: $highlight};
-            width: 300px;
-            height: 300px;
-            min-width: 100%;
-        }
+		svg {
+			.cls-1 {
+				fill: $primary;
+			}
+			.cls-2 {
+				fill: $highlight;
+			}
+			width: 300px;
+			height: 300px;
+			min-width: 100%;
+		}
 
-        &.twelve-column-grid {
-            @include grid(12, 0);
-        }
+		&.twelve-column-grid {
+			@include grid(12, 0);
+		}
 
-        simple-text {
-            padding-top: 50px;
-            margin-bottom: 16px;
-            a {
-                color: #333;
-            }
-        }
+		simple-text {
+			padding-top: 50px;
+			margin-bottom: 16px;
+			a {
+				color: #333;
+			}
+			hr {
+				border-style: none;
+				height: 5px;
+			}
+		}
 
-        simple-headline, event-date, simple-text, simple-button, svg {
-            @include startSpanOffset(12, 0);
-        }
-    }
+		simple-headline,
+		event-date,
+		simple-text,
+		simple-button,
+		svg {
+			@include startSpanOffset(12, 0);
+		}
+	}
 
-    @media screen and (min-width: 840px) {
-        .info {
-            margin: 0 60px;
+	@media screen and (min-width: 840px) {
+		.info {
+			margin: 0 60px;
 
-            &.twelve-column-grid {
-                @include grid(12, 44);
-            }
+			&.twelve-column-grid {
+				@include grid(12, 44);
+			}
 
-            svg {
-                @include startSpanOffset(6, 3);
-                margin-top: -100px !important;
-                width: 600px;
-                height: 600px;
-            }
+			svg {
+				@include startSpanOffset(6, 3);
+				margin-top: -100px !important;
+				width: 600px;
+				height: 600px;
+			}
 
-            simple-headline {
-                @include startSpanOffset(6, 0);
-            }
+			simple-headline {
+				@include startSpanOffset(6, 0);
+			}
 
-            simple-text {
-                @include startSpanOffset(8, 0);
-            }
-        }
-    }
+			simple-text {
+				@include startSpanOffset(8, 0);
+			}
+		}
+	}
 
-    @media screen and (min-width: 1340px) {
-        .info {
-            margin: 0 auto;
+	@media screen and (min-width: 1340px) {
+		.info {
+			margin: 0 auto;
 
-            event-date, simple-text, simple-button {
-                @include startSpanOffset(6, 0);
-            }
+			event-date,
+			simple-text,
+			simple-button {
+				@include startSpanOffset(6, 0);
+			}
 
-            svg {
-                @include startSpanOffset(5, 6);
-                margin-top: -300px !important;
-            }
-        }
-    }
+			svg {
+				@include startSpanOffset(5, 6);
+				margin-top: -300px !important;
+			}
+		}
+	}
 }
