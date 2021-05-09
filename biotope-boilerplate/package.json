@@ -19,7 +19,7 @@
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "breakpoint-sass": "2.7.1",
     "file-loader": "^3.0.1",
-    "handlebars": ">=4.0.14",
+    "handlebars": ">=4.7.7",
     "lottie-web": "^5.5.2",
     "sanitize.css": "^7.0.0",
     "susy": "2.2.14",
